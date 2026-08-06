@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frecuencias de Sanación: El Sonido de los Órganos Internos - Sembradores de Qi</title>
+    <meta name="description" content="Taller Presencial de Mudras y Sonidos de los Órganos Internos con el Maestro Yuan Ming. Del 20 al 22 de Noviembre de 2026 en el Convento de San Joaquín, CDMX.">
+    
+    <!-- Google Fonts: Montserrat for modern geometric UI, Playfair Display for elegant headings -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        /* Ajuste de accesibilidad para la tercera edad: incrementar el puntaje de textos pequeños */
+        .text-\[10px\] {
+            font-size: 12px !important;
+        }
+        .text-xs {
+            font-size: 14px !important;
+        }
+
+        #sdq-landing-root {
+            --sdq-navy: #0a1929;
+            --sdq-gold: #FFD700;
+            --sdq-navy-light: #132f4c;
+            --sdq-gold-hover: #e6c200;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .sdq-font-serif-elegant {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* REGLA DEL ROSTRO Y EFECTOS CRÍTICA: Despejamos el centro ampliando la altura y reubicando el encuadre */
+        .sdq-hero {
+            background-image: url('http://sembradoresdeqi.com/wp-content/uploads/2026/08/bannerwordpressyuanleft2026.webp');
+            background-size: cover;
+            background-position: right center !important;
+            background-repeat: no-repeat;
+            position: relative;
+            min-height: 650px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        @media (min-width: 1024px) {
+            .sdq-hero {
+                background-position: left center !important;
+                min-height: 820px;
+            }
+        }
+
+        /* CAPA DE DEGRADADO DE ATMÓSFERA PROFUNDA: Contraste en los extremos y transparencia cristalina en el centro */
+        .sdq-hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                to bottom, 
+                rgba(10, 25, 41, 1) 0%,         
+                rgba(10, 25, 41, 0.85) 12%,     
+                rgba(10, 25, 41, 0.4) 38%,      
+                rgba(10, 25, 41, 0) 50%,        
+                rgba(10, 25, 41, 0) 72%,        
+                rgba(10, 25, 41, 0.6) 88%,      
+                rgba(10, 25, 41, 0.98) 100%     
+            );
+            z-index: 1;
+        }
+
+        /* Sombras de texto premium para proteger la legibilidad sobre fondos complejos */
+        .sdq-text-shadow {
+            text-shadow: 2px 2px 14px rgba(10, 25, 41, 0.95), -1px -1px 4px rgba(10, 25, 41, 0.85), 0px 0px 15px rgba(10, 25, 41, 0.7);
+        }
+
+        /* Efectos visuales de tarjetas premium */
+        .sdq-card-glow {
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 215, 0, 0.12);
+        }
+
+        .sdq-card-glow:hover {
+            transform: translateY(-5px);
+            border-color: var(--sdq-gold);
+            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.15);
+        }
+
+        /* Normalización sutil para evitar interferencias de temas globales de WordPress */
+        #sdq-landing-root a {
+            color: inherit;
+            text-decoration: none;
+        }
+        #sdq-landing-root select, 
+        #sdq-landing-root input, 
+        #sdq-landing-root textarea {
+            color-scheme: dark;
+        }
+
+        /* Ocultar barra de scroll en navegadores */
+        .sdq-no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .sdq-no-scrollbar {
+            -ms-overflow-style: none;
+        }
+        @supports (scrollbar-width: none) {
+            .sdq-no-scrollbar {
+                scrollbar-width: none;
+            }
+        }
+        
+        .form-input:focus {
+            outline: none;
+            border-color: var(--sdq-gold);
+            box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-[#0a1929] text-white">
+
+    <div id="sdq-landing-root" class="antialiased text-white bg-[#0a1929] overflow-x-hidden relative w-full text-left">
+
+        <!-- Navigation -->
+        <nav class="sticky top-0 left-0 w-full z-45 bg-[#0a1929]/85 backdrop-blur-md border-b border-white/10 z-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+                <div class="flex items-center h-full">
+                    <a href="#" class="flex items-center">
+                        <img src="http://sembradoresdeqi.com/wp-content/uploads/2026/01/logo-sembradores-de-qi-zhineng-qigong.jpg" alt="Logo Sembradores de Qi" class="h-14 sm:h-16 w-auto object-contain rounded-lg">
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center gap-8 text-sm font-semibold">
+                    <a href="#ciencia" class="hover:text-[#FFD700] transition">La Ciencia</a>
+                    <a href="#precios" class="hover:text-[#FFD700] transition font-bold text-[#FFD700]">Planes de Inversión</a>
+                    <a href="https://sembradoresdeqi.com/formulario-taller-sonidos-teacher-yuan-2026/" class="bg-[#132f4c] text-white border border-[#FFD700] px-5 py-2.5 rounded-full hover:bg-[#FFD700] hover:text-[#0a1929] transition shadow-lg">Registrarme</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Header -->
+        <header class="sdq-hero">
+            <div class="sdq-hero-overlay"></div>
+            
+            <!-- TOP BLOCK: Centered Titles (Pushed Higher) -->
+            <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-8 text-center space-y-3">
+                <!-- Mobile-Only Close-up Portrait -->
+                <div class="lg:hidden mb-4">
+                    <div class="relative inline-block">
+                        <div class="absolute -inset-1 rounded-full bg-gradient-to-r from-[#FFD700] to-yellow-500 opacity-75 blur-sm animate-pulse"></div>
+                        <img src="http://sembradoresdeqi.com/wp-content/uploads/2026/08/yuanmovil.webp" alt="Maestro Yuan Ming" class="relative rounded-full w-64 h-64 object-cover object-top border-4 border-[#FFD700] shadow-2xl">
+                    </div>
+                </div>
+                
+                <span class="text-xs sm:text-sm font-extrabold tracking-[0.3em] text-[#FFD700] bg-[#0a1929]/90 px-4 py-2 rounded-full border border-[#FFD700]/30 inline-block uppercase">
+                    Taller Presencial de Mudras y Sonidos de los Órganos
+                </span>
+                <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black leading-none text-white sdq-text-shadow">
+                    FRECUENCIAS DE SANACIÓN
+                </h1>
+            </div>
+
+            <!-- MIDDLE AREA: Empty space to let Teacher Yuan be fully visible (Increased Spacer) -->
+            <div class="h-24 sm:h-64 pointer-events-none"></div>
+
+            <!-- BOTTOM BLOCK: Right-aligned details and buttons on desktop (Pushed Lower) -->
+            <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pb-8 flex flex-col items-center lg:items-end text-center lg:text-right space-y-4">
+                <p class="text-lg sm:text-2xl font-bold text-[#FFD700] uppercase tracking-wide sdq-text-shadow font-serif-elegant italic max-w-2xl">
+                    El Código de Zhineng Qigong para los Órganos Internos
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto pt-2">
+                    <a href="https://sembradoresdeqi.com/formulario-taller-sonidos-teacher-yuan-2026/" class="w-full sm:w-auto bg-[#132f4c] text-white border-2 border-[#FFD700] text-sm font-extrabold px-8 py-4 rounded-full hover:bg-[#FFD700] hover:text-[#0a1929] transition shadow-xl uppercase tracking-wider text-center">
+                        Asegurar mi Lugar
+                    </a>
+                    <a href="#precios" class="w-full sm:w-auto border border-white/30 backdrop-blur-sm hover:border-[#FFD700] text-white text-sm font-bold px-8 py-4 rounded-full transition uppercase tracking-wider text-center">
+                        Ver Planes de Inversión
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Location & Date Section -->
+        <section class="py-12 bg-gradient-to-b from-[#0a1929] to-[#132f4c]/40 border-b border-white/5 relative z-10 text-center">
+            <div class="max-w-4xl mx-auto px-6 space-y-4">
+                <p class="text-lg sm:text-xl md:text-2xl text-gray-200 font-medium leading-relaxed sdq-font-serif-elegant italic">
+                    "Del 20 al 22 de Noviembre, 2026. Sincroniza tus funciones biológicas y libera las emociones estancadas.<br>Te esperamos en el histórico Convento de San Joaquín, Tacuba, CDMX, junto al Maestro Yuan Ming."
+                </p>
+                <div class="flex flex-col lg:flex-row justify-center items-center gap-4 lg:gap-6 pt-4">
+                    <a href="https://maps.app.goo.gl/hketNg7o6dyBnopx6" target="_blank" rel="noopener" class="w-full lg:w-auto flex items-center justify-center gap-2 px-5 py-3.5 bg-[#132f4c]/60 hover:bg-[#132f4c] border border-[#FFD700]/30 hover:border-[#FFD700] rounded-2xl text-sm sm:text-base font-extrabold text-[#FFD700] uppercase tracking-wider transition duration-300 shadow-md">
+                        <span>⛪ CONVENTO DE SAN JOAQUÍN, CDMX</span>
+                        <span class="text-xs text-gray-400 font-semibold px-2 py-0.5 bg-[#0a1929] rounded-full border border-white/5">🗺️ Ver Mapa</span>
+                    </a>
+                    
+                    <div class="w-full lg:w-auto flex items-center justify-center gap-2 px-5 py-3.5 bg-[#132f4c]/60 border border-[#FFD700]/30 rounded-2xl text-sm sm:text-base font-extrabold text-white uppercase tracking-wider shadow-md">
+                        <span>📅 NOVIEMBRE 20 AL 22, 2026</span>
+                    </div>
+
+                    <div class="w-full lg:w-auto flex items-center justify-center gap-2 px-5 py-3.5 bg-[#132f4c]/60 border border-[#FFD700]/30 rounded-2xl text-sm sm:text-base font-extrabold text-white uppercase tracking-wider shadow-md">
+                        <span>🗣️ INGLÉS CON TRADUCCIÓN AL ESPAÑOL</span>
+                    </div>
+
+                    <div class="w-full lg:w-auto flex items-center justify-center gap-2 px-5 py-3.5 bg-[#132f4c]/60 border border-[#FFD700]/30 rounded-2xl text-sm sm:text-base font-extrabold text-white uppercase tracking-wider shadow-md">
+                        <span>🚗 CUENTA CON ESTACIONAMIENTO</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Science Section -->
+        <section id="ciencia" class="py-20 bg-[#0a1929] relative overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="text-sm font-black text-[#FFD700] uppercase tracking-[0.25em] mb-3">La Ciencia del Sonido y el Qi</h2>
+                    <p class="text-3xl sm:text-4xl font-extrabold text-white">¿Por qué un sonido específico puede restaurar un órgano físico?</p>
+                    <div class="w-20 h-1 bg-[#FFD700] mx-auto mt-6"></div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    <div class="lg:col-span-7 space-y-6 text-gray-300 leading-relaxed">
+                        <p class="text-lg text-white font-semibold">
+                            Según la Teoría de las Tres Capas de la Materia formulada por el creador del Zhineng Qigong, el Dr. Pang Ming, la materia similar a la información es capaz de estructurar la energía y la masa física.
+                        </p>
+                        <p>
+                            Cada uno de tus cinco órganos internos (corazón, pulmones, hígado, bazo y riñones) posee una <strong>Firma Vibracional</strong> o frecuencia saludable de Qi. Cuando acumulamos estrés diario, miedos o resentimientos, esa frecuencia natural se distorsiona, propiciando bloqueos de Qi que se manifiestan como fatiga, dolor y afecciones crónicas.
+                        </p>
+                        <p>
+                            Durante este taller intensivo de sonido de los órganos, aprenderás la entonación exacta de los <strong>sonidos y la geometría corporal de los mudras de ZNQG</strong>. Estos actúan como un diapasón biológico: emiten una frecuencia vibracional precisa que hace que las células del órgano vuelvan a resonar en su estado de salud original, disolviendo nudos físicos y liberando la memoria emocional limitante de forma medible.
+                        </p>
+                        
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4 text-white">
+                            <div class="flex items-start gap-4 bg-[#132f4c] p-6 rounded-xl border border-white/10 shadow-lg">
+                                <span class="text-4xl text-[#FFD700] shrink-0 select-none pt-1">🧬</span>
+                                <div>
+                                    <h4 class="text-white font-extrabold text-base block mb-2 tracking-wide">Afinación Celular</h4>
+                                    <p class="text-sm text-gray-200 leading-relaxed">El sonido de la voz reestructura el espacio celular de los tejidos.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4 bg-[#132f4c] p-6 rounded-xl border border-white/10 shadow-lg">
+                                <span class="text-4xl text-[#FFD700] shrink-0 select-none pt-1">🖐️</span>
+                                <div>
+                                    <h4 class="text-white font-extrabold text-base block mb-2 tracking-wide">Geometría de Mudras</h4>
+                                    <p class="text-sm text-gray-200 leading-relaxed">Posturas manuales precisas que canalizan y blindan el Hunyuan Qi.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-5">
+                        <div class="relative p-6 bg-[#132f4c]/50 rounded-3xl border border-[#FFD700]/20 backdrop-blur-sm">
+                            <h3 class="text-xl font-bold text-white mb-4 border-b border-white/10 pb-3 flex items-center gap-2">
+                                <span>🎯</span> Efectos de la Resonancia Orgánica
+                            </h3>
+                            <ul class="space-y-4 text-sm text-gray-300">
+                                <li class="flex gap-3">
+                                    <span class="text-[#FFD700] font-bold">✓</span>
+                                    <span><strong>Riñones:</strong> Transmutación de miedos en seguridad biológica y confianza.</span>
+                                </li>
+                                <li class="flex gap-3">
+                                    <span class="text-[#FFD700] font-bold">✓</span>
+                                    <span><strong>Hígado:</strong> Regulación de la ira para restablecer la tolerancia y desintoxicación celular.</span>
+                                </li>
+                                <li class="flex gap-3">
+                                    <span class="text-[#FFD700] font-bold">✓</span>
+                                    <span><strong>Corazón:</strong> Disolución de la ansiedad y agitación, devolviendo alegría profunda.</span>
+                                </li>
+                                <li class="flex gap-3">
+                                    <span class="text-[#FFD700] font-bold">✓</span>
+                                    <span><strong>Bazo:</strong> Descompresión del sobrepensamiento y las preocupaciones repetitivas.</span>
+                                </li>
+                                <li class="flex gap-3">
+                                    <span class="text-[#FFD700] font-bold">✓</span>
+                                    <span><strong>Pulmones:</strong> Liberación del duelo y la melancolía arraigada en los tejidos.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Instructor Section -->
+        <section class="py-20 bg-[#132f4c]/30 border-y border-white/5">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    <div class="lg:col-span-4 flex justify-center">
+                        <div class="relative">
+                            <div class="absolute -inset-1 rounded-full bg-gradient-to-r from-[#FFD700] to-yellow-500 opacity-75 blur-md animate-pulse"></div>
+                            <img src="http://sembradoresdeqi.com/wp-content/uploads/2026/08/yuancloseqimini.webp" alt="Maestro Yuan Ming" class="relative rounded-full w-64 h-64 object-cover border-4 border-[#0a1929]">
+                        </div>
+                    </div>
+                    <div class="lg:col-span-8 space-y-6">
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-xs font-bold text-[#FFD700] uppercase tracking-widest bg-[#132f4c] px-3.5 py-1.5 rounded-full border border-white/10">Instructor Titular</span>
+                            <span class="text-xs font-bold text-white uppercase tracking-widest bg-emerald-700/80 px-3.5 py-1.5 rounded-full border border-emerald-500/20">Inglés con Traducción al Español</span>
+                        </div>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Maestro Yuan Ming (Teacher Yuan)</h2>
+                        <p class="text-gray-300 leading-relaxed">
+                            Con décadas de práctica ininterrumpida y estudio profundo del cuerpo humano, el <strong>Maestro Yuan Ming</strong> es reconocido a nivel global por su rigor y calidez en la enseñanza científica del Zhineng Qigong. Su camino destaca por unificar de manera impecable la teoría del Dr. Pang Ming con las necesidades cotidianas del estudiante occidental.
+                        </p>
+                        <p class="text-gray-300 leading-relaxed">
+                            Su metodología se aleja de explicaciones místicas o dogmas, favoreciendo siempre la evidencia experimental de los cambios biológicos y emocionales que se experimentan al regular el flujo de Qi. Sostiene un campo de sanación de enorme compasión y asertividad técnica.
+                        </p>
+                        <div class="pt-4 border-t border-white/10 flex items-center gap-3">
+                            <span class="text-sm italic font-serif-elegant text-[#FFD700]">"La afinación de la voz y la geometría del cuerpo son las tecnologías más puras de autocuración."</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Investment Section (Pricing) -->
+        <section id="precios" class="py-20 bg-[#132f4c]/30 border-t border-white/10">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                    <h2 class="text-sm font-black text-[#FFD700] uppercase tracking-[0.25em]">Tu Entrada al Taller</h2>
+                    <p class="text-3xl sm:text-4xl font-extrabold text-white">Planes de Inversión Especiales</p>
+                    
+                    <div class="w-full max-w-3xl mx-auto mt-4 px-6 py-4 bg-gradient-to-r from-amber-400 to-[#FFD700] text-[#0a1929] font-black rounded-2xl shadow-xl shadow-yellow-500/15 border-2 border-white/30 transform transition hover:scale-[1.01]">
+                        <div class="flex flex-col sm:flex-row items-center justify-center gap-2.5 text-center text-sm md:text-base tracking-wide bg-[#0a1929] text-[#FFD700] py-2.5 px-4 rounded-xl border border-[#FFD700]/20 font-extrabold">
+                            <span class="text-xl animate-bounce">🔥</span>
+                            <span>¡APARTA TU LUGAR DESDE HOY CON SÓLO $1,000.00 MXN!</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch max-w-4xl mx-auto">
+                    <!-- Option 1: Paquete 1 -->
+                    <div class="bg-[#132f4c]/50 rounded-3xl p-8 flex flex-col justify-between sdq-card-glow relative overflow-hidden backdrop-blur-sm border border-white/10">
+                        <div>
+                            <h3 class="text-xl font-bold text-white">Paquete 1</h3>
+                            <p class="text-xs text-gray-400 mt-1">Ideal para residentes locales o pernocta externa</p>
+                            <div class="my-6">
+                                <span class="text-sm text-gray-500 line-through block font-medium">$9,500.00 MXN</span>
+                                <span class="text-4xl font-black text-[#FFD700] drop-shadow-[0_0_10px_rgba(255,215,0,0.2)]">$7,000</span>
+                                <span class="text-xs text-gray-400"> MXN (Promo)</span>
+                            </div>
+                            <div class="space-y-3.5 text-sm text-gray-300 border-t border-white/10 pt-5">
+                                <p class="flex gap-2"><span>🚶</span> <span>Curso completo de 3 días</span></p>
+                                <p class="flex gap-2"><span>☕</span> <span>Servicio de Coffee Break</span></p>
+                                <p class="flex gap-2"><span>🍲</span> <span>1 Comida al día</span></p>
+                                <p class="flex gap-2"><span>🚗</span> <span>Estacionamiento disponible en el Convento</span></p>
+                            </div>
+                        </div>
+                        <div class="mt-8">
+                            <a href="https://sembradoresdeqi.com/formulario-taller-sonidos-teacher-yuan-2026/?package=7000" class="block text-center py-4 bg-transparent border border-white/20 hover:border-[#FFD700] hover:bg-[#FFD700] hover:text-[#0a1929] text-white font-extrabold rounded-xl text-xs transition uppercase tracking-wider">Elegir Paquete 1</a>
+                        </div>
+                    </div>
+
+                    <!-- Option 2: Paquete 2 -->
+                    <div class="bg-[#132f4c]/80 rounded-3xl p-8 flex flex-col justify-between sdq-card-glow relative overflow-hidden border border-[#FFD700]/30 shadow-2xl backdrop-blur-sm">
+                        <div>
+                            <h3 class="text-xl font-bold text-[#FFD700]">Paquete 2</h3>
+                            <p class="text-xs text-gray-300 mt-1">Hospedaje y alimentación</p>
+                            <div class="my-6">
+                                <span class="text-sm text-gray-500 line-through block font-medium">$12,500.00 MXN</span>
+                                <span class="text-4xl font-black text-[#FFD700] drop-shadow-[0_0_10px_rgba(255,215,0,0.3)]">$10,000</span>
+                                <span class="text-xs text-gray-300"> MXN (Promo)</span>
+                            </div>
+                            <div class="space-y-3.5 text-sm text-gray-200 border-t border-white/20 pt-5">
+                                <p class="flex gap-2"><span>🏠</span> <span>Hospedaje en habitaciones del Convento, limitado a 10 habitaciones dobles</span></p>
+                                <p class="flex gap-2"><span>🍳</span> <span>Alimentación completa</span></p>
+                                <p class="flex gap-2"><span>🔊</span> <span>Curso completo de 3 días</span></p>
+                                <p class="flex gap-2"><span>🚗</span> <span>Estacionamiento disponible en el Convento</span></p>
+                            </div>
+                        </div>
+                        <div class="mt-8">
+                            <a href="https://sembradoresdeqi.com/formulario-taller-sonidos-teacher-yuan-2026/?package=10000" class="block text-center py-4 bg-[#FFD700] text-[#0a1929] font-extrabold rounded-xl text-xs hover:bg-[#e6c200] hover:text-[#0a1929] transition uppercase tracking-wider">Elegir Paquete 2</a>
+                        </div>
+                    </div>
+                </div>
+
+                 <div id="tarjetas" class="w-full max-w-3xl mx-auto mt-12 p-6 bg-[#132f4c]/90 border-2 border-[#FFD700]/30 rounded-2xl shadow-xl backdrop-blur-sm text-center space-y-3 transform transition hover:scale-[1.01]">
+                     <div class="flex flex-col sm:flex-row items-center justify-center gap-2">
+                         <span class="text-2xl">💳</span>
+                         <h4 class="text-sm sm:text-base md:text-lg font-black text-white uppercase tracking-wider">
+                             Aceptamos Pagos con Tarjeta de Crédito y Débito
+                         </h4>
+                     </div>
+                     <p class="text-xs sm:text-sm text-gray-200 leading-relaxed font-bold">
+                         *Nota: Si eliges pagar a meses con intereses, considera que los cargos adicionales o comisiones bancarias que puedan generarse corren por tu cuenta, ya que dependen directamente de tu banco.
+                     </p>
+                     <p class="text-xs text-[#FFD700] font-black tracking-wider uppercase pt-2.5 border-t border-white/10 mt-1">
+                          💡 IMPORTANTE: Podrás seleccionar tu método de pago preferido en el Formulario de Inscripción, al cual puedes acceder haciendo clic en el botón "Iniciar Mi Registro Aquí" ubicado al final de la página.
+                     </p>
+                 </div>
+            </div>
+        </section>
+
+        <!-- Financing Plans Section -->
+        <section id="financiamiento" class="py-20 bg-[#0a1929] border-t border-white/10 relative overflow-hidden">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 relative z-10">
+                <div class="bg-gradient-to-br from-[#132f4c] to-[#0a1929] rounded-3xl p-8 sm:p-12 border border-[#FFD700]/30 shadow-2xl">
+                    <div class="text-center max-w-2xl mx-auto mb-10">
+                        <p class="text-sm sm:text-base text-gray-300 max-w-xl mx-auto font-medium">Aprovecha nuestras opciones de pago diferido directamente con Sembradores de Qi.</p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10 text-left">
+                        <!-- Option 1 -->
+                        <div class="bg-[#0a1929]/60 p-6 rounded-2xl border border-white/10 space-y-4">
+                            <h3 class="text-lg font-bold text-[#FFD700]">Paquete 1</h3>
+                            <div class="space-y-3 text-sm text-gray-200">
+                                <p class="flex items-start gap-2">
+                                    <span class="text-emerald-400 mt-0.5">📌</span>
+                                    <span><strong>Apartado:</strong> $1,000.00 MXN</span>
+                                </p>
+                                <p class="flex items-start gap-2">
+                                    <span class="text-emerald-400 mt-0.5">📅</span>
+                                    <span>3 pagos de $2,000.00 MXN</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Option 2 -->
+                        <div class="bg-[#0a1929]/60 p-6 rounded-2xl border border-[#FFD700]/30 space-y-4 shadow-lg shadow-yellow-500/5">
+                            <h3 class="text-lg font-bold text-white">Paquete 2</h3>
+                            <div class="space-y-3 text-sm text-gray-200">
+                                <p class="flex items-start gap-2">
+                                    <span class="text-emerald-400 mt-0.5">📌</span>
+                                    <span><strong>Apartado:</strong> $1,000.00 MXN</span>
+                                </p>
+                                <p class="flex items-start gap-2">
+                                    <span class="text-emerald-400 mt-0.5">📅</span>
+                                    <span>3 pagos de $3,000.00 MXN</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Deadline Alert -->
+                    <div class="text-center font-bold text-gray-200 text-sm sm:text-base mb-8">
+                        📅 Fecha límite para el pago total del curso: <span class="bg-[#132f4c] text-[#FFD700] px-3 py-1 rounded-md ml-1 inline-block font-extrabold shadow-sm border border-white/10">antes del 15 de noviembre</span>
+                    </div>
+
+                    <!-- Important Information Banner -->
+                    <div class="p-8 bg-[#1a365d]/90 border-2 border-amber-500 rounded-3xl space-y-4 text-left shadow-2xl">
+                        <p class="font-black text-amber-300 text-base sm:text-lg flex items-center gap-2">
+                            <span>📌</span> <span>Información Importante sobre tu Plan Directo:</span>
+                        </p>
+                        <ul class="list-disc pl-5 space-y-2.5 text-sm sm:text-base text-gray-100 font-medium">
+                            <li><strong class="text-white">Facilidad de Apartado:</strong> Te brindamos la flexibilidad de apartar tu lugar con anticipación y realizar abonos fijos mensuales para mayor comodidad.</li>
+                            <li><strong class="text-white">Pago con Tarjeta:</strong> Aceptamos pagos con Tarjeta de Crédito y Débito para tu facilidad al momento de registrarte.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Registration Section -->
+         <section id="registro" class="py-24 bg-[#0a1929] border-t border-white/10 relative overflow-hidden text-center">
+             <div class="max-w-3xl mx-auto px-6 relative z-10 space-y-6">
+                 <span class="text-xs font-bold text-[#FFD700] uppercase tracking-widest bg-[#132f4c] px-3.5 py-1.5 rounded-full border border-[#FFD700]/20">Paso Final</span>
+                 <h2 class="text-3xl sm:text-4xl font-extrabold text-white">¿Listo para comenzar tu proceso de inscripción?</h2>
+                 <p class="text-sm sm:text-base text-gray-300 max-w-xl mx-auto leading-relaxed">
+                     Haz clic en el botón a continuación para iniciar tu registro y asegurar tu lugar en el taller. Serás redirigido con nuestro equipo en Sembradores de Qi.
+                 </p>
+                 <div class="pt-4 flex justify-center">
+                     <a href="https://sembradoresdeqi.com/formulario-taller-sonidos-teacher-yuan-2026/" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-[#132f4c] text-white border-2 border-[#FFD700] text-base sm:text-lg font-black px-12 py-5 rounded-2xl hover:bg-[#FFD700] hover:text-[#0a1929] transition duration-300 shadow-2xl hover:scale-105 transform uppercase tracking-wider">
+                         <span>✨ Iniciar Mi Registro Aquí</span>
+                         <span class="text-xl">👉</span>
+                     </a>
+                 </div>
+             </div>
+         </section>
+
+        <!-- Footer -->
+        <footer class="py-12 bg-[#0a1929] border-t border-white/10 text-center relative z-10 space-y-6">
+            <!-- Prominent WhatsApp Info Button -->
+            <div class="max-w-md mx-auto px-4">
+                <a href="https://wa.me/525533106161" target="_blank" rel="noopener" class="w-full flex items-center justify-center gap-3 text-sm sm:text-base font-extrabold text-white bg-emerald-600 hover:bg-emerald-700 transition duration-300 px-6 py-4 rounded-full shadow-lg shadow-emerald-700/20 border border-emerald-500/30 transform hover:-translate-y-0.5">
+                    <span class="text-lg">💬</span>
+                    <span>¿Dudas? Chat de Informes WhatsApp: +52 55 3310 6161</span>
+                </a>
+            </div>
+            
+            <div class="text-gray-500 text-xs space-y-2">
+                <p>&copy; 2026 Sembradores de Qi. Todos los derechos reservados. Practica con el corazón, comparte con compasión.</p>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+</html>
