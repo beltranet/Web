@@ -43,6 +43,7 @@ function doPost(e) {
         "Edad",
         "Género",
         "Práctica Previa Zhineng QiGong",
+        "Cómo se enteró / Quién invitó",
         "Talla de Playera",
         "Limitación Física o Movilidad",
         "Detalle de Limitación",
@@ -118,6 +119,7 @@ function doPost(e) {
     var edad = data.edad || "";
     var genero = data.genero || "";
     var historial = data.historial || "";
+    var referencia = data.referencia || "";
     var talla_playera = data.talla_playera || "";
     var movilidad = data.movilidad || "";
     var movilidad_detalle = data.movilidad_detalle || "";
@@ -137,6 +139,7 @@ function doPost(e) {
       edad,
       genero,
       historial,
+      referencia,
       talla_playera,
       movilidad,
       movilidad_detalle,
@@ -170,6 +173,7 @@ function doPost(e) {
             "<tr><td style='padding: 8px; border-bottom: 1px solid #eee; font-weight: bold; color: #333;'>Edad:</td><td style='padding: 8px; border-bottom: 1px solid #eee; color: #555;'>" + edad + " años</td></tr>" +
             "<tr><td style='padding: 8px; border-bottom: 1px solid #eee; font-weight: bold; color: #333;'>Género:</td><td style='padding: 8px; border-bottom: 1px solid #eee; color: #555;'>" + genero + "</td></tr>" +
             "<tr><td style='padding: 8px; border-bottom: 1px solid #eee; font-weight: bold; color: #333;'>Experiencia previa:</td><td style='padding: 8px; border-bottom: 1px solid #eee; color: #555;'>" + historial + "</td></tr>" +
+            "<tr><td style='padding: 8px; border-bottom: 1px solid #eee; font-weight: bold; color: #333;'>¿Cómo se enteró / Quién invitó?:</td><td style='padding: 8px; border-bottom: 1px solid #eee; color: #555;'>" + referencia + "</td></tr>" +
             "<tr><td style='padding: 8px; border-bottom: 1px solid #eee; font-weight: bold; color: #333;'>Talla de Playera:</td><td style='padding: 8px; border-bottom: 1px solid #eee; color: #555;'>" + talla_playera + "</td></tr>" +
             "<tr><td style='padding: 8px; border-bottom: 1px solid #eee; font-weight: bold; color: #333;'>Limitación de Movilidad:</td><td style='padding: 8px; border-bottom: 1px solid #eee; color: #555;'>" + movilidad + (movilidad_detalle ? " (" + movilidad_detalle + ")" : "") + "</td></tr>" +
             "<tr><td style='padding: 8px; border-bottom: 1px solid #eee; font-weight: bold; color: #333;'>Alergias Alimenticias:</td><td style='padding: 8px; border-bottom: 1px solid #eee; color: #555;'>" + alergias + "</td></tr>" +
