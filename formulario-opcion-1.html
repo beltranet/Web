@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pre-Registro Oficial: Paquete 1 (Sin Alojamiento) - Taller de Mudras y Sonidos</title>
-    <meta name="description" content="Completa tu pre-registro oficial para el Paquete 1 (Sin Alojamiento) del Taller de Mudras y Sonidos de los Órganos Internos con el Maestro Yuan Ming.">
+    <title id="meta-title">Pre-Registro Oficial: Paquete 1 - Taller de Mudras y Sonidos</title>
+    <meta name="description" id="meta-desc" content="Completa tu pre-registro oficial para el Paquete 1 del Taller de Mudras y Sonidos de los Órganos Internos con el Maestro Yuan Ming.">
     
     <!-- Google Fonts: Montserrat and Playfair Display -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -74,6 +74,16 @@
         .sdq-card-glow {
             box-shadow: 0 0 40px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.1);
         }
+        /* Language Switcher Buttons */
+        .lang-btn {
+            transition: all 0.25s ease;
+        }
+        .lang-btn.active {
+            background-color: #FFD700;
+            color: #0a1929;
+            font-weight: 900;
+            box-shadow: 0 2px 10px rgba(255, 215, 0, 0.3);
+        }
         /* Custom scrollbar */
         ::-webkit-scrollbar {
             width: 8px;
@@ -101,13 +111,23 @@
         <div class="absolute top-0 left-1/4 w-[500px] h-[500px] bg-blue-500/10 rounded-full blur-[120px] pointer-events-none"></div>
         <div class="absolute bottom-1/4 right-1/4 w-[600px] h-[600px] bg-yellow-500/5 rounded-full blur-[150px] pointer-events-none"></div>
 
-        <!-- Navigation Header -->
+        <!-- Navigation Header with Language Toggle -->
         <header class="w-full bg-[#0a1929]/95 border-b border-white/5 backdrop-blur-md sticky top-0 z-50">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
                 <a href="https://sembradoresdeqi.com/frecuencias-de-sanacion-el-codigo-de-znqg-para-organos/" class="flex items-center gap-3 group">
                     <img src="http://sembradoresdeqi.com/wp-content/uploads/2026/01/logo-sembradores-de-qi-zhineng-qigong.jpg" alt="Logo Sembradores de Qi" class="h-12 w-auto object-contain rounded-lg border border-white/10 group-hover:border-[#FFD700]/30 transition duration-300">
-                    <span class="text-xs font-bold text-gray-400 group-hover:text-white transition duration-300 hidden sm:inline-block uppercase tracking-wider">← Volver al Sitio</span>
+                    <span data-i18n="nav_back" class="text-xs font-bold text-gray-400 group-hover:text-white transition duration-300 hidden sm:inline-block uppercase tracking-wider">← Volver al Sitio</span>
                 </a>
+
+                <!-- Language Switcher Pill -->
+                <div class="flex items-center bg-[#132f4c] p-1 rounded-full border border-white/15">
+                    <button type="button" class="lang-btn lang-btn-es active px-3 py-1 rounded-full text-xs font-bold text-gray-300" onclick="setLanguage('es')">
+                        🇲🇽 ES
+                    </button>
+                    <button type="button" class="lang-btn lang-btn-en px-3 py-1 rounded-full text-xs font-bold text-gray-300" onclick="setLanguage('en')">
+                        🇺🇸 EN
+                    </button>
+                </div>
             </div>
         </header>
 
@@ -115,9 +135,9 @@
     <main class="flex-grow max-w-4xl w-full mx-auto px-4 sm:px-6 py-12 relative z-10">
         <!-- Page Title & Hero Header -->
         <div class="text-center mb-8 space-y-3">
-            <span class="text-xs font-bold text-[#FFD700] uppercase tracking-[0.25em] bg-[#132f4c] px-4 py-1.5 rounded-full border border-[#FFD700]/20">Taller Mudras y Sonidos 2026</span>
-            <h1 class="text-3xl sm:text-4xl font-extrabold text-white">Pre-Registro Oficial — Paquete 1</h1>
-            <p class="text-sm sm:text-base text-gray-300 max-w-xl mx-auto leading-relaxed font-medium">
+            <span data-i18n="form_tag" class="text-xs font-bold text-[#FFD700] uppercase tracking-[0.25em] bg-[#132f4c] px-4 py-1.5 rounded-full border border-[#FFD700]/20">Taller Mudras y Sonidos 2026</span>
+            <h1 data-i18n="form_title" class="text-3xl sm:text-4xl font-extrabold text-white">Pre-Registro Oficial — Paquete 1</h1>
+            <p data-i18n="form_subtitle" class="text-sm sm:text-base text-gray-300 max-w-xl mx-auto leading-relaxed font-medium">
                 Ideal para residentes locales o asistentes con pernocta externa. Completa el formulario para asegurar tu lugar.
             </p>
         </div>
@@ -130,14 +150,14 @@
             
             <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 border-b border-white/10 pb-6">
                 <div>
-                    <span class="text-xs font-extrabold text-[#FFD700] uppercase tracking-wider">Opción Seleccionada</span>
+                    <span data-i18n="card_selected" class="text-xs font-extrabold text-[#FFD700] uppercase tracking-wider">Opción Seleccionada</span>
                     <h2 class="text-2xl sm:text-3xl font-black text-white">Paquete 1</h2>
-                    <p class="text-xs sm:text-sm text-gray-300 mt-1">Del 20 al 22 de Noviembre, 2026 | Convento de San Joaquín, CDMX</p>
+                    <p data-i18n="card_date_venue" class="text-xs sm:text-sm text-gray-300 mt-1">Del 20 al 22 de Noviembre, 2026 | Convento de San Joaquín, CDMX</p>
                 </div>
                 <div class="text-left md:text-right shrink-0">
                     <span class="text-xs text-gray-400 line-through block font-medium">$9,500.00 MXN</span>
                     <span class="text-3xl sm:text-4xl font-black text-[#FFD700] drop-shadow-[0_0_12px_rgba(255,215,0,0.3)]">$7,000</span>
-                    <span class="text-xs text-gray-300 font-bold"> MXN (Promo)</span>
+                    <span data-i18n="card_promo" class="text-xs text-gray-300 font-bold"> MXN (Promo)</span>
                 </div>
             </div>
 
@@ -145,22 +165,22 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-6">
                 <div class="bg-[#0a1929]/70 p-4 rounded-2xl border border-white/10 space-y-1">
                     <span class="text-xl">🚶</span>
-                    <h4 class="text-xs font-bold text-white uppercase tracking-wider">Curso Completo</h4>
-                    <p class="text-[11px] text-gray-300">Taller presencial intensivo de 3 días con el Maestro Yuan Ming.</p>
+                    <h4 data-i18n="feat_course_title" class="text-xs font-bold text-white uppercase tracking-wider">Curso Completo</h4>
+                    <p data-i18n="feat_course_desc" class="text-[11px] text-gray-300">Taller presencial intensivo de 3 días con el Maestro Yuan Ming.</p>
                 </div>
                 <div class="bg-[#0a1929]/70 p-4 rounded-2xl border border-white/10 space-y-1 flex flex-col justify-center">
                     <span class="text-xl">☕</span>
-                    <h4 class="text-xs font-bold text-white uppercase tracking-wider">Coffee Break</h4>
+                    <h4 data-i18n="feat_coffee_title" class="text-xs font-bold text-white uppercase tracking-wider">Coffee Break</h4>
                 </div>
                 <div class="bg-[#0a1929]/70 p-4 rounded-2xl border border-white/10 space-y-1">
                     <span class="text-xl">🍲</span>
-                    <h4 class="text-xs font-bold text-white uppercase tracking-wider">1 Comida al Día</h4>
-                    <p class="text-[11px] text-gray-300">Alimentación principal diaria incluida en el Convento.</p>
+                    <h4 data-i18n="feat_lunch_title" class="text-xs font-bold text-white uppercase tracking-wider">1 Comida al Día</h4>
+                    <p data-i18n="feat_lunch_desc" class="text-[11px] text-gray-300">Alimentación principal diaria incluida en el Convento.</p>
                 </div>
                 <div class="bg-[#0a1929]/70 p-4 rounded-2xl border border-white/10 space-y-1">
                     <span class="text-xl">🚗</span>
-                    <h4 class="text-xs font-bold text-white uppercase tracking-wider">Estacionamiento</h4>
-                    <p class="text-[11px] text-gray-300">Libre acceso al estacionamiento privado dentro del Convento.</p>
+                    <h4 data-i18n="feat_parking_title" class="text-xs font-bold text-white uppercase tracking-wider">Estacionamiento</h4>
+                    <p data-i18n="feat_parking_desc" class="text-[11px] text-gray-300">Libre acceso al estacionamiento privado dentro del Convento.</p>
                 </div>
             </div>
 
@@ -168,9 +188,9 @@
             <div class="mt-6 pt-4 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-amber-200 font-semibold bg-[#0a1929]/50 p-4 rounded-2xl border border-amber-500/20">
                 <div class="flex items-center gap-2">
                     <span class="text-lg">📌</span>
-                    <span><strong>Facilidad de Apartado:</strong> Aparta tu lugar hoy con solo <strong>$1,000.00 MXN</strong> y realiza 3 pagos mensuales de <strong>$2,000.00 MXN</strong>.</span>
+                    <span data-i18n-html="card_financing_notice"><strong>Facilidad de Apartado:</strong> Aparta tu lugar hoy con solo <strong>$1,000.00 MXN</strong> y realiza 3 pagos mensuales de <strong>$2,000.00 MXN</strong>.</span>
                 </div>
-                <span class="shrink-0 bg-[#132f4c] text-[#FFD700] px-3 py-1 rounded-full text-[11px] font-extrabold border border-[#FFD700]/30">Límite: 15 Nov</span>
+                <span data-i18n="card_financing_deadline" class="shrink-0 bg-[#132f4c] text-[#FFD700] px-3 py-1 rounded-full text-[11px] font-extrabold border border-[#FFD700]/30">Límite: 15 Nov</span>
             </div>
         </div>
 
@@ -183,13 +203,13 @@
                     <div class="absolute inset-0 rounded-full border-4 border-white/10"></div>
                     <div class="absolute inset-0 rounded-full border-4 border-t-[#FFD700] animate-spin"></div>
                 </div>
-                <h3 class="text-lg font-bold text-white">Enviando tu Pre-Registro...</h3>
-                <p class="text-xs text-gray-400">Por favor no cierres ni recargues esta página.</p>
+                <h3 data-i18n="loader_title" class="text-lg font-bold text-white">Enviando tu Pre-Registro...</h3>
+                <p data-i18n="loader_desc" class="text-xs text-gray-400">Por favor no cierres ni recargues esta página.</p>
             </div>
 
             <!-- Error Banner -->
             <div id="error-banner" class="hidden bg-rose-950/80 border border-rose-500/30 text-rose-200 text-sm p-4 rounded-xl mb-6">
-                <strong>⚠️ Corregir errores:</strong> Revisa los campos marcados en rojo antes de enviar.
+                <strong data-i18n="error_banner_title">⚠️ Corregir errores:</strong> <span data-i18n="error_banner_desc">Revisa los campos marcados en rojo antes de enviar.</span>
             </div>
 
             <!-- Main Form -->
@@ -197,28 +217,28 @@
                 
                 <!-- Section 1: Datos Personales -->
                 <div class="space-y-6">
-                    <h2 class="text-lg font-bold text-[#FFD700] uppercase tracking-wide border-b border-white/5 pb-2">1. Información de Contacto</h2>
+                    <h2 data-i18n="sec1_title" class="text-lg font-bold text-[#FFD700] uppercase tracking-wide border-b border-white/5 pb-2">1. Información de Contacto</h2>
                     
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <!-- Nombre Completo -->
                         <div class="space-y-2">
-                            <label for="nombre" class="block text-xs font-bold text-gray-300 uppercase tracking-wider">Nombre Completo *</label>
+                            <label for="nombre" data-i18n="lbl_name" class="block text-xs font-bold text-gray-300 uppercase tracking-wider">Nombre Completo *</label>
                             <input type="text" id="nombre" name="nombre" class="w-full bg-[#0a1929]/80 border border-white/10 rounded-xl p-3 text-sm text-white focus:outline-none focus:border-[#FFD700] transition" placeholder="Ej: Juan Pérez Sánchez">
-                            <span class="error-msg text-[10px] text-rose-400 hidden">Este campo es requerido.</span>
+                            <span data-i18n="err_required" class="error-msg text-[10px] text-rose-400 hidden">Este campo es requerido.</span>
                         </div>
 
                         <!-- Correo Electrónico -->
                         <div class="space-y-2">
-                            <label for="email" class="block text-xs font-bold text-gray-300 uppercase tracking-wider">Correo Electrónico *</label>
+                            <label for="email" data-i18n="lbl_email" class="block text-xs font-bold text-gray-300 uppercase tracking-wider">Correo Electrónico *</label>
                             <input type="email" id="email" name="email" class="w-full bg-[#0a1929]/80 border border-white/10 rounded-xl p-3 text-sm text-white focus:outline-none focus:border-[#FFD700] transition" placeholder="Ej: juan@ejemplo.com">
-                            <span class="error-msg text-[10px] text-rose-400 hidden">Ingresa un correo electrónico válido.</span>
+                            <span data-i18n="err_email" class="error-msg text-[10px] text-rose-400 hidden">Ingresa un correo electrónico válido.</span>
                         </div>
                     </div>
 
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <!-- WhatsApp -->
                         <div class="space-y-2">
-                            <label for="whatsapp_num" class="block text-xs font-bold text-gray-300 uppercase tracking-wider">WhatsApp de Contacto *</label>
+                            <label for="whatsapp_num" data-i18n="lbl_whatsapp" class="block text-xs font-bold text-gray-300 uppercase tracking-wider">WhatsApp de Contacto *</label>
                             <div class="flex gap-2">
                                 <select id="pais_codigo" name="pais_codigo" title="Código de país" aria-label="Código de país" class="bg-[#0a1929] border border-white/10 rounded-xl p-3 text-sm text-white focus:outline-none focus:border-[#FFD700] transition w-32 shrink-0">
                                     <option value="+52" selected>🇲🇽 +52 (MX)</option>
@@ -252,19 +272,19 @@
                                 </select>
                                 <input type="tel" id="whatsapp_num" name="whatsapp_num" class="flex-grow bg-[#0a1929]/80 border border-white/10 rounded-xl p-3 text-sm text-white focus:outline-none focus:border-[#FFD700] transition" placeholder="Ej: 55 1234 5678">
                             </div>
-                            <span class="error-msg text-[10px] text-rose-400 hidden">Este campo es requerido.</span>
+                            <span data-i18n="err_required" class="error-msg text-[10px] text-rose-400 hidden">Este campo es requerido.</span>
                         </div>
 
                         <!-- País -->
                         <div class="space-y-2">
-                            <label for="pais" class="block text-xs font-bold text-gray-300 uppercase tracking-wider">País *</label>
+                            <label for="pais" data-i18n="lbl_country" class="block text-xs font-bold text-gray-300 uppercase tracking-wider">País *</label>
                             <input type="text" id="pais" name="pais" class="w-full bg-[#0a1929]/80 border border-white/10 rounded-xl p-3 text-sm text-white focus:outline-none focus:border-[#FFD700] transition" placeholder="Ej: México" readonly>
-                            <span class="error-msg text-[10px] text-rose-400 hidden">Este campo es requerido.</span>
+                            <span data-i18n="err_required" class="error-msg text-[10px] text-rose-400 hidden">Este campo es requerido.</span>
                         </div>
                     </div>
 
                     <div class="space-y-2">
-                        <label for="residencia" class="block text-xs font-bold text-gray-300 uppercase tracking-wider">Ciudad y Estado de Residencia *</label>
+                        <label for="residencia" data-i18n="lbl_residence" class="block text-xs font-bold text-gray-300 uppercase tracking-wider">Ciudad y Estado de Residencia *</label>
                         
                         <!-- Hidden input for payload compatibility -->
                         <input type="hidden" id="residencia" name="residencia">
@@ -310,89 +330,89 @@
                         <!-- Text input for typing city/state -->
                         <input type="text" id="residencia_text" class="w-full bg-[#0a1929]/80 border border-white/10 rounded-xl p-3 text-sm text-white focus:outline-none focus:border-[#FFD700] transition hidden" placeholder="Ej: Monterrey, Nuevo León">
                         
-                        <span class="error-msg text-[10px] text-rose-400 hidden">Este campo es requerido.</span>
+                        <span data-i18n="err_required" class="error-msg text-[10px] text-rose-400 hidden">Este campo es requerido.</span>
                     </div>
 
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <!-- Edad -->
                         <div class="space-y-2">
-                            <label for="edad" class="block text-xs font-bold text-gray-300 uppercase tracking-wider">Edad *</label>
+                            <label for="edad" data-i18n="lbl_age" class="block text-xs font-bold text-gray-300 uppercase tracking-wider">Edad *</label>
                             <input type="number" id="edad" name="edad" min="1" max="120" class="w-full bg-[#0a1929]/80 border border-white/10 rounded-xl p-3 text-sm text-white focus:outline-none focus:border-[#FFD700] transition" placeholder="Ej: 35">
-                            <span class="error-msg text-[10px] text-rose-400 hidden">Ingresa una edad válida (1 a 120 años).</span>
+                            <span data-i18n="err_age" class="error-msg text-[10px] text-rose-400 hidden">Ingresa una edad válida (1 a 120 años).</span>
                         </div>
 
                         <!-- Género -->
                         <div class="space-y-2">
-                            <label for="genero" class="block text-xs font-bold text-gray-300 uppercase tracking-wider">Género *</label>
+                            <label for="genero" data-i18n="lbl_gender" class="block text-xs font-bold text-gray-300 uppercase tracking-wider">Género *</label>
                             <select id="genero" name="genero" class="w-full bg-[#0a1929] border border-white/10 rounded-xl p-3 text-sm text-white focus:outline-none focus:border-[#FFD700] transition">
                                 <option value="" disabled selected>Selecciona tu género...</option>
-                                <option value="Femenino">Femenino</option>
-                                <option value="Masculino">Masculino</option>
-                                <option value="Otro">Otro</option>
-                                <option value="Prefiero no decirlo">Prefiero no decirlo</option>
+                                <option value="Femenino" id="opt_gen_fem">Femenino</option>
+                                <option value="Masculino" id="opt_gen_masc">Masculino</option>
+                                <option value="Otro" id="opt_gen_other">Otro</option>
+                                <option value="Prefiero no decirlo" id="opt_gen_none">Prefiero no decirlo</option>
                             </select>
-                            <span class="error-msg text-[10px] text-rose-400 hidden">Este campo es requerido.</span>
+                            <span data-i18n="err_required" class="error-msg text-[10px] text-rose-400 hidden">Este campo es requerido.</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Section 2: Experiencia e Historial -->
                 <div class="space-y-4">
-                    <h2 class="text-lg font-bold text-[#FFD700] uppercase tracking-wide border-b border-white/5 pb-2">2. Experiencia previa</h2>
+                    <h2 data-i18n="sec2_title" class="text-lg font-bold text-[#FFD700] uppercase tracking-wide border-b border-white/5 pb-2">2. Experiencia previa</h2>
                     <div class="space-y-3">
-                        <label class="block text-xs font-bold text-gray-300 uppercase tracking-wider">¿Has tomado algún curso de ZhiNeng Qi Gong presencial o en línea previamente? *</label>
+                        <label data-i18n="lbl_experience" class="block text-xs font-bold text-gray-300 uppercase tracking-wider">¿Has tomado algún curso de ZhiNeng Qi Gong presencial o en línea previamente? *</label>
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             <label class="flex items-center gap-3 p-4 bg-[#0a1929]/40 border border-white/5 hover:border-[#FFD700]/30 rounded-xl cursor-pointer transition">
                                 <input type="radio" name="historial" value="Sí, anteriormente he tomado cursos de ZhiNeng QiGong" class="accent-[#FFD700] h-4 w-4">
-                                <span class="text-xs sm:text-sm text-gray-200">Sí, anteriormente he tomado cursos de ZhiNeng QiGong</span>
+                                <span data-i18n="opt_exp_yes" class="text-xs sm:text-sm text-gray-200">Sí, anteriormente he tomado cursos de ZhiNeng QiGong</span>
                             </label>
                             <label class="flex items-center gap-3 p-4 bg-[#0a1929]/40 border border-white/5 hover:border-[#FFD700]/30 rounded-xl cursor-pointer transition">
                                 <input type="radio" name="historial" value="No, este retiro será mi primer encuentro" class="accent-[#FFD700] h-4 w-4">
-                                <span class="text-xs sm:text-sm text-gray-200">No, este taller será mi primer encuentro</span>
+                                <span data-i18n="opt_exp_no" class="text-xs sm:text-sm text-gray-200">No, este taller será mi primer encuentro</span>
                             </label>
                         </div>
-                        <span class="error-msg text-[10px] text-rose-400 hidden">Selecciona una opción.</span>
+                        <span data-i18n="err_required_option" class="error-msg text-[10px] text-rose-400 hidden">Selecciona una opción.</span>
                     </div>
                 </div>
 
                 <!-- Section 3: ¿Cómo te enteraste? -->
                 <div class="space-y-4">
-                    <h2 class="text-lg font-bold text-[#FFD700] uppercase tracking-wide border-b border-white/5 pb-2">3. ¿Cómo te enteraste del taller?</h2>
+                    <h2 data-i18n="sec3_title" class="text-lg font-bold text-[#FFD700] uppercase tracking-wide border-b border-white/5 pb-2">3. ¿Cómo te enteraste del taller?</h2>
                     
                     <div class="space-y-3">
-                        <label for="referencia_select" class="block text-xs font-bold text-gray-300 uppercase tracking-wider">¿Cómo te enteraste de este taller o quién te invitó? *</label>
+                        <label for="referencia_select" data-i18n="lbl_referral" class="block text-xs font-bold text-gray-300 uppercase tracking-wider">¿Cómo te enteraste de este taller o quién te invitó? *</label>
                         
                         <input type="hidden" id="referencia" name="referencia">
                         
                         <select id="referencia_select" class="w-full bg-[#0a1929] border border-white/10 rounded-xl p-3 text-sm text-white focus:outline-none focus:border-[#FFD700] transition">
-                            <option value="" disabled selected>Selecciona una opción...</option>
-                            <option value="Recomendación de un amigo o familiar">Recomendación de un amigo o familiar</option>
-                            <option value="Redes Sociales (Facebook, Instagram, etc.)">Redes Sociales (Facebook, Instagram, etc.)</option>
-                            <option value="Mensaje o grupo de WhatsApp">Mensaje o grupo de WhatsApp</option>
-                            <option value="Página web oficial (sembradoresdeqi.com)">Página web oficial (sembradoresdeqi.com)</option>
-                            <option value="Otro">Otro (especificar...)</option>
+                            <option value="" disabled selected id="opt_ref_placeholder">Selecciona una opción...</option>
+                            <option value="Recomendación de un amigo o familiar" id="opt_ref_friend">Recomendación de un amigo o familiar</option>
+                            <option value="Redes Sociales (Facebook, Instagram, etc.)" id="opt_ref_social">Redes Sociales (Facebook, Instagram, etc.)</option>
+                            <option value="Mensaje o grupo de WhatsApp" id="opt_ref_wa">Mensaje o grupo de WhatsApp</option>
+                            <option value="Página web oficial (sembradoresdeqi.com)" id="opt_ref_web">Página web oficial (sembradoresdeqi.com)</option>
+                            <option value="Otro" id="opt_ref_other">Otro (especificar...)</option>
                         </select>
                         
                         <!-- Text input for typing who/what -->
                         <div id="referencia_detalle_container" class="space-y-2 hidden">
-                            <label id="referencia_detalle_label" for="referencia_detalle" class="block text-xs font-bold text-gray-300 uppercase tracking-wider">Por favor especifica (ej: nombre de quien te invitó o medio) *</label>
+                            <label id="referencia_detalle_label" for="referencia_detalle" data-i18n="lbl_referral_detail" class="block text-xs font-bold text-gray-300 uppercase tracking-wider">Por favor especifica (ej: nombre de quien te invitó o medio) *</label>
                             <input type="text" id="referencia_detalle" class="w-full bg-[#0a1929]/80 border border-white/10 rounded-xl p-3 text-sm text-white focus:outline-none focus:border-[#FFD700] transition" placeholder="Ej: Sandra Ramos, Alina, Mary Carmen, Felipe, etc.">
-                            <span class="error-msg text-[10px] text-rose-400 hidden">Este campo es requerido.</span>
+                            <span data-i18n="err_required" class="error-msg text-[10px] text-rose-400 hidden">Este campo es requerido.</span>
                         </div>
                         
-                        <span class="error-msg text-[10px] text-rose-400 hidden">Por favor selecciona cómo te enteraste.</span>
+                        <span data-i18n="err_required_referral" class="error-msg text-[10px] text-rose-400 hidden">Por favor selecciona cómo te enteraste.</span>
                     </div>
                 </div>
 
                 <!-- Section 4: Forma de Pago exclusiva del Paquete 1 -->
                 <div class="space-y-6">
                     <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 border-b border-white/5 pb-2">
-                        <h2 class="text-lg font-bold text-[#FFD700] uppercase tracking-wide">4. Forma de Pago (Paquete 1)</h2>
-                        <span class="text-xs font-extrabold text-amber-200 bg-[#0a1929] px-3 py-1 rounded-full border border-amber-500/30">Precio Promo: $7,000.00 MXN</span>
+                        <h2 data-i18n="sec4_title" class="text-lg font-bold text-[#FFD700] uppercase tracking-wide">4. Forma de Pago (Paquete 1)</h2>
+                        <span data-i18n="sec4_promo_badge" class="text-xs font-extrabold text-amber-200 bg-[#0a1929] px-3 py-1 rounded-full border border-amber-500/30">Precio Promo: $7,000.00 MXN</span>
                     </div>
                     
-                    <p class="text-xs sm:text-sm text-gray-300 leading-relaxed font-semibold">
-                        Selecciona la modalidad de pago que mejor se adapte a ti para el <strong>Paquete 1 (Sin Alojamiento)</strong>:
+                    <p data-i18n-html="sec4_instructions" class="text-xs sm:text-sm text-gray-300 leading-relaxed font-semibold">
+                        Selecciona la modalidad de pago que mejor se adapte a ti para el <strong>Paquete 1</strong>:
                     </p>
 
                     <!-- Hidden inputs for backend payload compatibility -->
@@ -406,8 +426,8 @@
                                 <div class="flex items-start gap-3">
                                     <input type="radio" name="pago_opcion" value="opt1_total_transfer" class="accent-[#FFD700] h-5 w-5 mt-1 shrink-0">
                                     <div class="space-y-1">
-                                        <span class="block text-sm font-extrabold text-white">🏦 Pago Único por Depósito o Transferencia ($7,000.00 MXN)</span>
-                                        <span class="block text-xs text-gray-300 leading-relaxed">Un solo pago de contado por transferencia bancaria o depósito directo.</span>
+                                        <span data-i18n="opt1a_title" class="block text-sm font-extrabold text-white">🏦 Pago Único por Depósito o Transferencia ($7,000.00 MXN)</span>
+                                        <span data-i18n="opt1a_desc" class="block text-xs text-gray-300 leading-relaxed">Un solo pago de contado por transferencia bancaria o depósito directo.</span>
                                     </div>
                                 </div>
                             </label>
@@ -416,8 +436,8 @@
                                 <div class="flex items-start gap-3">
                                     <input type="radio" name="pago_opcion" value="opt1_total_card" class="accent-[#FFD700] h-5 w-5 mt-1 shrink-0">
                                     <div class="space-y-1">
-                                        <span class="block text-sm font-extrabold text-white">💳 Pago Único con Tarjeta de Crédito o Débito ($7,000.00 MXN)</span>
-                                        <span class="block text-xs text-gray-300 leading-relaxed">Un solo pago de contado de forma segura en línea con tarjeta de crédito o débito.</span>
+                                        <span data-i18n="opt1b_title" class="block text-sm font-extrabold text-white">💳 Pago Único con Tarjeta de Crédito o Débito ($7,000.00 MXN)</span>
+                                        <span data-i18n="opt1b_desc" class="block text-xs text-gray-300 leading-relaxed">Un solo pago de contado de forma segura en línea con tarjeta de crédito o débito.</span>
                                     </div>
                                 </div>
                             </label>
@@ -426,8 +446,8 @@
                                 <div class="flex items-start gap-3">
                                     <input type="radio" name="pago_opcion" value="opt1_apartado_transfer" class="accent-[#FFD700] h-5 w-5 mt-1 shrink-0">
                                     <div class="space-y-1">
-                                        <span class="block text-sm font-extrabold text-white">🏦 Pago en Mensualidades por Transferencia (Apartado $1,000 + 3 de $2,000)</span>
-                                        <span class="block text-xs text-amber-200 leading-relaxed font-semibold">Aparta tu lugar hoy con $1,000.00 MXN y realiza 3 pagos mensuales adicionales de $2,000.00 MXN por transferencia.</span>
+                                        <span data-i18n="opt1c_title" class="block text-sm font-extrabold text-white">🏦 Pago en Mensualidades por Transferencia (Apartado $1,000 + 3 de $2,000)</span>
+                                        <span data-i18n="opt1c_desc" class="block text-xs text-amber-200 leading-relaxed font-semibold">Aparta tu lugar hoy con $1,000.00 MXN y realiza 3 pagos mensuales adicionales de $2,000.00 MXN por transferencia.</span>
                                     </div>
                                 </div>
                             </label>
@@ -436,73 +456,73 @@
                                 <div class="flex items-start gap-3">
                                     <input type="radio" name="pago_opcion" value="opt1_apartado_card" class="accent-[#FFD700] h-5 w-5 mt-1 shrink-0">
                                     <div class="space-y-1">
-                                        <span class="block text-sm font-extrabold text-white">💳 Pago en Mensualidades con Tarjeta (Apartado $1,000 + 3 de $2,000)</span>
-                                        <span class="block text-xs text-amber-200 leading-relaxed font-semibold">Aparta tu lugar hoy con $1,000.00 MXN y realiza 3 pagos mensuales adicionales de $2,000.00 MXN con tu tarjeta.</span>
+                                        <span data-i18n="opt1d_title" class="block text-sm font-extrabold text-white">💳 Pago en Mensualidades con Tarjeta (Apartado $1,000 + 3 de $2,000)</span>
+                                        <span data-i18n="opt1d_desc" class="block text-xs text-amber-200 leading-relaxed font-semibold">Aparta tu lugar hoy con $1,000.00 MXN y realiza 3 pagos mensuales adicionales de $2,000.00 MXN con tu tarjeta.</span>
                                     </div>
                                 </div>
                             </label>
                         </div>
                     </div>
-                    <span class="error-msg text-[10px] text-rose-400 hidden">Por favor, selecciona una forma de pago.</span>
+                    <span data-i18n="err_required_payment" class="error-msg text-[10px] text-rose-400 hidden">Por favor, selecciona una forma de pago.</span>
                     
                     <!-- Botón de Soporte de Pago -->
                     <div class="mt-6 flex justify-center">
-                        <a href="https://wa.me/525533106161?text=Hola%20Felipe.%20Tengo%20dudas%20sobre%20el%20pago%20del%20Paquete%201." target="_blank" rel="noopener" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-5 bg-[#25D366] hover:bg-[#22c35e] text-white text-base sm:text-lg font-black rounded-2xl transition duration-300 shadow-xl hover:shadow-emerald-500/20 hover:scale-[1.02] transform cursor-pointer border-2 border-white/20">
+                        <a id="help-wa-btn" href="https://wa.me/525533106161?text=Hola%20Felipe.%20Tengo%20dudas%20sobre%20el%20pago%20del%20Paquete%201." target="_blank" rel="noopener" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-5 bg-[#25D366] hover:bg-[#22c35e] text-white text-base sm:text-lg font-black rounded-2xl transition duration-300 shadow-xl hover:shadow-emerald-500/20 hover:scale-[1.02] transform cursor-pointer border-2 border-white/20">
                             <span class="text-xl sm:text-2xl whatsapp-btn-text">💬</span>
-                            <span class="whatsapp-btn-text">Necesito ayuda para pagar (WhatsApp)</span>
+                            <span data-i18n="btn_payment_help" class="whatsapp-btn-text">Necesito ayuda para pagar (WhatsApp)</span>
                         </a>
                     </div>
                 </div>
 
                 <!-- Section 5: Logística y Requerimientos Especiales -->
                 <div class="space-y-6">
-                    <h2 class="text-lg font-bold text-[#FFD700] uppercase tracking-wide border-b border-white/5 pb-2">5. Logística y Requerimientos Especiales</h2>
+                    <h2 data-i18n="sec5_title" class="text-lg font-bold text-[#FFD700] uppercase tracking-wide border-b border-white/5 pb-2">5. Logística y Requerimientos Especiales</h2>
                     
                     <div class="space-y-3">
-                        <label class="block text-xs font-bold text-gray-300 uppercase tracking-wider">¿Sufres de alguna limitación física o problema de movilidad? *</label>
+                        <label data-i18n="lbl_mobility" class="block text-xs font-bold text-gray-300 uppercase tracking-wider">¿Sufres de alguna limitación física o problema de movilidad? *</label>
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             <label class="flex items-center gap-3 p-4 bg-[#0a1929]/40 border border-white/5 hover:border-[#FFD700]/30 rounded-xl cursor-pointer transition">
                                 <input type="radio" name="movilidad" value="No, no presento ninguna limitación física" class="accent-[#FFD700] h-4 w-4">
-                                <span class="text-xs sm:text-sm text-gray-200">No, no presento ninguna limitación física</span>
+                                <span data-i18n="opt_mob_no" class="text-xs sm:text-sm text-gray-200">No, no presento ninguna limitación física</span>
                             </label>
                             <label class="flex items-center gap-3 p-4 bg-[#0a1929]/40 border border-white/5 hover:border-[#FFD700]/30 rounded-xl cursor-pointer transition">
                                 <input type="radio" name="movilidad" value="Sí, tengo una limitación física" class="accent-[#FFD700] h-4 w-4">
-                                <span class="text-xs sm:text-sm text-gray-200">Sí (Favor de detallar en la siguiente pregunta)</span>
+                                <span data-i18n="opt_mob_yes" class="text-xs sm:text-sm text-gray-200">Sí (Favor de detallar en la siguiente pregunta)</span>
                             </label>
                         </div>
-                        <span class="error-msg text-[10px] text-rose-400 hidden">Selecciona una respuesta.</span>
+                        <span data-i18n="err_required_option" class="error-msg text-[10px] text-rose-400 hidden">Selecciona una respuesta.</span>
                     </div>
 
                     <!-- Detalle Movilidad -->
                     <div class="space-y-2">
-                        <label for="movilidad_detalle" class="block text-xs font-bold text-gray-300 uppercase tracking-wider">En caso de responder SÍ, detalla tu condición física: <span id="movilidad_detalle_asterisk" class="hidden text-rose-500">*</span></label>
+                        <label for="movilidad_detalle" data-i18n-html="lbl_mob_detail" class="block text-xs font-bold text-gray-300 uppercase tracking-wider">En caso de responder SÍ, detalla tu condición física: <span id="movilidad_detalle_asterisk" class="hidden text-rose-500">*</span></label>
                         <textarea id="movilidad_detalle" name="movilidad_detalle" rows="2" class="w-full bg-[#0a1929]/80 border border-white/10 rounded-xl p-3 text-sm text-white focus:outline-none focus:border-[#FFD700] transition" placeholder="Ej: Dificultad para subir escaleras, prótesis, etc."></textarea>
-                        <span class="error-msg text-[10px] text-rose-400 hidden">Por favor detalla tu condición física.</span>
+                        <span data-i18n="err_mob_detail" class="error-msg text-[10px] text-rose-400 hidden">Por favor detalla tu condición física.</span>
                     </div>
 
                     <!-- Restricciones Alimenticias -->
                     <div class="space-y-2">
-                        <label for="alergias" class="block text-xs font-bold text-gray-300 uppercase tracking-wider">Alergias Alimenticias *</label>
+                        <label for="alergias" data-i18n="lbl_allergies" class="block text-xs font-bold text-gray-300 uppercase tracking-wider">Alergias Alimenticias *</label>
                         <textarea id="alergias" name="alergias" rows="2" class="w-full bg-[#0a1929]/80 border border-white/10 rounded-xl p-3 text-sm text-white focus:outline-none focus:border-[#FFD700] transition" placeholder="Ej: Ninguna / Alergia al cacahuate / Intolerante al gluten..."></textarea>
-                        <span class="error-msg text-[10px] text-rose-400 hidden">Este campo es requerido. En caso de no tener alergias, escribe "Ninguna".</span>
+                        <span data-i18n="err_allergies" class="error-msg text-[10px] text-rose-400 hidden">Este campo es requerido. En caso de no tener alergias, escribe "Ninguna".</span>
                     </div>
                 </div>
 
                 <!-- Section 6: Talla de Playera -->
                 <div class="space-y-4">
-                    <h2 class="text-lg font-bold text-[#FFD700] uppercase tracking-wide border-b border-white/5 pb-2">6. Talla de Playera</h2>
+                    <h2 data-i18n="sec6_title" class="text-lg font-bold text-[#FFD700] uppercase tracking-wide border-b border-white/5 pb-2">6. Talla de Playera</h2>
                     
                     <div class="space-y-2">
-                        <label for="talla_playera" class="block text-xs font-bold text-gray-300 uppercase tracking-wider">Talla de Playera *</label>
+                        <label for="talla_playera" data-i18n="lbl_shirt" class="block text-xs font-bold text-gray-300 uppercase tracking-wider">Talla de Playera *</label>
                         <select id="talla_playera" name="talla_playera" class="w-full bg-[#0a1929] border border-white/10 rounded-xl p-3 text-sm text-white focus:outline-none focus:border-[#FFD700] transition">
-                            <option value="" disabled selected>Elige tu talla de playera...</option>
-                            <option value="Chica (S)">Chica (S)</option>
-                            <option value="Mediana (M)">Mediana (M)</option>
-                            <option value="Grande (L)">Grande (L)</option>
-                            <option value="Extra Grande (XL)">Extra Grande (XL)</option>
+                            <option value="" disabled selected id="opt_shirt_placeholder">Elige tu talla de playera...</option>
+                            <option value="Chica (S)" id="opt_shirt_s">Chica (S)</option>
+                            <option value="Mediana (M)" id="opt_shirt_m">Mediana (M)</option>
+                            <option value="Grande (L)" id="opt_shirt_l">Grande (L)</option>
+                            <option value="Extra Grande (XL)" id="opt_shirt_xl">Extra Grande (XL)</option>
                         </select>
-                        <p class="text-[10px] text-gray-400">Por favor elige tu talla habitual de playera.</p>
-                        <span class="error-msg text-[10px] text-rose-400 hidden">Elige una talla para tu playera.</span>
+                        <p data-i18n="lbl_shirt_desc" class="text-[10px] text-gray-400">Por favor elige tu talla habitual de playera.</p>
+                        <span data-i18n="err_shirt" class="error-msg text-[10px] text-rose-400 hidden">Elige una talla para tu playera.</span>
                     </div>
                 </div>
 
@@ -510,17 +530,17 @@
                 <div class="pt-4 border-t border-white/10 space-y-2">
                     <label class="flex items-start gap-3 p-4 bg-[#0a1929]/60 border border-white/10 hover:border-[#FFD700]/40 rounded-xl cursor-pointer transition">
                         <input type="checkbox" id="acepto_terminos" name="acepto_terminos" value="Sí, acepto" class="accent-[#FFD700] h-5 w-5 mt-0.5 shrink-0 cursor-pointer">
-                        <span class="text-xs sm:text-sm text-gray-200 leading-relaxed">
+                        <span data-i18n-html="lbl_terms_accept" class="text-xs sm:text-sm text-gray-200 leading-relaxed">
                             He leído y acepto expresamente los <a href="https://sembradoresdeqi.com/terminos-y-condiciones/" target="_blank" rel="noopener" class="text-[#FFD700] hover:underline font-bold">Términos, Condiciones y Lineamientos de Participación</a> del taller. *
                         </span>
                     </label>
-                    <span class="error-msg text-[10px] text-rose-400 hidden">Debes aceptar los Términos, Condiciones y Lineamientos de Participación para continuar.</span>
+                    <span data-i18n="err_terms" class="error-msg text-[10px] text-rose-400 hidden">Debes aceptar los Términos, Condiciones y Lineamientos de Participación para continuar.</span>
                 </div>
 
                 <!-- Action Button -->
                 <div class="pt-4">
                     <button type="submit" class="w-full inline-flex items-center justify-center gap-3 bg-[#132f4c] text-white border-2 border-[#FFD700] text-base sm:text-lg font-black px-12 py-5 rounded-2xl hover:bg-[#FFD700] hover:text-[#0a1929] transition duration-300 shadow-2xl hover:scale-[1.02] transform uppercase tracking-wider cursor-pointer">
-                        <span>✨ Enviar Registro Paquete 1</span>
+                        <span data-i18n="btn_submit">✨ Enviar Registro Paquete 1</span>
                         <span class="text-xl">👉</span>
                     </button>
                 </div>
@@ -531,7 +551,7 @@
         <div id="success-wrapper" class="hidden bg-[#132f4c]/40 border border-white/10 rounded-3xl p-6 sm:p-10 backdrop-blur-md sdq-card-glow text-center space-y-8 animate-fadeIn">
             <div class="space-y-3">
                 <span class="text-5xl">🎉</span>
-                <h2 class="text-2xl sm:text-3xl font-extrabold text-[#FFD700]">¡Registro Recibido con Éxito!</h2>
+                <h2 data-i18n="success_title" class="text-2xl sm:text-3xl font-extrabold text-[#FFD700]">¡Registro Recibido con Éxito!</h2>
                 <div id="success-dynamic-intro"></div>
             </div>
 
@@ -546,19 +566,273 @@
                     <span id="wa-btn-text">📱 Continuar por WhatsApp</span>
                     <span class="text-xl">👉</span>
                 </a>
-                <a href="https://sembradoresdeqi.com/frecuencias-de-sanacion-el-codigo-de-znqg-para-organos/" class="text-xs text-gray-400 hover:text-white underline transition">Regresar al sitio principal</a>
+                <a href="https://sembradoresdeqi.com/frecuencias-de-sanacion-el-codigo-de-znqg-para-organos/" data-i18n="success_back_link" class="text-xs text-gray-400 hover:text-white underline transition">Regresar al sitio principal</a>
             </div>
         </div>
     </main>
 
     <!-- Footer -->
     <footer class="py-12 bg-[#0a1929]/95 border-t border-white/5 text-center relative z-10 space-y-4">
-        <p class="text-xs text-gray-500">© 2026 Sembradores de Qi. Todos los derechos reservados.</p>
-        <p class="text-[10px] text-gray-600">Este pre-registro está sujeto a los <a href="https://sembradoresdeqi.com/terminos-y-condiciones/" target="_blank" rel="noopener" class="text-gray-400 hover:text-[#FFD700] underline">Términos, Condiciones y Lineamientos de Participación</a>. Cupo Limitado.</p>
+        <p data-i18n="footer_copy" class="text-xs text-gray-500">© 2026 Sembradores de Qi. Todos los derechos reservados.</p>
+        <p data-i18n-html="footer_legal" class="text-[10px] text-gray-600">Este pre-registro está sujeto a los <a href="https://sembradoresdeqi.com/terminos-y-condiciones/" target="_blank" rel="noopener" class="text-gray-400 hover:text-[#FFD700] underline">Términos, Condiciones y Lineamientos de Participación</a>. Cupo Limitado.</p>
     </footer>
 
     <!-- Script Section -->
     <script>
+        let currentLang = 'es';
+
+        const i18n = {
+            es: {
+                meta_title: "Pre-Registro Oficial: Paquete 1 - Taller de Mudras y Sonidos",
+                meta_desc: "Completa tu pre-registro oficial para el Paquete 1 del Taller de Mudras y Sonidos de los Órganos Internos con el Maestro Yuan Ming.",
+                nav_back: "← Volver al Sitio",
+                form_tag: "Taller Mudras y Sonidos 2026",
+                form_title: "Pre-Registro Oficial — Paquete 1",
+                form_subtitle: "Ideal para residentes locales o asistentes con pernocta externa. Completa el formulario para asegurar tu lugar.",
+                card_selected: "Opción Seleccionada",
+                card_date_venue: "Del 20 al 22 de Noviembre, 2026 | Convento de San Joaquín, CDMX",
+                card_promo: " MXN (Promo)",
+                feat_course_title: "Curso Completo",
+                feat_course_desc: "Taller presencial intensivo de 3 días con el Maestro Yuan Ming.",
+                feat_coffee_title: "Coffee Break",
+                feat_lunch_title: "1 Comida al Día",
+                feat_lunch_desc: "Alimentación principal diaria incluida en el Convento.",
+                feat_parking_title: "Estacionamiento",
+                feat_parking_desc: "Libre acceso al estacionamiento privado dentro del Convento.",
+                card_financing_notice: "<strong>Facilidad de Apartado:</strong> Aparta tu lugar hoy con solo <strong>$1,000.00 MXN</strong> y realiza 3 pagos mensuales de <strong>$2,000.00 MXN</strong>.",
+                card_financing_deadline: "Límite: 15 Nov",
+                loader_title: "Enviando tu Pre-Registro...",
+                loader_desc: "Por favor no cierres ni recargues esta página.",
+                error_banner_title: "⚠️ Corregir errores:",
+                error_banner_desc: "Revisa los campos marcados en rojo antes de enviar.",
+                sec1_title: "1. Información de Contacto",
+                lbl_name: "Nombre Completo *",
+                lbl_email: "Correo Electrónico *",
+                lbl_whatsapp: "WhatsApp de Contacto *",
+                lbl_country: "País *",
+                lbl_residence: "Ciudad y Estado de Residencia *",
+                lbl_age: "Edad *",
+                lbl_gender: "Género *",
+                opt_gen_fem: "Femenino",
+                opt_gen_masc: "Masculino",
+                opt_gen_other: "Otro",
+                opt_gen_none: "Prefiero no decirlo",
+                sec2_title: "2. Experiencia previa",
+                lbl_experience: "¿Has tomado algún curso de ZhiNeng Qi Gong presencial o en línea previamente? *",
+                opt_exp_yes: "Sí, anteriormente he tomado cursos de ZhiNeng QiGong",
+                opt_exp_no: "No, este taller será mi primer encuentro",
+                sec3_title: "3. ¿Cómo te enteraste del taller?",
+                lbl_referral: "¿Cómo te enteraste de este taller o quién te invitó? *",
+                opt_ref_placeholder: "Selecciona una opción...",
+                opt_ref_friend: "Recomendación de un amigo o familiar",
+                opt_ref_social: "Redes Sociales (Facebook, Instagram, etc.)",
+                opt_ref_wa: "Mensaje o grupo de WhatsApp",
+                opt_ref_web: "Página web oficial (sembradoresdeqi.com)",
+                opt_ref_other: "Otro (especificar...)",
+                lbl_referral_detail: "Por favor especifica (ej: nombre de quien te invitó o medio) *",
+                sec4_title: "4. Forma de Pago (Paquete 1)",
+                sec4_promo_badge: "Precio Promo: $7,000.00 MXN",
+                sec4_instructions: "Selecciona la modalidad de pago que mejor se adapte a ti para el <strong>Paquete 1</strong>:",
+                opt1a_title: "🏦 Pago Único por Depósito o Transferencia ($7,000.00 MXN)",
+                opt1a_desc: "Un solo pago de contado por transferencia bancaria o depósito directo.",
+                opt1b_title: "💳 Pago Único con Tarjeta de Crédito o Débito ($7,000.00 MXN)",
+                opt1b_desc: "Un solo pago de contado de forma segura en línea con tarjeta de crédito o débito.",
+                opt1c_title: "🏦 Pago en Mensualidades por Transferencia (Apartado $1,000 + 3 de $2,000)",
+                opt1c_desc: "Aparta tu lugar hoy con $1,000.00 MXN y realiza 3 pagos mensuales adicionales de $2,000.00 MXN por transferencia.",
+                opt1d_title: "💳 Pago en Mensualidades con Tarjeta (Apartado $1,000 + 3 de $2,000)",
+                opt1d_desc: "Aparta tu lugar hoy con $1,000.00 MXN y realiza 3 pagos mensuales adicionales de $2,000.00 MXN con tu tarjeta.",
+                btn_payment_help: "Necesito ayuda para pagar (WhatsApp)",
+                sec5_title: "5. Logística y Requerimientos Especiales",
+                lbl_mobility: "¿Sufres de alguna limitación física o problema de movilidad? *",
+                opt_mob_no: "No, no presento ninguna limitación física",
+                opt_mob_yes: "Sí (Favor de detallar en la siguiente pregunta)",
+                lbl_mob_detail: "En caso de responder SÍ, detalla tu condición física: <span id=\"movilidad_detalle_asterisk\" class=\"hidden text-rose-500\">*</span>",
+                lbl_allergies: "Alergias Alimenticias *",
+                sec6_title: "6. Talla de Playera",
+                lbl_shirt: "Talla de Playera *",
+                opt_shirt_placeholder: "Elige tu talla de playera...",
+                opt_shirt_s: "Chica (S)",
+                opt_shirt_m: "Mediana (M)",
+                opt_shirt_l: "Grande (L)",
+                opt_shirt_xl: "Extra Grande (XL)",
+                lbl_shirt_desc: "Por favor elige tu talla habitual de playera.",
+                lbl_terms_accept: "He leído y acepto expresamente los <a href=\"https://sembradoresdeqi.com/terminos-y-condiciones/\" target=\"_blank\" rel=\"noopener\" class=\"text-[#FFD700] hover:underline font-bold\">Términos, Condiciones y Lineamientos de Participación</a> del taller. *",
+                btn_submit: "✨ Enviar Registro Paquete 1",
+                err_required: "Este campo es requerido.",
+                err_email: "Ingresa un correo electrónico válido.",
+                err_age: "Ingresa una edad válida (1 a 120 años).",
+                err_required_option: "Selecciona una opción.",
+                err_required_referral: "Por favor selecciona cómo te enteraste.",
+                err_required_payment: "Por favor, selecciona una forma de pago.",
+                err_mob_detail: "Por favor detalla tu condición física.",
+                err_allergies: "Este campo es requerido. En caso de no tener alergias, escribe \"Ninguna\".",
+                err_shirt: "Elige una talla para tu playera.",
+                err_terms: "Debes aceptar los Términos, Condiciones y Lineamientos de Participación para continuar.",
+                success_title: "¡Registro Recibido con Éxito!",
+                success_back_link: "Regresar al sitio principal",
+                footer_copy: "© 2026 Sembradores de Qi. Todos los derechos reservados.",
+                footer_legal: "Este pre-registro está sujeto a los <a href=\"https://sembradoresdeqi.com/terminos-y-condiciones/\" target=\"_blank\" rel=\"noopener\" class=\"text-gray-400 hover:text-[#FFD700] underline\">Términos, Condiciones y Lineamientos de Participación</a>. Cupo Limitado."
+            },
+            en: {
+                meta_title: "Official Pre-Registration: Package 1 - Mudras & Sounds Workshop",
+                meta_desc: "Complete your official pre-registration for Package 1 of the Internal Organs Mudras & Sounds Workshop with Teacher Yuan Ming.",
+                nav_back: "← Back to Site",
+                form_tag: "Mudras & Sounds Workshop 2026",
+                form_title: "Official Pre-Registration — Package 1",
+                form_subtitle: "Ideal for local residents or attendees with external lodging. Complete the form to secure your spot.",
+                card_selected: "Selected Option",
+                card_date_venue: "November 20 - 22, 2026 | San Joaquín Convent, Mexico City",
+                card_promo: " MXN (Promo)",
+                feat_course_title: "Full Workshop",
+                feat_course_desc: "Intensive 3-day in-person workshop with Teacher Yuan Ming.",
+                feat_coffee_title: "Coffee Break",
+                feat_lunch_title: "1 Lunch Daily",
+                feat_lunch_desc: "Daily lunch meal included at the Convent.",
+                feat_parking_title: "Secure Parking",
+                feat_parking_desc: "Free access to private parking inside the Convent.",
+                card_financing_notice: "<strong>Deposit Flexibility:</strong> Reserve your spot today with only <strong>$1,000.00 MXN</strong> and make 3 monthly payments of <strong>$2,000.00 MXN</strong>.",
+                card_financing_deadline: "Deadline: Nov 15",
+                loader_title: "Submitting your Pre-Registration...",
+                loader_desc: "Please do not close or refresh this page.",
+                error_banner_title: "⚠️ Please correct errors:",
+                error_banner_desc: "Check the fields highlighted in red before submitting.",
+                sec1_title: "1. Contact Information",
+                lbl_name: "Full Name *",
+                lbl_email: "Email Address *",
+                lbl_whatsapp: "Contact WhatsApp *",
+                lbl_country: "Country *",
+                lbl_residence: "City & State of Residence *",
+                lbl_age: "Age *",
+                lbl_gender: "Gender *",
+                opt_gen_fem: "Female",
+                opt_gen_masc: "Male",
+                opt_gen_other: "Other",
+                opt_gen_none: "Prefer not to say",
+                sec2_title: "2. Previous Experience",
+                lbl_experience: "Have you previously attended an in-person or online Zhineng Qigong course? *",
+                opt_exp_yes: "Yes, I have previously taken Zhineng Qigong courses",
+                opt_exp_no: "No, this workshop will be my first experience",
+                sec3_title: "3. How did you hear about the workshop?",
+                lbl_referral: "How did you hear about this workshop or who invited you? *",
+                opt_ref_placeholder: "Select an option...",
+                opt_ref_friend: "Recommendation from a friend or family member",
+                opt_ref_social: "Social Media (Facebook, Instagram, etc.)",
+                opt_ref_wa: "WhatsApp message or group",
+                opt_ref_web: "Official Website (sembradoresdeqi.com)",
+                opt_ref_other: "Other (specify...)",
+                lbl_referral_detail: "Please specify (e.g., name of person who invited you or media) *",
+                sec4_title: "4. Payment Method (Package 1)",
+                sec4_promo_badge: "Promo Rate: $7,000.00 MXN",
+                sec4_instructions: "Select the payment option that best fits your preference for <strong>Package 1</strong>:",
+                opt1a_title: "🏦 Single Payment via Wire Transfer / Deposit ($7,000.00 MXN)",
+                opt1a_desc: "Single upfront payment via direct bank wire transfer or deposit.",
+                opt1b_title: "💳 Single Payment via Credit or Debit Card ($7,000.00 MXN)",
+                opt1b_desc: "Secure online credit or debit card single payment.",
+                opt1c_title: "🏦 Monthly Installments via Wire Transfer (Deposit $1,000 + 3 of $2,000)",
+                opt1c_desc: "Reserve your spot today with $1,000.00 MXN and make 3 monthly wire payments of $2,000.00 MXN.",
+                opt1d_title: "💳 Monthly Installments with Card (Deposit $1,000 + 3 of $2,000)",
+                opt1d_desc: "Reserve your spot today with $1,000.00 MXN and make 3 monthly card payments of $2,000.00 MXN.",
+                btn_payment_help: "I need help with payment (WhatsApp)",
+                sec5_title: "5. Health & Logistics",
+                lbl_mobility: "Do you have any physical or mobility limitations? *",
+                opt_mob_no: "No, I do not have any physical limitations",
+                opt_mob_yes: "Yes (Please provide details in the next field)",
+                lbl_mob_detail: "If YES, please detail your physical condition: <span id=\"movilidad_detalle_asterisk\" class=\"hidden text-rose-500\">*</span>",
+                lbl_allergies: "Food Allergies *",
+                sec6_title: "6. T-Shirt Size",
+                lbl_shirt: "T-Shirt Size *",
+                opt_shirt_placeholder: "Choose your T-shirt size...",
+                opt_shirt_s: "Small (S)",
+                opt_shirt_m: "Medium (M)",
+                opt_shirt_l: "Large (L)",
+                opt_shirt_xl: "Extra Large (XL)",
+                lbl_shirt_desc: "Please select your regular T-shirt size.",
+                lbl_terms_accept: "I have read and expressly accept the <a href=\"https://sembradoresdeqi.com/terminos-y-condiciones/\" target=\"_blank\" rel=\"noopener\" class=\"text-[#FFD700] hover:underline font-bold\">Terms, Conditions, and Participation Guidelines</a> of the workshop. *",
+                btn_submit: "✨ Submit Package 1 Registration",
+                err_required: "This field is required.",
+                err_email: "Please enter a valid email address.",
+                err_age: "Please enter a valid age (1 to 120 years).",
+                err_required_option: "Please select an option.",
+                err_required_referral: "Please select how you heard about the retreat.",
+                err_required_payment: "Please select a payment method.",
+                err_mob_detail: "Please detail your physical condition.",
+                err_allergies: "This field is required. If you have no allergies, write \"None\".",
+                err_shirt: "Please select a T-shirt size.",
+                err_terms: "You must accept the Terms, Conditions, and Guidelines to proceed.",
+                success_title: "Registration Successfully Received!",
+                success_back_link: "Return to main site",
+                footer_copy: "© 2026 Sembradores de Qi. All rights reserved.",
+                footer_legal: "This pre-registration is subject to the <a href=\"https://sembradoresdeqi.com/terminos-y-condiciones/\" target=\"_blank\" rel=\"noopener\" class=\"text-gray-400 hover:text-[#FFD700] underline\">Terms, Conditions, and Participation Guidelines</a>. Limited spots."
+            }
+        };
+
+        function setLanguage(lang) {
+            if (!i18n[lang]) return;
+            currentLang = lang;
+            document.documentElement.lang = lang;
+
+            try {
+                localStorage.setItem('sdq_lang_pref', lang);
+            } catch (e) {}
+
+            const dict = i18n[lang];
+
+            const metaTitle = document.getElementById('meta-title');
+            if (metaTitle && dict.meta_title) metaTitle.textContent = dict.meta_title;
+            const metaDesc = document.getElementById('meta-desc');
+            if (metaDesc && dict.meta_desc) metaDesc.setAttribute('content', dict.meta_desc);
+
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (dict[key]) {
+                    el.textContent = dict[key];
+                }
+            });
+
+            document.querySelectorAll('[data-i18n-html]').forEach(el => {
+                const key = el.getAttribute('data-i18n-html');
+                if (dict[key]) {
+                    el.innerHTML = dict[key];
+                }
+            });
+
+            // Update Option Text in Selects
+            if (document.getElementById('opt_gen_fem')) document.getElementById('opt_gen_fem').textContent = dict.opt_gen_fem;
+            if (document.getElementById('opt_gen_masc')) document.getElementById('opt_gen_masc').textContent = dict.opt_gen_masc;
+            if (document.getElementById('opt_gen_other')) document.getElementById('opt_gen_other').textContent = dict.opt_gen_other;
+            if (document.getElementById('opt_gen_none')) document.getElementById('opt_gen_none').textContent = dict.opt_gen_none;
+
+            if (document.getElementById('opt_ref_placeholder')) document.getElementById('opt_ref_placeholder').textContent = dict.opt_ref_placeholder;
+            if (document.getElementById('opt_ref_friend')) document.getElementById('opt_ref_friend').textContent = dict.opt_ref_friend;
+            if (document.getElementById('opt_ref_social')) document.getElementById('opt_ref_social').textContent = dict.opt_ref_social;
+            if (document.getElementById('opt_ref_wa')) document.getElementById('opt_ref_wa').textContent = dict.opt_ref_wa;
+            if (document.getElementById('opt_ref_web')) document.getElementById('opt_ref_web').textContent = dict.opt_ref_web;
+            if (document.getElementById('opt_ref_other')) document.getElementById('opt_ref_other').textContent = dict.opt_ref_other;
+
+            if (document.getElementById('opt_shirt_placeholder')) document.getElementById('opt_shirt_placeholder').textContent = dict.opt_shirt_placeholder;
+            if (document.getElementById('opt_shirt_s')) document.getElementById('opt_shirt_s').textContent = dict.opt_shirt_s;
+            if (document.getElementById('opt_shirt_m')) document.getElementById('opt_shirt_m').textContent = dict.opt_shirt_m;
+            if (document.getElementById('opt_shirt_l')) document.getElementById('opt_shirt_l').textContent = dict.opt_shirt_l;
+            if (document.getElementById('opt_shirt_xl')) document.getElementById('opt_shirt_xl').textContent = dict.opt_shirt_xl;
+
+            // Help WhatsApp link
+            const helpWa = document.getElementById('help-wa-btn');
+            if (helpWa) {
+                const msg = (lang === 'en') ? 'Hello Felipe, I have questions regarding the payment for Package 1.' : 'Hola Felipe, tengo dudas sobre el pago del Paquete 1.';
+                helpWa.href = `https://wa.me/525533106161?text=${encodeURIComponent(msg)}`;
+            }
+
+            // Switcher UI
+            document.querySelectorAll('.lang-btn-es').forEach(btn => {
+                if (lang === 'es') btn.classList.add('active');
+                else btn.classList.remove('active');
+            });
+            document.querySelectorAll('.lang-btn-en').forEach(btn => {
+                if (lang === 'en') btn.classList.add('active');
+                else btn.classList.remove('active');
+            });
+        }
+
         const DEFAULT_WEBHOOK_URL = 'https://script.google.com/macros/s/AKfycbzFGib7q9Y7eZ4I2rWMVBeQ2n8oBG0aEuNnehFx1N_-arjN4uONvj28UtBIv8bjf8ta4A/exec';
         const currentWebhookUrl = DEFAULT_WEBHOOK_URL;
 
@@ -573,10 +847,7 @@
         form.addEventListener('submit', function(e) {
             e.preventDefault();
             
-            // Clear prior errors
             clearErrors();
-
-            // Run validations
             let hasErrors = false;
 
             // Nombre
@@ -612,7 +883,7 @@
             syncResidenciaValue();
             const residenciaInput = document.getElementById('residencia');
             if (residenciaInput.value.trim() === '') {
-                const isMexico = (paisInput.value === 'México');
+                const isMexico = (paisInput.value === 'México' || paisInput.value === 'Mexico');
                 if (isMexico) {
                     showError(document.getElementById('residencia_select'));
                 } else {
@@ -649,24 +920,18 @@
                 hasErrors = true;
             }
 
-            // Referencia / Cómo se enteró
+            // Referencia
             syncReferenciaValue();
-            const referenciaSelect = document.getElementById('referencia_select');
-            const referenciaDetalleInput = document.getElementById('referencia_detalle');
-            if (referenciaSelect.value === '') {
-                showError(referenciaSelect);
+            const referenciaInput = document.getElementById('referencia');
+            if (referenciaInput.value.trim() === '') {
+                showError(document.getElementById('referencia_select'));
                 hasErrors = true;
-            } else if (referenciaSelect.value === 'Recomendación de un amigo o familiar' || referenciaSelect.value === 'Otro') {
-                if (referenciaDetalleInput.value.trim() === '') {
-                    showError(referenciaDetalleInput);
-                    hasErrors = true;
-                }
             }
 
-            // Talla playera
-            const tallaInput = document.getElementById('talla_playera');
-            if (tallaInput.value === '') {
-                showError(tallaInput);
+            // Forma de Pago
+            const modalidadInput = document.getElementById('modalidad');
+            if (modalidadInput.value === '') {
+                showError(document.getElementById('pago_opciones_container'));
                 hasErrors = true;
             }
 
@@ -681,10 +946,13 @@
             if (!movilidadVal) {
                 showError(movilidadOptions[0].closest('div'));
                 hasErrors = true;
-            } else if (movilidadVal.startsWith('Sí')) {
-                const movilidadDetalleInput = document.getElementById('movilidad_detalle');
-                if (movilidadDetalleInput.value.trim() === '') {
-                    showError(movilidadDetalleInput);
+            }
+
+            // Detalle Movilidad
+            const detalleMovilidad = document.getElementById('movilidad_detalle');
+            if (movilidadVal.includes('Sí') || movilidadVal.includes('Yes')) {
+                if (detalleMovilidad.value.trim() === '') {
+                    showError(detalleMovilidad);
                     hasErrors = true;
                 }
             }
@@ -696,106 +964,96 @@
                 hasErrors = true;
             }
 
-            // Metodo de pago
-            const pagoInput = document.getElementById('metodo_pago');
-            if (pagoInput.value === '') {
-                showError(pagoInput);
+            // Talla Playera
+            const tallaInput = document.getElementById('talla_playera');
+            if (tallaInput.value === '') {
+                showError(tallaInput);
                 hasErrors = true;
             }
 
             // Acepto Términos
-            const aceptoTerminosInput = document.getElementById('acepto_terminos');
-            if (!aceptoTerminosInput.checked) {
-                showError(aceptoTerminosInput);
+            const terminosCheckbox = document.getElementById('acepto_terminos');
+            if (!terminosCheckbox.checked) {
+                showError(terminosCheckbox.closest('label'));
                 hasErrors = true;
             }
-
-            const submitBtn = form.querySelector('button[type="submit"]');
 
             if (hasErrors) {
                 errorBanner.classList.remove('hidden');
                 if (firstErrorElement) {
                     firstErrorElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                    if (typeof firstErrorElement.focus === 'function') {
-                        firstErrorElement.focus({ preventScroll: true });
-                    }
-                } else {
-                    formWrapper.scrollIntoView({ behavior: 'smooth' });
                 }
                 return;
             }
 
-            // Prevent double submission & show loader
-            if (submitBtn) {
-                submitBtn.disabled = true;
-                submitBtn.classList.add('opacity-50', 'cursor-not-allowed');
-            }
-            loader.classList.remove('hidden');
-            
-            const formData = new FormData(form);
-            const serializedData = {};
-            formData.forEach((value, key) => {
-                serializedData[key] = value;
-            });
-            
-            // Combine country code and number cleanly (digits clean)
-            const codigo = document.getElementById('pais_codigo').value;
-            const numeroRaw = document.getElementById('whatsapp_num').value.trim();
-            const numeroLimpio = numeroRaw.replace(/\D/g, '');
-            serializedData['whatsapp'] = (codigo === 'otro') ? numeroRaw : `${codigo} ${numeroLimpio || numeroRaw}`;
-            delete serializedData['pais_codigo'];
-            delete serializedData['whatsapp_num'];
-            
-            // Add metadata fields
-            serializedData['timestamp'] = new Date().toISOString();
-            serializedData['taller'] = 'Mudras y Sonidos Noviembre 2026 (Paquete 1)';
+            // Prepare Payload
+            const fullPhone = document.getElementById('pais_codigo').value + ' ' + whatsappNumInput.value.trim();
+            const formData = {
+                nombre: nombreInput.value.trim(),
+                email: emailInput.value.trim(),
+                whatsapp: fullPhone,
+                pais: paisInput.value.trim(),
+                residencia: residenciaInput.value.trim(),
+                edad: edadInput.value.trim(),
+                genero: generoInput.value,
+                historial: historialVal,
+                referencia: referenciaInput.value.trim(),
+                modalidad: modalidadInput.value,
+                metodo_pago: document.getElementById('metodo_pago').value,
+                movilidad: movilidadVal,
+                movilidad_detalle: detalleMovilidad.value.trim(),
+                alergias: alergiasInput.value.trim(),
+                talla_playera: tallaInput.value,
+                acepto_terminos: 'Sí',
+                paquete: 'Paquete 1 ($7,000.00 MXN)',
+                idioma: currentLang
+            };
 
-            const searchParams = new URLSearchParams();
-            for (const key in serializedData) {
-                searchParams.append(key, serializedData[key]);
-            }
-
-            fetch(currentWebhookUrl, {
-                method: 'POST',
-                mode: 'no-cors',
-                body: searchParams
-            })
-            .then(response => {
-                handleSuccess(serializedData);
-            })
-            .catch(error => {
-                console.error('Error submitting form:', error);
-                handleSuccess(serializedData);
-            });
+            submitRegistration(formData);
         });
 
         function showError(element) {
             if (!firstErrorElement) {
                 firstErrorElement = element;
             }
+            if (element.classList.contains('payment-option-card')) return;
             element.classList.add('border-rose-500');
-            let parent = element.parentElement;
-            if (element.name === 'historial' || element.name === 'movilidad') {
-                parent = element.closest('.space-y-3');
-            }
-            if (element.id === 'acepto_terminos') {
-                parent = element.closest('.space-y-2');
-            }
-            if (element.id === 'metodo_pago') {
-                document.getElementById('pago_opciones_container').classList.add('border-2', 'border-rose-500', 'p-4', 'rounded-2xl');
-            }
-            const errorSpan = parent.querySelector('.error-msg');
-            if (errorSpan) {
-                errorSpan.classList.remove('hidden');
+            const parent = element.closest('.space-y-2') || element.closest('.space-y-3') || element.parentElement;
+            if (parent) {
+                const errorMsg = parent.querySelector('.error-msg');
+                if (errorMsg) {
+                    errorMsg.classList.remove('hidden');
+                }
             }
         }
 
         function clearErrors() {
             firstErrorElement = null;
             errorBanner.classList.add('hidden');
-            document.querySelectorAll('.error-msg').forEach(el => el.classList.add('hidden'));
-            document.querySelectorAll('input, select, textarea').forEach(el => el.classList.remove('border-rose-500'));
-            document.getElementById('pago_opciones_container').classList.remove('border-2', 'border-rose-500', 'p-4', 'rounded-2xl');
+            const inputs = form.querySelectorAll('input, select, textarea');
+            inputs.forEach(el => el.classList.remove('border-rose-500'));
+            const errorMsgs = form.querySelectorAll('.error-msg');
+            errorMsgs.forEach(msg => msg.classList.add('hidden'));
+        }
+
+        function submitRegistration(data) {
+            loader.classList.remove('hidden');
+
+            fetch(currentWebhookUrl, {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            })
+            .then(() => {
+                handleSuccess(data);
+            })
+            .catch(err => {
+                console.warn('Form sent with fallback handling:', err);
+                handleSuccess(data);
+            });
         }
 
         function handleSuccess(data) {
@@ -812,8 +1070,19 @@
             let detailsHtml = '';
             let waMessage = '';
             let isApartado = data.modalidad.includes('apartado');
+            const isEn = (currentLang === 'en');
             
-            const transferDetailsHtml = `
+            const transferDetailsHtml = isEn ? `
+                <div class="bg-[#0a1929] rounded-2xl p-6 border border-white/10 text-left space-y-3 shadow-lg">
+                    <h3 class="text-base sm:text-lg font-bold text-[#FFD700] uppercase tracking-wider border-b border-white/10 pb-2 flex items-center gap-2"><span>🏦</span> Wire Transfer / Deposit Details</h3>
+                    <p class="text-sm sm:text-base text-gray-200 leading-relaxed">
+                        Thank you for your registration! To complete your enrollment for <strong>Package 1</strong>, <strong>the bank account details to complete your deposit or wire transfer will be provided to you via WhatsApp message</strong>.
+                    </p>
+                    <p class="text-sm sm:text-base text-gray-300 leading-relaxed">
+                        Please click the button below to open WhatsApp and request the account details from Felipe to finalize your payment.
+                    </p>
+                </div>
+            ` : `
                 <div class="bg-[#0a1929] rounded-2xl p-6 border border-white/10 text-left space-y-3 shadow-lg">
                     <h3 class="text-base sm:text-lg font-bold text-[#FFD700] uppercase tracking-wider border-b border-white/10 pb-2 flex items-center gap-2"><span>🏦</span> Datos de Transferencia o Depósito</h3>
                     <p class="text-sm sm:text-base text-gray-200 leading-relaxed">
@@ -827,13 +1096,27 @@
 
             if (data.modalidad === 'Paquete 1 ($7,000.00 un solo pago)') {
                 if (data.metodo_pago === 'Transferencia') {
-                    introHtml = `<p class="text-base sm:text-lg text-gray-200 max-w-xl mx-auto leading-relaxed">Has elegido realizar el pago total de contado del <strong>Paquete 1 ($7,000.00 MXN)</strong> por transferencia bancaria.</p>`;
+                    introHtml = isEn 
+                        ? `<p class="text-base sm:text-lg text-gray-200 max-w-xl mx-auto leading-relaxed">You have chosen the full single payment for <strong>Package 1 ($7,000.00 MXN)</strong> via wire transfer.</p>`
+                        : `<p class="text-base sm:text-lg text-gray-200 max-w-xl mx-auto leading-relaxed">Has elegido realizar el pago total de contado del <strong>Paquete 1 ($7,000.00 MXN)</strong> por transferencia bancaria.</p>`;
                     detailsHtml = transferDetailsHtml;
-                    waMessage = `Hola Felipe, acabo de registrarme para el Taller de Mudras y Sonidos 2026 en el Paquete 1 ($7,000.00 MXN). Elegí la opción de depósito o transferencia bancaria y me gustaría solicitar los datos de la cuenta para realizar mi pago. Mi nombre es ${data.nombre}.`;
-                    waButtonText.textContent = '📱 Solicitar Datos de Cuenta por WhatsApp';
+                    waMessage = isEn
+                        ? `Hello Felipe, I just registered for the Mudras & Sounds Workshop 2026 (Package 1 - $7,000.00 MXN). I chose wire transfer/deposit and would like to request the bank account details. My name is ${data.nombre}.`
+                        : `Hola Felipe, acabo de registrarme para el Taller de Mudras y Sonidos 2026 en el Paquete 1 ($7,000.00 MXN). Elegí la opción de depósito o transferencia bancaria y me gustaría solicitar los datos de la cuenta para realizar mi pago. Mi nombre es ${data.nombre}.`;
+                    waButtonText.textContent = isEn ? '📱 Request Bank Account via WhatsApp' : '📱 Solicitar Datos de Cuenta por WhatsApp';
                 } else if (data.metodo_pago === 'Tarjeta') {
-                    introHtml = `<p class="text-base sm:text-lg text-gray-200 max-w-xl mx-auto leading-relaxed">Has elegido realizar el pago total del <strong>Paquete 1 ($7,000.00 MXN)</strong> con tarjeta.</p>`;
-                    detailsHtml = `
+                    introHtml = isEn
+                        ? `<p class="text-base sm:text-lg text-gray-200 max-w-xl mx-auto leading-relaxed">You have chosen the full single payment for <strong>Package 1 ($7,000.00 MXN)</strong> with card.</p>`
+                        : `<p class="text-base sm:text-lg text-gray-200 max-w-xl mx-auto leading-relaxed">Has elegido realizar el pago total del <strong>Paquete 1 ($7,000.00 MXN)</strong> con tarjeta.</p>`;
+                    detailsHtml = isEn ? `
+                        <div class="bg-[#0a1929] rounded-2xl p-6 border border-white/10 text-left space-y-4 shadow-lg">
+                            <h3 class="text-base sm:text-lg font-bold text-[#FFD700] uppercase tracking-wider border-b border-white/10 pb-2 flex items-center gap-2"><span>💳</span> Secure Payment Link</h3>
+                            <p class="text-sm sm:text-base text-gray-300">Click the button below to pay the total amount of **$7,000.00 MXN** with your credit or debit card:</p>
+                            <div class="text-center py-2">
+                                <a href="https://mpago.li/2zMcZ3N" target="_blank" rel="noopener" class="inline-flex items-center justify-center bg-[#009ee3] hover:bg-[#007ec1] text-white font-extrabold text-xs uppercase tracking-wider px-8 py-3.5 rounded-xl transition shadow-md">Pay with Mercado Pago ($7,000.00 MXN) 👉</a>
+                            </div>
+                        </div>
+                    ` : `
                         <div class="bg-[#0a1929] rounded-2xl p-6 border border-white/10 text-left space-y-4 shadow-lg">
                             <h3 class="text-base sm:text-lg font-bold text-[#FFD700] uppercase tracking-wider border-b border-white/10 pb-2 flex items-center gap-2"><span>💳</span> Enlace de Pago Seguro</h3>
                             <p class="text-sm sm:text-base text-gray-300">Haz clic en el botón de abajo para pagar el monto total de **$7,000.00 MXN** con tu tarjeta de crédito o débito:</p>
@@ -842,18 +1125,34 @@
                             </div>
                         </div>
                     `;
-                    waMessage = `Hola Felipe, acabo de registrarme para el Taller de Mudras y Sonidos 2026. Realicé mi pago de contado con tarjeta para el Paquete 1 ($7,000.00 MXN) y aquí te comparto mi comprobante. Mi nombre es ${data.nombre}.`;
-                    waButtonText.textContent = '📱 Enviar Comprobante por WhatsApp';
+                    waMessage = isEn
+                        ? `Hello Felipe, I just registered for the Mudras & Sounds Workshop 2026. I made my card payment for Package 1 ($7,000.00 MXN) and here is my receipt. My name is ${data.nombre}.`
+                        : `Hola Felipe, acabo de registrarme para el Taller de Mudras y Sonidos 2026. Realicé mi pago de contado con tarjeta para el Paquete 1 ($7,000.00 MXN) y aquí te comparto mi comprobante. Mi nombre es ${data.nombre}.`;
+                    waButtonText.textContent = isEn ? '📱 Send Payment Receipt via WhatsApp' : '📱 Enviar Comprobante por WhatsApp';
                 }
             } else if (data.modalidad === 'Paquete 1 ($1,000.00 apartado)') {
                 if (data.metodo_pago === 'Transferencia') {
-                    introHtml = `<p class="text-base sm:text-lg text-gray-200 max-w-xl mx-auto leading-relaxed">Has elegido realizar el pago de apartado del <strong>Paquete 1 ($1,000.00 MXN)</strong> por transferencia bancaria.</p>`;
+                    introHtml = isEn
+                        ? `<p class="text-base sm:text-lg text-gray-200 max-w-xl mx-auto leading-relaxed">You have chosen the deposit option for <strong>Package 1 ($1,000.00 MXN deposit)</strong> via wire transfer.</p>`
+                        : `<p class="text-base sm:text-lg text-gray-200 max-w-xl mx-auto leading-relaxed">Has elegido realizar el pago de apartado del <strong>Paquete 1 ($1,000.00 MXN)</strong> por transferencia bancaria.</p>`;
                     detailsHtml = transferDetailsHtml;
-                    waMessage = `Hola Felipe, acabo de registrarme para el Taller de Mudras y Sonidos 2026. Elegí realizar el apartado por transferencia para el Paquete 1 ($1,000.00 MXN de apartado) y me gustaría solicitar los datos de la cuenta para realizar mi pago. Mi nombre es ${data.nombre}.`;
-                    waButtonText.textContent = '📱 Solicitar Datos de Cuenta por WhatsApp';
+                    waMessage = isEn
+                        ? `Hello Felipe, I just registered for the Mudras & Sounds Workshop 2026. I chose the deposit plan for Package 1 ($1,000.00 MXN deposit) and would like the bank account details to complete it. My name is ${data.nombre}.`
+                        : `Hola Felipe, acabo de registrarme para el Taller de Mudras y Sonidos 2026. Elegí realizar el apartado por transferencia para el Paquete 1 ($1,000.00 MXN de apartado) y me gustaría solicitar los datos de la cuenta para realizar mi pago. Mi nombre es ${data.nombre}.`;
+                    waButtonText.textContent = isEn ? '📱 Request Bank Account via WhatsApp' : '📱 Solicitar Datos de Cuenta por WhatsApp';
                 } else if (data.metodo_pago === 'Tarjeta') {
-                    introHtml = `<p class="text-base sm:text-lg text-gray-200 max-w-xl mx-auto leading-relaxed">Has elegido realizar el apartado del <strong>Paquete 1 ($1,000.00 MXN)</strong> con tarjeta.</p>`;
-                    detailsHtml = `
+                    introHtml = isEn
+                        ? `<p class="text-base sm:text-lg text-gray-200 max-w-xl mx-auto leading-relaxed">You have chosen the deposit option for <strong>Package 1 ($1,000.00 MXN deposit)</strong> with card.</p>`
+                        : `<p class="text-base sm:text-lg text-gray-200 max-w-xl mx-auto leading-relaxed">Has elegido realizar el apartado del <strong>Paquete 1 ($1,000.00 MXN)</strong> con tarjeta.</p>`;
+                    detailsHtml = isEn ? `
+                        <div class="bg-[#0a1929] rounded-2xl p-6 border border-white/10 text-left space-y-4 shadow-lg">
+                            <h3 class="text-base sm:text-lg font-bold text-[#FFD700] uppercase tracking-wider border-b border-white/10 pb-2 flex items-center gap-2"><span>💳</span> Secure Payment Link</h3>
+                            <p class="text-sm sm:text-base text-gray-300">Click the button below to pay your **$1,000.00 MXN** deposit with your credit or debit card:</p>
+                            <div class="text-center py-2">
+                                <a href="https://mpago.li/1fFzgkP" target="_blank" rel="noopener" class="inline-flex items-center justify-center bg-[#009ee3] hover:bg-[#007ec1] text-white font-extrabold text-xs uppercase tracking-wider px-8 py-3.5 rounded-xl transition shadow-md">Reserve with Mercado Pago ($1,000.00 MXN) 👉</a>
+                            </div>
+                        </div>
+                    ` : `
                         <div class="bg-[#0a1929] rounded-2xl p-6 border border-white/10 text-left space-y-4 shadow-lg">
                             <h3 class="text-base sm:text-lg font-bold text-[#FFD700] uppercase tracking-wider border-b border-white/10 pb-2 flex items-center gap-2"><span>💳</span> Enlace de Pago Seguro</h3>
                             <p class="text-sm sm:text-base text-gray-300">Haz clic en el botón de abajo para pagar tu apartado de **$1,000.00 MXN** con tu tarjeta de crédito o débito:</p>
@@ -862,19 +1161,29 @@
                             </div>
                         </div>
                     `;
-                    waMessage = `Hola Felipe, acabo de registrarme para el Taller de Mudras y Sonidos 2026. Realicé el pago de apartado con tarjeta para el Paquete 1 ($1,000.00 MXN) y aquí te comparto mi comprobante. Mi nombre es ${data.nombre}.`;
-                    waButtonText.textContent = '📱 Enviar Comprobante por WhatsApp';
+                    waMessage = isEn
+                        ? `Hello Felipe, I just registered for the Mudras & Sounds Workshop 2026. I completed my $1,000.00 MXN card deposit for Package 1 and here is my receipt. My name is ${data.nombre}.`
+                        : `Hola Felipe, acabo de registrarme para el Taller de Mudras y Sonidos 2026. Realicé el pago de apartado con tarjeta para el Paquete 1 ($1,000.00 MXN) y aquí te comparto mi comprobante. Mi nombre es ${data.nombre}.`;
+                    waButtonText.textContent = isEn ? '📱 Send Payment Receipt via WhatsApp' : '📱 Enviar Comprobante por WhatsApp';
                 }
             }
             
-            let warningsHtml = `
+            let warningsHtml = isEn ? `
+                <div class="bg-rose-500/10 border border-rose-500/30 p-4 rounded-xl text-left text-sm sm:text-base text-rose-300 space-y-1">
+                    ⚠️ <strong>Important Note:</strong> If you are unable to attend, your payment will be applied to the next Sembradores event; for this reason, no refunds are issued.
+                </div>
+            ` : `
                 <div class="bg-rose-500/10 border border-rose-500/30 p-4 rounded-xl text-left text-sm sm:text-base text-rose-300 space-y-1">
                     ⚠️ <strong>Nota importante:</strong> En caso de no poder asistir, tu pago se tomará en cuenta para el siguiente evento de Sembradores; por esta razón, no se realizan devoluciones.
                 </div>
             `;
             
             if (isApartado) {
-                warningsHtml += `
+                warningsHtml += isEn ? `
+                    <div class="bg-amber-500/10 border border-amber-500/30 p-4 rounded-xl text-left text-sm sm:text-base text-amber-200 space-y-1">
+                        📅 <strong>Payment Deadline:</strong> Please remember that the final deadline to complete your total balance is <strong>November 15, 2026</strong>. Following your $1,000.00 MXN deposit, your plan consists of <strong>3 additional monthly payments of $2,000.00 MXN</strong>.
+                    </div>
+                ` : `
                     <div class="bg-amber-500/10 border border-amber-500/30 p-4 rounded-xl text-left text-sm sm:text-base text-amber-200 space-y-1">
                         📅 <strong>Fecha límite de liquidación:</strong> Recuerda que la fecha límite para realizar la liquidación total de tu curso es el <strong>15 de noviembre de 2026</strong>. Posterior a tu apartado de $1,000.00 MXN, tu plan consiste en <strong>3 pagos mensuales adicionales de $2,000.00 MXN</strong>.
                     </div>
@@ -927,7 +1236,6 @@
             radio.addEventListener('change', handlePaymentRadioChange);
         }
 
-        // Auto-select first payment option by default for convenience
         if (pagoRadios.length > 0) {
             pagoRadios[0].checked = true;
             handlePaymentRadioChange();
@@ -1009,63 +1317,58 @@
                 { prefix: '52', code: '+52' }
             ];
 
-            for (let item of countryCodes) {
-                if (hasPlus && digitsOnly.startsWith(item.prefix)) {
-                    paisCodigoSelect.value = item.code;
-                    whatsappNumInput.value = digitsOnly.substring(item.prefix.length);
-                    updateCountryAndResidencia(true);
-                    return;
+            let matchedCode = null;
+
+            if (hasPlus) {
+                for (let item of countryCodes) {
+                    if (digitsOnly.startsWith(item.prefix)) {
+                        matchedCode = item.code;
+                        digitsOnly = digitsOnly.substring(item.prefix.length);
+                        break;
+                    }
                 }
-                if (!hasPlus && item.prefix !== '52' && item.prefix !== '55' && digitsOnly.startsWith(item.prefix) && digitsOnly.length > item.prefix.length + 4) {
-                    paisCodigoSelect.value = item.code;
-                    whatsappNumInput.value = digitsOnly.substring(item.prefix.length);
-                    updateCountryAndResidencia(true);
-                    return;
-                }
-                if (!hasPlus && item.prefix === '52' && digitsOnly.startsWith('52') && digitsOnly.length === 12) {
-                    paisCodigoSelect.value = '+52';
-                    whatsappNumInput.value = digitsOnly.substring(2);
-                    updateCountryAndResidencia(true);
-                    return;
-                }
+            }
+
+            if (matchedCode) {
+                paisCodigoSelect.value = matchedCode;
+                whatsappNumInput.value = digitsOnly;
+                updateCountryUI(matchedCode);
             }
         }
 
-        function updateCountryAndResidencia(isFromSelect = false) {
-            const code = paisCodigoSelect.value;
-            
-            if (code === 'otro') {
-                if (isFromSelect) {
-                    paisInput.value = '';
-                }
-                paisInput.removeAttribute('readonly');
-                paisInput.placeholder = 'Escribe tu país...';
-            } else {
-                paisInput.value = prefixToCountry[code] || '';
-                paisInput.setAttribute('readonly', 'true');
-            }
-
-            const isMexico = (paisInput.value.trim() === 'México');
-            if (isMexico) {
+        function updateCountryUI(code) {
+            if (code === '+52') {
+                paisInput.value = (currentLang === 'en') ? 'Mexico' : 'México';
                 residenciaSelect.classList.remove('hidden');
-                if (residenciaSelect.value === 'Otro') {
-                    residenciaText.classList.remove('hidden');
-                    residenciaText.placeholder = 'Escribe tu ciudad y estado...';
-                } else {
-                    residenciaText.classList.add('hidden');
-                }
-            } else {
+                residenciaText.classList.add('hidden');
+            } else if (code === 'otro') {
+                paisInput.value = '';
+                paisInput.removeAttribute('readonly');
+                paisInput.placeholder = (currentLang === 'en') ? 'Type your country' : 'Escribe tu país';
                 residenciaSelect.classList.add('hidden');
                 residenciaText.classList.remove('hidden');
-                residenciaText.placeholder = 'Escribe tu ciudad y estado...';
+            } else {
+                paisInput.value = prefixToCountry[code] || 'Internacional';
+                paisInput.setAttribute('readonly', true);
+                residenciaSelect.classList.add('hidden');
+                residenciaText.classList.remove('hidden');
             }
-            
             syncResidenciaValue();
         }
 
+        paisCodigoSelect.addEventListener('change', function() {
+            updateCountryUI(this.value);
+        });
+
+        whatsappNumInput.addEventListener('blur', autoDetectCountryFromPhone);
+        whatsappNumInput.addEventListener('input', function() {
+            if (this.value.trim().startsWith('+')) {
+                autoDetectCountryFromPhone();
+            }
+        });
+
         function syncResidenciaValue() {
-            const isMexico = (paisInput.value.trim() === 'México');
-            if (isMexico) {
+            if (!residenciaSelect.classList.contains('hidden')) {
                 if (residenciaSelect.value === 'Otro') {
                     hiddenResidencia.value = residenciaText.value.trim();
                 } else {
@@ -1076,92 +1379,71 @@
             }
         }
 
-        paisCodigoSelect.addEventListener('change', function() {
-            updateCountryAndResidencia(true);
-        });
-        paisInput.addEventListener('input', function() {
-            updateCountryAndResidencia(false);
-        });
-        whatsappNumInput.addEventListener('input', autoDetectCountryFromPhone);
-        whatsappNumInput.addEventListener('blur', autoDetectCountryFromPhone);
         residenciaSelect.addEventListener('change', function() {
-            updateCountryAndResidencia(false);
+            if (this.value === 'Otro') {
+                residenciaText.classList.remove('hidden');
+                residenciaText.placeholder = (currentLang === 'en') ? 'Type your city and state' : 'Escribe tu ciudad y estado';
+            } else {
+                residenciaText.classList.add('hidden');
+            }
+            syncResidenciaValue();
         });
+
         residenciaText.addEventListener('input', syncResidenciaValue);
-        
-        // Dynamic Mobility Detail validation
+
+        // Movilidad Detalle Trigger
         const movilidadRadios = document.getElementsByName('movilidad');
-        const movilidadDetalleAsterisk = document.getElementById('movilidad_detalle_asterisk');
+        const detalleMovilidadContainer = document.getElementById('movilidad_detalle').parentElement;
+        const asteriscoMovilidad = document.getElementById('movilidad_detalle_asterisk');
 
-        function updateMobilityRequirement() {
-            let selectedValue = '';
-            for (let radio of movilidadRadios) {
-                if (radio.checked) {
-                    selectedValue = radio.value;
-                }
-            }
-            if (selectedValue.startsWith('Sí')) {
-                movilidadDetalleAsterisk.classList.remove('hidden');
-            } else {
-                movilidadDetalleAsterisk.classList.add('hidden');
-            }
-        }
-
-        for (let radio of movilidadRadios) {
-            radio.addEventListener('change', updateMobilityRequirement);
-        }
-
-        // Dynamic Referencia (Cómo se enteró) logic
-        const referenciaSelect = document.getElementById('referencia_select');
-        const referenciaDetalleContainer = document.getElementById('referencia_detalle_container');
-        const referenciaDetalleInput = document.getElementById('referencia_detalle');
-        const hiddenReferencia = document.getElementById('referencia');
-
-        function updateReferencia() {
-            const val = referenciaSelect.value;
-            if (val === 'Recomendación de un amigo o familiar' || val === 'Otro') {
-                referenciaDetalleContainer.classList.remove('hidden');
-            } else {
-                referenciaDetalleContainer.classList.add('hidden');
-                referenciaDetalleInput.value = '';
-            }
-            syncReferenciaValue();
-        }
-
-        function syncReferenciaValue() {
-            const val = referenciaSelect.value;
-            if (val === 'Recomendación de un amigo o familiar' || val === 'Otro') {
-                const detail = referenciaDetalleInput.value.trim();
-                hiddenReferencia.value = detail ? `${val}: ${detail}` : val;
-            } else {
-                hiddenReferencia.value = val;
-            }
-        }
-
-        referenciaSelect.addEventListener('change', updateReferencia);
-        referenciaDetalleInput.addEventListener('input', syncReferenciaValue);
-
-        // Real-time email validation on blur
-        const emailInputEl = document.getElementById('email');
-        if (emailInputEl) {
-            emailInputEl.addEventListener('blur', function() {
-                const val = this.value.trim();
-                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                if (val !== '' && !emailRegex.test(val)) {
-                    showError(this);
-                } else if (emailRegex.test(val)) {
-                    this.classList.remove('border-rose-500');
-                    const errorSpan = this.parentElement.querySelector('.error-msg');
-                    if (errorSpan) errorSpan.classList.add('hidden');
+        movilidadRadios.forEach(radio => {
+            radio.addEventListener('change', function() {
+                if (this.value.includes('Sí') || this.value.includes('Yes')) {
+                    asteriscoMovilidad.classList.remove('hidden');
+                } else {
+                    asteriscoMovilidad.classList.add('hidden');
                 }
             });
+        });
+
+        // Referencia Trigger
+        const refSelect = document.getElementById('referencia_select');
+        const refDetalleContainer = document.getElementById('referencia_detalle_container');
+        const refDetalleInput = document.getElementById('referencia_detalle');
+        const hiddenRef = document.getElementById('referencia');
+
+        function syncReferenciaValue() {
+            if (refSelect.value === 'Otro' || refSelect.value === 'Recomendación de un amigo o familiar') {
+                hiddenRef.value = refSelect.value + (refDetalleInput.value.trim() ? `: ${refDetalleInput.value.trim()}` : '');
+            } else {
+                hiddenRef.value = refSelect.value;
+            }
         }
 
-        // Initialize state on page load
-        updateCountryAndResidencia();
-        updateMobilityRequirement();
-        updateReferencia();
+        refSelect.addEventListener('change', function() {
+            if (this.value === 'Otro' || this.value === 'Recomendación de un amigo o familiar') {
+                refDetalleContainer.classList.remove('hidden');
+            } else {
+                refDetalleContainer.classList.add('hidden');
+            }
+            syncReferenciaValue();
+        });
+
+        refDetalleInput.addEventListener('input', syncReferenciaValue);
+
+        // Init language on load
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const langParam = urlParams.get('lang');
+            let savedLang = 'es';
+            try {
+                savedLang = localStorage.getItem('sdq_lang_pref') || 'es';
+            } catch (e) {}
+
+            const initialLang = (langParam === 'en' || langParam === 'es') ? langParam : savedLang;
+            setLanguage(initialLang);
+            updateCountryUI(paisCodigoSelect.value);
+        });
     </script>
-    </div>
 </body>
 </html>

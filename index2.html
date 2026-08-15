@@ -1,0 +1,1714 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="meta-title">Frecuencias de Sanación: El Sonido de los Órganos Internos - Sembradores de Qi</title>
+    <meta name="description" id="meta-desc" content="Taller Presencial de Mudras y Sonidos de los Órganos Internos con el Maestro Yuan Ming. Del 20 al 22 de Noviembre de 2026 en el histórico Convento de San Joaquín, CDMX.">
+    
+    <!-- Open Graph / Facebook / WhatsApp Preview -->
+    <meta property="og:type" content="event">
+    <meta property="og:title" content="Frecuencias de Sanación: Taller de Mudras y Sonidos con el Maestro Yuan Ming">
+    <meta property="og:description" content="Aprende el código de Zhineng Qigong para sintonizar y sanar los 5 órganos vitales. Del 20 al 22 de Noviembre de 2026, Convento de San Joaquín, CDMX.">
+    <meta property="og:image" content="http://sembradoresdeqi.com/wp-content/uploads/2026/08/bannerwordpressyuanleft2026.webp">
+    <meta property="og:url" content="https://sembradoresdeqi.com/taller-yuan-2026/">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Frecuencias de Sanación: Taller con el Maestro Yuan Ming">
+    <meta name="twitter:description" content="Taller Presencial de Zhineng Qigong en CDMX. Convento de San Joaquín, 20 al 22 de Noviembre de 2026.">
+    <meta name="twitter:image" content="http://sembradoresdeqi.com/wp-content/uploads/2026/08/bannerwordpressyuanleft2026.webp">
+
+    <!-- Google Fonts: Montserrat for UI, Playfair Display for elegant accents, Outfit for badges -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        /* Ajuste de accesibilidad para personas de la tercera edad */
+        .text-\[10px\] { font-size: 12px !important; }
+        .text-xs { font-size: 14px !important; }
+
+        :root {
+            --sdq-navy: #0a1929;
+            --sdq-navy-light: #132f4c;
+            --sdq-navy-card: #0f2744;
+            --sdq-gold: #FFD700;
+            --sdq-gold-hover: #e6c200;
+            --sdq-gold-light: #fff3a8;
+        }
+
+        #sdq-landing-root {
+            font-family: 'Montserrat', sans-serif;
+            color-scheme: dark;
+        }
+
+        .sdq-font-serif-elegant {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .sdq-font-display {
+            font-family: 'Outfit', sans-serif;
+        }
+
+        /* REGLA DEL HERO Y ENCUADRE DE MAESTRO YUAN */
+        .sdq-hero {
+            background-image: url('http://sembradoresdeqi.com/wp-content/uploads/2026/08/bannerwordpressyuanleft2026.webp');
+            background-size: cover;
+            background-position: right center !important;
+            background-repeat: no-repeat;
+            position: relative;
+            min-height: 650px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        @media (min-width: 1024px) {
+            .sdq-hero {
+                background-position: left center !important;
+                min-height: 820px;
+            }
+        }
+
+        /* CAPA DE DEGRADADO DE ATMÓSFERA PROFUNDA */
+        .sdq-hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                to bottom, 
+                rgba(10, 25, 41, 0.98) 0%,         
+                rgba(10, 25, 41, 0.85) 12%,     
+                rgba(10, 25, 41, 0.4) 38%,      
+                rgba(10, 25, 41, 0.05) 50%,        
+                rgba(10, 25, 41, 0.05) 72%,        
+                rgba(10, 25, 41, 0.65) 88%,      
+                rgba(10, 25, 41, 0.98) 100%     
+            );
+            z-index: 1;
+        }
+
+        /* Sombras de texto de alta definición */
+        .sdq-text-shadow {
+            text-shadow: 2px 2px 14px rgba(10, 25, 41, 0.98), -1px -1px 4px rgba(10, 25, 41, 0.9), 0px 0px 18px rgba(10, 25, 41, 0.85);
+        }
+
+        .sdq-gold-glow-text {
+            text-shadow: 0 0 20px rgba(255, 215, 0, 0.45);
+        }
+
+        /* Efectos visuales de tarjetas premium y resplandores Qi */
+        .sdq-card-glow {
+            transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+            border: 1px solid rgba(255, 215, 0, 0.12);
+        }
+
+        .sdq-card-glow:hover {
+            transform: translateY(-4px);
+            border-color: rgba(255, 215, 0, 0.6);
+            box-shadow: 0 16px 36px rgba(255, 215, 0, 0.15);
+        }
+
+        .sdq-gold-badge {
+            background: linear-gradient(135deg, #FFD700 0%, #d4af37 100%);
+            color: #0a1929;
+            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.25);
+        }
+
+        /* Acordeón FAQ Transition */
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-out, opacity 0.3s ease-out;
+            opacity: 0;
+        }
+        .faq-item.active .faq-answer {
+            max-height: 600px;
+            opacity: 1;
+            transition: max-height 0.5s ease-in, opacity 0.4s ease-in;
+        }
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+
+        /* Tab Organos Activos */
+        .organ-tab.active {
+            background: linear-gradient(135deg, #132f4c 0%, #1e4976 100%);
+            border-color: #FFD700;
+            color: #FFD700;
+            box-shadow: 0 6px 20px rgba(255, 215, 0, 0.2);
+            transform: translateY(-2px);
+        }
+
+        /* Language Switcher Buttons */
+        .lang-btn {
+            transition: all 0.25s ease;
+        }
+        .lang-btn.active {
+            background-color: #FFD700;
+            color: #0a1929;
+            font-weight: 900;
+            box-shadow: 0 2px 10px rgba(255, 215, 0, 0.3);
+        }
+
+        /* Normalización de enlaces e inputs */
+        #sdq-landing-root a { text-decoration: none; }
+        #sdq-landing-root select, #sdq-landing-root input, #sdq-landing-root textarea { color-scheme: dark; }
+
+        /* Animación suave de pulso para WhatsApp */
+        @keyframes subtlePulse {
+            0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.6); }
+            50% { transform: scale(1.05); box-shadow: 0 0 0 12px rgba(34, 197, 94, 0); }
+        }
+        .animate-subtle-pulse {
+            animation: subtlePulse 2.8s infinite;
+        }
+
+        /* Ocultar barra de scroll en navegadores */
+        .sdq-no-scrollbar::-webkit-scrollbar { display: none; }
+        .sdq-no-scrollbar { -ms-overflow-style: none; }
+        @supports (scrollbar-width: none) {
+            .sdq-no-scrollbar { scrollbar-width: none; }
+        }
+    </style>
+
+    <!-- Schema.org Event Structured Data for Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Event",
+      "name": "Frecuencias de Sanación: El Sonido de los Órganos Internos con el Maestro Yuan Ming",
+      "startDate": "2026-11-20T09:00:00-06:00",
+      "endDate": "2026-11-22T18:00:00-06:00",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "Place",
+        "name": "Convento de San Joaquín",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Calz. Sta. Cruz Cacalco 15a, Miguel Hidalgo",
+          "addressLocality": "Ciudad de México",
+          "postalCode": "11260",
+          "addressRegion": "CDMX",
+          "addressCountry": "MX"
+        }
+      },
+      "image": [
+        "http://sembradoresdeqi.com/wp-content/uploads/2026/08/bannerwordpressyuanleft2026.webp"
+      ],
+      "description": "Taller Presencial de Zhineng Qigong enfocado en la vibración, mudras y sonidos de los órganos internos impartido por el Maestro Yuan Ming.",
+      "performer": {
+        "@type": "Person",
+        "name": "Maestro Yuan Ming (Teacher Yuan)"
+      },
+      "organizer": {
+        "@type": "Organization",
+        "name": "Sembradores de Qi",
+        "url": "https://sembradoresdeqi.com"
+      },
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "Paquete 1 (Curso + Comida + Coffee Break)",
+          "price": "7000",
+          "priceCurrency": "MXN",
+          "url": "https://sembradoresdeqi.com/formulario-taller-sonidos-opcion-1/",
+          "availability": "https://schema.org/InStock"
+        },
+        {
+          "@type": "Offer",
+          "name": "Paquete 2 (Curso + Hospedaje en Convento + Alimentos)",
+          "price": "10000",
+          "priceCurrency": "MXN",
+          "url": "https://sembradoresdeqi.com/formulario-taller-sonidos-opcion-2/",
+          "availability": "https://schema.org/LimitedAvailability"
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="bg-[#0a1929] text-white">
+
+    <div id="sdq-landing-root" class="antialiased text-white bg-[#0a1929] overflow-x-hidden relative w-full text-left selection:bg-[#FFD700] selection:text-[#0a1929]">
+
+        <!-- ========================================== -->
+        <!-- 1. NAVIGATION BAR WITH LANGUAGE SWITCHER   -->
+        <!-- ========================================== -->
+        <nav class="sticky top-0 left-0 w-full z-50 bg-[#0a1929]/90 backdrop-blur-md border-b border-white/10 transition-all duration-300">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+                <!-- Logo -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <img src="http://sembradoresdeqi.com/wp-content/uploads/2026/01/logo-sembradores-de-qi-zhineng-qigong.jpg" alt="Logo Sembradores de Qi" class="h-12 sm:h-14 w-auto object-contain rounded-lg border border-white/10 group-hover:border-[#FFD700]/50 transition duration-300">
+                    <div class="hidden sm:block">
+                        <span class="block text-xs font-black tracking-widest text-[#FFD700] uppercase">Sembradores de Qi</span>
+                        <span class="block text-[11px] text-gray-300 font-medium">Zhineng Qigong México</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Links & Language Switcher -->
+                <div class="hidden lg:flex items-center gap-6 text-sm font-semibold">
+                    <a href="#ciencia" data-i18n="nav_science" class="text-gray-300 hover:text-[#FFD700] transition">La Ciencia</a>
+                    <a href="#organos" data-i18n="nav_organs" class="text-gray-300 hover:text-[#FFD700] transition">Los 5 Órganos</a>
+                    <a href="#campo-qi" data-i18n="nav_field" class="text-gray-300 hover:text-[#FFD700] transition">El Campo de Qi</a>
+                    <a href="#maestro" data-i18n="nav_master" class="text-gray-300 hover:text-[#FFD700] transition">Maestro Yuan</a>
+                    <a href="#sede" data-i18n="nav_venue" class="text-gray-300 hover:text-[#FFD700] transition">Sede</a>
+                    <a href="#faq" data-i18n="nav_faq" class="text-gray-300 hover:text-[#FFD700] transition">Preguntas</a>
+                    <a href="#precios" data-i18n="nav_pricing" class="text-[#FFD700] hover:text-white transition font-bold">Planes de Inversión</a>
+
+                    <!-- Language Switcher Pill (Desktop) -->
+                    <div class="flex items-center bg-[#132f4c] p-1 rounded-full border border-white/15">
+                        <button type="button" class="lang-btn lang-btn-es active px-3 py-1 rounded-full text-xs font-bold text-gray-300" onclick="setLanguage('es')">
+                            🇲🇽 ES
+                        </button>
+                        <button type="button" class="lang-btn lang-btn-en px-3 py-1 rounded-full text-xs font-bold text-gray-300" onclick="setLanguage('en')">
+                            🇺🇸 EN
+                        </button>
+                    </div>
+
+                    <a href="#precios" data-i18n="nav_cta" class="bg-gradient-to-r from-[#132f4c] to-[#1d4670] text-white border border-[#FFD700] px-5 py-2.5 rounded-full hover:bg-[#FFD700] hover:text-[#0a1929] transition shadow-lg font-bold text-xs uppercase tracking-wider transform hover:scale-105">
+                        Asegurar mi Lugar
+                    </a>
+                </div>
+
+                <!-- Mobile Header Right (Lang + Hamburger) -->
+                <div class="flex lg:hidden items-center gap-2">
+                    <!-- Language Switcher Pill (Mobile Header) -->
+                    <div class="flex items-center bg-[#132f4c] p-0.5 rounded-full border border-white/15">
+                        <button type="button" class="lang-btn lang-btn-es active px-2.5 py-1 rounded-full text-[11px] font-bold text-gray-300" onclick="setLanguage('es')">
+                            ES
+                        </button>
+                        <button type="button" class="lang-btn lang-btn-en px-2.5 py-1 rounded-full text-[11px] font-bold text-gray-300" onclick="setLanguage('en')">
+                            EN
+                        </button>
+                    </div>
+
+                    <a href="#precios" data-i18n="nav_register_mobile" class="bg-[#FFD700] text-[#0a1929] px-3 py-1.5 rounded-full text-xs font-black uppercase tracking-wider">
+                        Registrarme
+                    </a>
+                    
+                    <button id="mobile-menu-btn" type="button" aria-label="Abrir menú de navegación" class="p-2 text-gray-300 hover:text-white focus:outline-none bg-[#132f4c]/60 rounded-xl border border-white/10">
+                        <svg id="menu-open-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                        <svg id="menu-close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Dropdown Drawer -->
+            <div id="mobile-menu-drawer" class="hidden lg:hidden bg-[#0a1929] border-b border-white/15 px-6 py-6 space-y-4 text-center transition-all duration-300 shadow-2xl">
+                <!-- Language Toggle Inside Drawer -->
+                <div class="flex items-center justify-center gap-3 pb-3 border-b border-white/10">
+                    <span class="text-xs text-gray-400 font-bold uppercase tracking-wider">Idioma / Language:</span>
+                    <div class="inline-flex bg-[#132f4c] p-1 rounded-full border border-white/15">
+                        <button type="button" class="lang-btn lang-btn-es active px-4 py-1 rounded-full text-xs font-bold text-gray-300" onclick="setLanguage('es')">
+                            🇲🇽 Español
+                        </button>
+                        <button type="button" class="lang-btn lang-btn-en px-4 py-1 rounded-full text-xs font-bold text-gray-300" onclick="setLanguage('en')">
+                            🇺🇸 English
+                        </button>
+                    </div>
+                </div>
+
+                <a href="#ciencia" data-i18n="nav_science" class="mobile-nav-link block py-2 text-base font-semibold text-gray-200 hover:text-[#FFD700] border-b border-white/5">La Ciencia del Sonido</a>
+                <a href="#organos" data-i18n="nav_organs" class="mobile-nav-link block py-2 text-base font-semibold text-gray-200 hover:text-[#FFD700] border-b border-white/5">Explorador de los 5 Órganos</a>
+                <a href="#campo-qi" data-i18n="nav_field" class="mobile-nav-link block py-2 text-base font-semibold text-gray-200 hover:text-[#FFD700] border-b border-white/5">La Sabiduría del Campo de Qi</a>
+                <a href="#maestro" data-i18n="nav_master" class="mobile-nav-link block py-2 text-base font-semibold text-gray-200 hover:text-[#FFD700] border-b border-white/5">Maestro Yuan Ming</a>
+                <a href="#sede" data-i18n="nav_venue" class="mobile-nav-link block py-2 text-base font-semibold text-gray-200 hover:text-[#FFD700] border-b border-white/5">Sede (Convento de San Joaquín)</a>
+                <a href="#faq" data-i18n="nav_faq" class="mobile-nav-link block py-2 text-base font-semibold text-gray-200 hover:text-[#FFD700] border-b border-white/5">Preguntas Frecuentes</a>
+                <a href="#precios" data-i18n="nav_pricing" class="mobile-nav-link block py-3 text-base font-black text-[#FFD700] bg-[#132f4c] rounded-xl border border-[#FFD700]/30 uppercase tracking-wider">
+                    Ver Planes de Inversión
+                </a>
+            </div>
+        </nav>
+
+        <!-- ========================================== -->
+        <!-- 2. HERO HEADER                             -->
+        <!-- ========================================== -->
+        <header class="sdq-hero">
+            <div class="sdq-hero-overlay"></div>
+            
+            <!-- TOP BLOCK: Centered Titles -->
+            <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-8 text-center space-y-3">
+                <!-- Mobile-Only Close-up Portrait -->
+                <div class="lg:hidden mb-4">
+                    <div class="relative inline-block">
+                        <div class="absolute -inset-1 rounded-full bg-gradient-to-r from-[#FFD700] to-yellow-500 opacity-75 blur-sm animate-pulse"></div>
+                        <img src="http://sembradoresdeqi.com/wp-content/uploads/2026/08/yuanmovil.webp" alt="Maestro Yuan Ming" class="relative rounded-full w-48 h-48 sm:w-60 sm:h-60 object-cover object-top border-4 border-[#FFD700] shadow-2xl mx-auto">
+                    </div>
+                </div>
+                
+                <div class="inline-flex items-center gap-2 text-xs sm:text-sm font-extrabold tracking-[0.25em] text-[#FFD700] bg-[#0a1929]/95 px-5 py-2.5 rounded-full border border-[#FFD700]/40 uppercase shadow-lg">
+                    <span>✨</span>
+                    <span data-i18n="hero_badge">Taller Presencial de Mudras y Sonidos de los Órganos</span>
+                </div>
+                <h1 data-i18n="hero_title" class="text-3xl sm:text-5xl lg:text-6xl font-black leading-tight text-white sdq-text-shadow tracking-tight">
+                    FRECUENCIAS DE SANACIÓN
+                </h1>
+                <p data-i18n="hero_subtitle" class="text-base sm:text-xl font-bold text-[#FFD700] uppercase tracking-wider sdq-text-shadow sdq-font-serif-elegant italic max-w-3xl mx-auto">
+                    El Código de Zhineng Qigong para los Órganos Internos
+                </p>
+            </div>
+
+            <!-- MIDDLE AREA: Espaciador transparente para que el Maestro Yuan sea visible -->
+            <div class="h-20 sm:h-48 lg:h-64 pointer-events-none"></div>
+
+            <!-- BOTTOM BLOCK: Llamados a la acción y botones -->
+            <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pb-8 flex flex-col items-center lg:items-end text-center lg:text-right space-y-4">
+                <div class="bg-[#0a1929]/80 backdrop-blur-md px-6 py-3 rounded-2xl border border-white/10 max-w-xl text-center lg:text-right">
+                    <p data-i18n-html="hero_date_venue" class="text-sm sm:text-base text-gray-200 font-semibold leading-snug">
+                        🏛️ <strong class="text-white">Noviembre 20 al 22, 2026</strong> • Convento de San Joaquín, CDMX<br>
+                        <span class="text-[#FFD700] text-xs sm:text-sm font-bold">Impartido en persona por el Maestro Yuan Ming</span>
+                    </p>
+                </div>
+
+                <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto pt-2">
+                    <a href="#precios" data-i18n="hero_btn_reserve" class="w-full sm:w-auto bg-[#132f4c] text-white border-2 border-[#FFD700] text-sm font-extrabold px-8 py-4 rounded-full hover:bg-[#FFD700] hover:text-[#0a1929] transition duration-300 shadow-2xl uppercase tracking-wider text-center transform hover:scale-105">
+                        Asegurar mi Lugar desde $1,000 MXN
+                    </a>
+                    <a href="#organos" data-i18n="hero_btn_explore" class="w-full sm:w-auto bg-black/40 border border-white/30 backdrop-blur-md hover:border-[#FFD700] hover:bg-white/10 text-white text-sm font-bold px-8 py-4 rounded-full transition uppercase tracking-wider text-center">
+                        Explorar los 5 Órganos ↓
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- ========================================== -->
+        <!-- 3. COUNTDOWN TIMER SECTION                 -->
+        <!-- ========================================== -->
+        <section class="py-8 bg-gradient-to-r from-[#0a1929] via-[#132f4c] to-[#0a1929] border-y border-[#FFD700]/20 relative z-20">
+            <div class="max-w-5xl mx-auto px-4 text-center space-y-4">
+                <div class="flex items-center justify-center gap-2">
+                    <span data-i18n="cd_title" class="text-xs sm:text-sm font-black text-[#FFD700] uppercase tracking-[0.2em] bg-[#0a1929] px-4 py-1 rounded-full border border-[#FFD700]/30">
+                        ⏳ Cuenta Regresiva para el Retiro
+                    </span>
+                </div>
+
+                <!-- Countdown Units -->
+                <div id="sdq-countdown" class="grid grid-cols-4 gap-2 sm:gap-4 max-w-xl mx-auto pt-2">
+                    <div class="bg-[#0a1929]/90 border border-white/10 p-3 sm:p-4 rounded-2xl shadow-lg">
+                        <span id="cd-days" class="block text-2xl sm:text-4xl font-black text-[#FFD700] sdq-font-display">--</span>
+                        <span data-i18n="cd_days_label" class="text-[11px] sm:text-xs text-gray-400 font-bold uppercase tracking-wider">Días</span>
+                    </div>
+                    <div class="bg-[#0a1929]/90 border border-white/10 p-3 sm:p-4 rounded-2xl shadow-lg">
+                        <span id="cd-hours" class="block text-2xl sm:text-4xl font-black text-white sdq-font-display">--</span>
+                        <span data-i18n="cd_hours_label" class="text-[11px] sm:text-xs text-gray-400 font-bold uppercase tracking-wider">Horas</span>
+                    </div>
+                    <div class="bg-[#0a1929]/90 border border-white/10 p-3 sm:p-4 rounded-2xl shadow-lg">
+                        <span id="cd-mins" class="block text-2xl sm:text-4xl font-black text-white sdq-font-display">--</span>
+                        <span data-i18n="cd_mins_label" class="text-[11px] sm:text-xs text-gray-400 font-bold uppercase tracking-wider">Minutos</span>
+                    </div>
+                    <div class="bg-[#0a1929]/90 border border-white/10 p-3 sm:p-4 rounded-2xl shadow-lg">
+                        <span id="cd-secs" class="block text-2xl sm:text-4xl font-black text-[#FFD700] sdq-font-display">--</span>
+                        <span data-i18n="cd_secs_label" class="text-[11px] sm:text-xs text-gray-400 font-bold uppercase tracking-wider">Segundos</span>
+                    </div>
+                </div>
+
+                <p data-i18n="cd_footer" class="text-xs text-gray-300 font-medium">
+                    📅 Viernes 20 al Domingo 22 de Noviembre, 2026 • Miguel Hidalgo, CDMX
+                </p>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- 4. LOCATION & BADGES SUMMARY               -->
+        <!-- ========================================== -->
+        <section class="py-12 bg-[#0a1929] border-b border-white/5 relative z-10 text-center">
+            <div class="max-w-5xl mx-auto px-6 space-y-6">
+                <p data-i18n-html="summary_quote" class="text-lg sm:text-xl md:text-2xl text-gray-200 font-medium leading-relaxed sdq-font-serif-elegant italic max-w-4xl mx-auto">
+                    "Sincroniza tus funciones biológicas y libera las emociones estancadas a través de la frecuencia de la voz y la geometría de los mudras.<br>Te esperamos en el histórico Convento de San Joaquín junto al Maestro Yuan Ming."
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 pt-2">
+                    <a href="https://maps.app.goo.gl/hketNg7o6dyBnopx6" target="_blank" rel="noopener" class="flex items-center justify-center gap-2 p-3.5 bg-[#132f4c]/60 hover:bg-[#132f4c] border border-[#FFD700]/30 hover:border-[#FFD700] rounded-2xl text-xs sm:text-sm font-extrabold text-[#FFD700] uppercase tracking-wider transition duration-300 shadow-md">
+                        <span data-i18n="badge_venue">⛪ CONVENTO DE SAN JOAQUÍN</span>
+                        <span class="text-[10px] text-gray-300 bg-[#0a1929] px-2 py-0.5 rounded-full">🗺️ Mapa</span>
+                    </a>
+                    
+                    <div class="flex items-center justify-center gap-2 p-3.5 bg-[#132f4c]/60 border border-white/10 rounded-2xl text-xs sm:text-sm font-extrabold text-white uppercase tracking-wider shadow-md">
+                        <span data-i18n="badge_date">📅 NOVIEMBRE 20 AL 22, 2026</span>
+                    </div>
+
+                    <div class="flex items-center justify-center gap-2 p-3.5 bg-[#132f4c]/60 border border-white/10 rounded-2xl text-xs sm:text-sm font-extrabold text-white uppercase tracking-wider shadow-md">
+                        <span data-i18n="badge_translation">🗣️ INGLÉS CON TRADUCCIÓN</span>
+                    </div>
+
+                    <div class="flex items-center justify-center gap-2 p-3.5 bg-[#132f4c]/60 border border-white/10 rounded-2xl text-xs sm:text-sm font-extrabold text-white uppercase tracking-wider shadow-md">
+                        <span data-i18n="badge_parking">🚗 CON ESTACIONAMIENTO</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- 5. SCIENCE OF SOUND & QI                   -->
+        <!-- ========================================== -->
+        <section id="ciencia" class="py-20 bg-[#0a1929] relative overflow-hidden">
+            <!-- Background Glow Decor -->
+            <div class="absolute top-1/2 left-0 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 data-i18n="sci_tag" class="text-xs sm:text-sm font-black text-[#FFD700] uppercase tracking-[0.3em] mb-3">La Ciencia del Sonido y el Qi</h2>
+                    <p data-i18n="sci_heading" class="text-3xl sm:text-4xl font-extrabold text-white">¿Por qué un sonido específico puede restaurar un órgano físico?</p>
+                    <div class="w-24 h-1 bg-[#FFD700] mx-auto mt-6 rounded-full"></div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    <div class="lg:col-span-7 space-y-6 text-gray-300 leading-relaxed text-base">
+                        <p data-i18n-html="sci_p1" class="text-lg text-white font-semibold">
+                            Según la <em>Teoría de las Tres Capas de la Materia</em> formulada por el Dr. Pang Ming, la información es el principio fundamental que organiza y estructura la energía (Qi) y la masa física.
+                        </p>
+                        <p data-i18n-html="sci_p2">
+                            Cada uno de tus cinco órganos internos (corazón, pulmones, hígado, bazo y riñones) posee una <strong>Firma Vibracional</strong> o frecuencia natural de energía saludable. Cuando acumulamos estrés crónico, miedo, duelo o resentimiento, esa frecuencia se distorsiona, generando bloqueos de Qi que eventualmente derivan en fatiga, inflamación y trastornos de salud.
+                        </p>
+                        <p data-i18n-html="sci_p3">
+                            En este taller aprenderás la entonación y resonancia exacta de los <strong>sonidos de Zhineng Qigong junto con la geometría corporal de los mudras</strong>. Esta combinación actúa como un diapasón biológico: las células del órgano vuelven a resonar en su estado de armonía original, disolviendo nudos energéticos y liberando la memoria emocional limitante.
+                        </p>
+                        
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4 text-white">
+                            <div class="flex items-start gap-4 bg-[#132f4c]/80 p-6 rounded-2xl border border-white/10 shadow-lg sdq-card-glow">
+                                <span class="text-4xl text-[#FFD700] shrink-0 select-none">🧬</span>
+                                <div>
+                                    <h4 data-i18n="sci_box1_title" class="text-white font-extrabold text-base mb-1 tracking-wide">Afinación Celular</h4>
+                                    <p data-i18n="sci_box1_desc" class="text-xs sm:text-sm text-gray-300 leading-relaxed">El sonido de la voz reestructura el espacio intracelular y el fluido de los tejidos.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4 bg-[#132f4c]/80 p-6 rounded-2xl border border-white/10 shadow-lg sdq-card-glow">
+                                <span class="text-4xl text-[#FFD700] shrink-0 select-none">🖐️</span>
+                                <div>
+                                    <h4 data-i18n="sci_box2_title" class="text-white font-extrabold text-base mb-1 tracking-wide">Geometría de Mudras</h4>
+                                    <p data-i18n="sci_box2_desc" class="text-xs sm:text-sm text-gray-300 leading-relaxed">Posturas manuales milimétricas que canalizan, sellan y protegen la energía de cada órgano.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Interactive Highlight Card -->
+                    <div class="lg:col-span-5">
+                        <div class="relative p-8 bg-gradient-to-br from-[#132f4c] to-[#0a1929] rounded-3xl border-2 border-[#FFD700]/30 shadow-2xl">
+                            <div class="flex items-center gap-3 border-b border-white/10 pb-4 mb-6">
+                                <span class="text-3xl">🎯</span>
+                                <div>
+                                    <h3 data-i18n="sci_card_title" class="text-xl font-bold text-white">Efectos de la Resonancia Orgánica</h3>
+                                    <span data-i18n="sci_card_subtitle" class="text-xs text-[#FFD700] font-semibold">Transformación Bioenergética Integral</span>
+                                </div>
+                            </div>
+                            <ul class="space-y-4 text-sm text-gray-200">
+                                <li class="flex items-start gap-3 bg-[#0a1929]/50 p-3 rounded-xl border border-white/5">
+                                    <span class="text-[#FFD700] font-bold text-base mt-0.5">🌊</span>
+                                    <span data-i18n-html="sci_card_item1"><strong class="text-white">Riñones:</strong> Disolución del miedo y el pánico; restauración de la vitalidad raíz y fuerza de voluntad.</span>
+                                </li>
+                                <li class="flex items-start gap-3 bg-[#0a1929]/50 p-3 rounded-xl border border-white/5">
+                                    <span class="text-[#FFD700] font-bold text-base mt-0.5">🪵</span>
+                                    <span data-i18n-html="sci_card_item2"><strong class="text-white">Hígado:</strong> Liberación de la frustración e ira; recuperación de la amabilidad, visión y desintoxicación.</span>
+                                </li>
+                                <li class="flex items-start gap-3 bg-[#0a1929]/50 p-3 rounded-xl border border-white/5">
+                                    <span class="text-[#FFD700] font-bold text-base mt-0.5">🫀</span>
+                                    <span data-i18n-html="sci_card_item3"><strong class="text-white">Corazón:</strong> Disolución de la ansiedad y el insomnio; despertar de la alegría pura y paz mental.</span>
+                                </li>
+                                <li class="flex items-start gap-3 bg-[#0a1929]/50 p-3 rounded-xl border border-white/5">
+                                    <span class="text-[#FFD700] font-bold text-base mt-0.5">🌾</span>
+                                    <span data-i18n-html="sci_card_item4"><strong class="text-white">Bazo y Páncreas:</strong> Descompresión del sobrepensamiento y preocupación; armonización de la digestión.</span>
+                                </li>
+                                <li class="flex items-start gap-3 bg-[#0a1929]/50 p-3 rounded-xl border border-white/5">
+                                    <span class="text-[#FFD700] font-bold text-base mt-0.5">🫁</span>
+                                    <span data-i18n-html="sci_card_item5"><strong class="text-white">Pulmones:</strong> Sanación del duelo y la tristeza arraigada; expansión de la capacidad respiratoria y valentía.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- 6. INTERACTIVE 5 ORGANS EXPLORER           -->
+        <!-- ========================================== -->
+        <section id="organos" class="py-20 bg-gradient-to-b from-[#0a1929] via-[#0d2238] to-[#0a1929] border-t border-white/10 relative overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="text-center max-w-3xl mx-auto mb-12">
+                    <span data-i18n="organs_tag" class="text-xs font-black text-[#FFD700] uppercase tracking-[0.3em] bg-[#132f4c] px-4 py-1.5 rounded-full border border-[#FFD700]/30 inline-block mb-3">
+                        Explorador Interactivo
+                    </span>
+                    <h2 data-i18n="organs_heading" class="text-3xl sm:text-4xl font-extrabold text-white">Los 5 Órganos y sus Frecuencias de Sanación</h2>
+                    <p data-i18n="organs_subtitle" class="text-gray-300 text-sm sm:text-base mt-3">Haz clic en cada órgano para descubrir su elemento, emoción y el poder regenerativo del sonido.</p>
+                </div>
+
+                <!-- Organ Switcher Tabs -->
+                <div class="flex flex-wrap justify-center gap-2 sm:gap-3 mb-10" role="tablist">
+                    <button role="tab" aria-selected="true" class="organ-tab active px-4 sm:px-6 py-3 rounded-2xl text-xs sm:text-sm font-extrabold border border-white/10 bg-[#132f4c]/50 text-gray-300 transition duration-300 flex items-center gap-2" data-organ="corazon">
+                        <span>🫀</span> <span id="tab-label-corazon">Corazón</span>
+                    </button>
+                    <button role="tab" aria-selected="false" class="organ-tab px-4 sm:px-6 py-3 rounded-2xl text-xs sm:text-sm font-extrabold border border-white/10 bg-[#132f4c]/50 text-gray-300 transition duration-300 flex items-center gap-2" data-organ="pulmones">
+                        <span>🫁</span> <span id="tab-label-pulmones">Pulmones</span>
+                    </button>
+                    <button role="tab" aria-selected="false" class="organ-tab px-4 sm:px-6 py-3 rounded-2xl text-xs sm:text-sm font-extrabold border border-white/10 bg-[#132f4c]/50 text-gray-300 transition duration-300 flex items-center gap-2" data-organ="higado">
+                        <span>🪵</span> <span id="tab-label-higado">Hígado</span>
+                    </button>
+                    <button role="tab" aria-selected="false" class="organ-tab px-4 sm:px-6 py-3 rounded-2xl text-xs sm:text-sm font-extrabold border border-white/10 bg-[#132f4c]/50 text-gray-300 transition duration-300 flex items-center gap-2" data-organ="bazo">
+                        <span>🌾</span> <span id="tab-label-bazo">Bazo y Páncreas</span>
+                    </button>
+                    <button role="tab" aria-selected="false" class="organ-tab px-4 sm:px-6 py-3 rounded-2xl text-xs sm:text-sm font-extrabold border border-white/10 bg-[#132f4c]/50 text-gray-300 transition duration-300 flex items-center gap-2" data-organ="rinones">
+                        <span>🌊</span> <span id="tab-label-rinones">Riñones</span>
+                    </button>
+                </div>
+
+                <!-- Organ Details Display Card -->
+                <div id="organ-detail-box" class="max-w-4xl mx-auto bg-[#132f4c]/70 rounded-3xl p-8 sm:p-12 border-2 border-[#FFD700]/30 shadow-2xl backdrop-blur-md transition-all duration-500">
+                    <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+                        <div class="md:col-span-4 text-center space-y-4">
+                            <div id="organ-icon-wrapper" class="w-32 h-32 mx-auto rounded-full bg-gradient-to-tr from-red-600/30 to-amber-500/20 border-2 border-[#FFD700] flex items-center justify-center text-6xl shadow-xl animate-pulse">
+                                🫀
+                            </div>
+                            <div>
+                                <span id="organ-element" class="text-xs font-black uppercase tracking-widest text-[#FFD700] bg-[#0a1929] px-3 py-1 rounded-full border border-[#FFD700]/30">Elemento Fuego</span>
+                                <h3 id="organ-name" class="text-2xl font-black text-white mt-2">Corazón</h3>
+                                <p id="organ-sub" class="text-xs text-gray-300">Centro Emocional y de la Conciencia</p>
+                            </div>
+                        </div>
+
+                        <div class="md:col-span-8 space-y-4 border-t md:border-t-0 md:border-l border-white/10 pt-6 md:pt-0 md:pl-8">
+                            <div>
+                                <h4 data-i18n="organ_label_emotion" class="text-xs font-bold text-gray-400 uppercase tracking-wider">Emoción a Transformar:</h4>
+                                <p id="organ-emotion" class="text-sm sm:text-base font-semibold text-rose-300 mt-0.5">
+                                    Ansiedad, agitación mental, dispersión, insomnio y exceso de excitación emocional.
+                                </p>
+                            </div>
+
+                            <div>
+                                <h4 data-i18n="organ_label_virtue" class="text-xs font-bold text-gray-400 uppercase tracking-wider">Estado de Sanación y Virtud:</h4>
+                                <p id="organ-virtue" class="text-sm sm:text-base font-semibold text-emerald-300 mt-0.5">
+                                    Paz profunda, serenidad imperturbable, compasión y alegría interior pura.
+                                </p>
+                            </div>
+
+                            <div>
+                                <h4 data-i18n="organ_label_sound" class="text-xs font-bold text-gray-400 uppercase tracking-wider">Efecto del Sonido y Mudra:</h4>
+                                <p id="organ-sound" class="text-xs sm:text-sm text-gray-200 leading-relaxed mt-0.5">
+                                    El sonido regula la presión arterial, armoniza el ritmo cardíaco y relaja el sistema nervioso central, permitiendo que la mente vuelva a descansar en calma en el pecho.
+                                </p>
+                            </div>
+
+                            <div class="pt-2">
+                                <a href="#precios" class="inline-flex items-center gap-2 text-xs font-bold text-[#FFD700] hover:underline uppercase tracking-wider">
+                                    <span data-i18n="organ_cta_learn">Aprender los sonidos en el retiro</span>
+                                    <span>→</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- 7. THE QI FIELD PHILOSOPHY (NO TIMELINE)   -->
+        <!-- ========================================== -->
+        <section id="campo-qi" class="py-20 bg-[#0a1929] border-t border-white/10 relative overflow-hidden">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center space-y-8">
+                <div class="max-w-3xl mx-auto space-y-3">
+                    <span data-i18n="field_tag" class="text-xs font-black text-[#FFD700] uppercase tracking-[0.3em] bg-[#132f4c] px-4 py-1.5 rounded-full border border-[#FFD700]/30 inline-block">
+                        Metodología Tradicional
+                    </span>
+                    <h2 data-i18n="field_heading" class="text-3xl sm:text-4xl font-extrabold text-white">La Sabiduría del Campo de Qi</h2>
+                    <p data-i18n="field_quote" class="text-lg text-[#FFD700] sdq-font-serif-elegant italic">
+                        "Una enseñanza viva que respira y se transforma con el grupo"
+                    </p>
+                </div>
+
+                <div class="bg-gradient-to-br from-[#132f4c]/80 to-[#0a1929] p-8 sm:p-12 rounded-3xl border border-[#FFD700]/30 shadow-2xl text-left space-y-6">
+                    <p data-i18n-html="field_p1" class="text-base sm:text-lg text-gray-200 leading-relaxed">
+                        En la auténtica práctica de <strong>Zhineng Qigong</strong>, el aprendizaje no sigue un itinerario rígido ni un programa mecánico por minutos. El <strong>Maestro Yuan Ming</strong> sostiene y sintoniza el <em>Campo de Qi colectivo (Campo de Energía)</em> de los practicantes, adaptando en tiempo real las secuencias, la modulación de las frecuencias vocales y la intensidad de los mudras de acuerdo al estado energético, emocional y físico del grupo.
+                    </p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4">
+                        <div class="bg-[#0a1929]/70 p-6 rounded-2xl border border-white/10 space-y-2">
+                            <span class="text-3xl">🌐</span>
+                            <h4 data-i18n="field_pillar1_title" class="text-white font-extrabold text-base">1. Apertura del Campo</h4>
+                            <p data-i18n="field_pillar1_desc" class="text-xs text-gray-300 leading-relaxed">Sintonización profunda con la energía del universo para elevar el nivel de conciencia y armonía grupal.</p>
+                        </div>
+                        <div class="bg-[#0a1929]/70 p-6 rounded-2xl border border-white/10 space-y-2">
+                            <span class="text-3xl">🔊</span>
+                            <h4 data-i18n="field_pillar2_title" class="text-white font-extrabold text-base">2. Afinación Viva</h4>
+                            <p data-i18n="field_pillar2_desc" class="text-xs text-gray-300 leading-relaxed">Transmisión directa de la resonancia exacta de cada sonido y corrección de la postura de mudras.</p>
+                        </div>
+                        <div class="bg-[#0a1929]/70 p-6 rounded-2xl border border-white/10 space-y-2">
+                            <span class="text-3xl">🌿</span>
+                            <h4 data-i18n="field_pillar3_title" class="text-white font-extrabold text-base">3. Integración Celular</h4>
+                            <p data-i18n="field_pillar3_desc" class="text-xs text-gray-300 leading-relaxed">Asimilación de la práctica para que puedas continuar sanando y afinando tus órganos en casa.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- 8. INSTRUCTOR SECTION: TEACHER YUAN        -->
+        <!-- ========================================== -->
+        <section id="maestro" class="py-20 bg-[#132f4c]/30 border-y border-white/5">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    <div class="lg:col-span-4 flex justify-center">
+                        <div class="relative">
+                            <div class="absolute -inset-1 rounded-full bg-gradient-to-r from-[#FFD700] to-yellow-500 opacity-75 blur-md animate-pulse"></div>
+                            <img src="http://sembradoresdeqi.com/wp-content/uploads/2026/08/yuancloseqimini.webp" alt="Maestro Yuan Ming" class="relative rounded-full w-64 h-64 sm:w-72 sm:h-72 object-cover border-4 border-[#0a1929] shadow-2xl">
+                        </div>
+                    </div>
+                    <div class="lg:col-span-8 space-y-6 text-left">
+                        <div class="flex flex-wrap gap-2">
+                            <span data-i18n="master_tag" class="text-xs font-bold text-[#FFD700] uppercase tracking-widest bg-[#132f4c] px-3.5 py-1.5 rounded-full border border-white/10">Instructor Titular</span>
+                            <span data-i18n="master_lang_badge" class="text-xs font-bold text-white uppercase tracking-widest bg-emerald-700/80 px-3.5 py-1.5 rounded-full border border-emerald-500/20">Inglés con Traducción al Español</span>
+                        </div>
+                        <h2 data-i18n="master_name" class="text-3xl sm:text-4xl font-extrabold text-white">Maestro Yuan Ming (Teacher Yuan)</h2>
+                        <p data-i18n-html="master_p1" class="text-gray-300 leading-relaxed">
+                            Con décadas de práctica ininterrumpida y estudio riguroso de la anatomía sutil humana, el <strong>Maestro Yuan Ming</strong> es reconocido internacionalmente por su precisión técnica, calidez pedagógica y profundidad en la enseñanza del Zhineng Qigong. Su trayectoria destaca por tender un puente claro y accesible entre la ciencia formulada por el Dr. Pang Ming y las necesidades de salud del practicante contemporáneo.
+                        </p>
+                        <p data-i18n-html="master_p2" class="text-gray-300 leading-relaxed">
+                            Su pedagogía prescinde de dogmas o misticismo, basándose siempre en la comprobación vivencial de los cambios biológicos y emocionales que ocurren al armonizar el flujo de energía. Es reconocido por sostener campos de sanación con gran calidez humana y enfoque clínico.
+                        </p>
+                        <div class="pt-4 border-t border-white/10 flex items-center gap-3">
+                            <span data-i18n="master_quote" class="text-base italic sdq-font-serif-elegant text-[#FFD700]">"La afinación de la voz y la geometría del cuerpo son las tecnologías más puras de autocuración."</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- 9. VENUE / SANTUARIO: SAN JOAQUÍN          -->
+        <!-- ========================================== -->
+        <section id="sede" class="py-20 bg-[#0a1929] relative overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                    <span data-i18n="venue_tag" class="text-xs font-black text-[#FFD700] uppercase tracking-[0.3em] bg-[#132f4c] px-4 py-1.5 rounded-full border border-[#FFD700]/30 inline-block">
+                        El Santuario de Práctica
+                    </span>
+                    <h2 data-i18n="venue_heading" class="text-3xl sm:text-4xl font-extrabold text-white">Convento de San Joaquín, Tacuba, CDMX</h2>
+                    <p data-i18n="venue_sub" class="text-gray-300 text-sm sm:text-base">Un remanso de paz histórica y silencio protegido en el corazón de la Ciudad de México.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-[#132f4c]/50 p-8 rounded-3xl border border-white/10 space-y-4 sdq-card-glow text-left">
+                        <div class="text-4xl text-[#FFD700]">🏛️</div>
+                        <h3 data-i18n="venue_box1_title" class="text-xl font-bold text-white">Entorno de Paz y Silencio</h3>
+                        <p data-i18n="venue_box1_desc" class="text-sm text-gray-300 leading-relaxed">
+                            Sus claustros y arquitectura colonial aíslan el bullicio urbano, creando una acústica idónea para la resonancia de los sonidos y la introspección.
+                        </p>
+                    </div>
+
+                    <div class="bg-[#132f4c]/50 p-8 rounded-3xl border border-white/10 space-y-4 sdq-card-glow text-left">
+                        <div class="text-4xl text-[#FFD700]">🌳</div>
+                        <h3 data-i18n="venue_box2_title" class="text-xl font-bold text-white">Jardines y Salón Amplio</h3>
+                        <p data-i18n="venue_box2_desc" class="text-sm text-gray-300 leading-relaxed">
+                            Cuenta con amplio salon de práctica y áreas verdes para caminar.
+                        </p>
+                    </div>
+
+                    <div class="bg-[#132f4c]/50 p-8 rounded-3xl border border-white/10 space-y-4 sdq-card-glow text-left">
+                        <div class="text-4xl text-[#FFD700]">🚗</div>
+                        <h3 data-i18n="venue_box3_title" class="text-xl font-bold text-white">Acceso y Estacionamiento</h3>
+                        <p data-i18n="venue_box3_desc" class="text-sm text-gray-300 leading-relaxed">
+                            Ubicado en Calz. Sta. Cruz Cacalco 15a, con estacionamiento interior seguro dentro del recinto para todos los asistentes.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mt-10 text-center">
+                    <a href="https://maps.app.goo.gl/hketNg7o6dyBnopx6" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-[#132f4c] hover:bg-[#FFD700] hover:text-[#0a1929] text-white border border-[#FFD700]/50 font-bold px-6 py-3.5 rounded-full text-xs sm:text-sm uppercase tracking-wider transition duration-300 shadow-lg">
+                        <span data-i18n="venue_map_btn">📍 Ver Ubicación en Google Maps (Calz. Sta. Cruz Cacalco 15a, CDMX)</span>
+                        <span>↗</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- 10. INVESTMENT & PRICING PLANS             -->
+        <!-- ========================================== -->
+        <section id="precios" class="py-20 bg-[#132f4c]/30 border-t border-white/10 relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                    <h2 data-i18n="price_tag" class="text-xs sm:text-sm font-black text-[#FFD700] uppercase tracking-[0.3em]">Tu Entrada al Taller</h2>
+                    <p data-i18n="price_heading" class="text-3xl sm:text-4xl font-extrabold text-white">Planes de Inversión Especiales</p>
+                    
+                    <!-- Apartado Banner -->
+                    <div class="w-full max-w-3xl mx-auto mt-4 px-6 py-4 bg-gradient-to-r from-amber-400 to-[#FFD700] text-[#0a1929] font-black rounded-2xl shadow-xl shadow-yellow-500/15 border-2 border-white/30 transform transition hover:scale-[1.01]">
+                        <div class="flex flex-col sm:flex-row items-center justify-center gap-2.5 text-center text-sm md:text-base tracking-wide bg-[#0a1929] text-[#FFD700] py-2.5 px-4 rounded-xl border border-[#FFD700]/20 font-extrabold">
+                            <span class="text-xl animate-bounce">🔥</span>
+                            <span data-i18n="price_apartado">¡APARTA TU LUGAR DESDE HOY CON SÓLO $1,000.00 MXN!</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pricing Cards Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch max-w-4xl mx-auto">
+                    <!-- Option 1: Paquete 1 -->
+                    <div class="bg-[#132f4c]/50 rounded-3xl p-8 flex flex-col justify-between sdq-card-glow relative overflow-hidden backdrop-blur-sm border border-white/10">
+                        <div>
+                            <div class="flex items-center justify-between">
+                                <h3 data-i18n="pkg1_title" class="text-2xl font-bold text-white">Paquete 1</h3>
+                            </div>
+                            <p data-i18n="pkg1_sub" class="text-xs text-gray-300 mt-2">Ideal para residentes de CDMX o pernocta externa</p>
+                            
+                            <div class="my-6">
+                                <span class="text-sm text-gray-400 line-through block font-medium">$9,500.00 MXN</span>
+                                <span class="text-4xl sm:text-5xl font-black text-[#FFD700] drop-shadow-[0_0_10px_rgba(255,215,0,0.2)] sdq-font-display">$7,000</span>
+                                <span data-i18n="pkg1_promo" class="text-xs text-gray-300"> MXN (Precio Promo)</span>
+                            </div>
+
+                            <div class="space-y-3.5 text-sm text-gray-200 border-t border-white/10 pt-5">
+                                <p class="flex items-start gap-2.5">
+                                    <span class="text-emerald-400 font-bold">✓</span>
+                                    <span data-i18n-html="pkg1_item1"><strong>Curso completo de 3 días</strong> con el Maestro Yuan</span>
+                                </p>
+                                <p class="flex items-start gap-2.5">
+                                    <span class="text-emerald-400 font-bold">✓</span>
+                                    <span data-i18n-html="pkg1_item2">Servicio de <strong>Coffee Break continuo</strong></span>
+                                </p>
+                                <p class="flex items-start gap-2.5">
+                                    <span class="text-emerald-400 font-bold">✓</span>
+                                    <span data-i18n-html="pkg1_item3"><strong>1 Comida al día</strong> en el Convento</span>
+                                </p>
+                                <p class="flex items-start gap-2.5">
+                                    <span class="text-emerald-400 font-bold">✓</span>
+                                    <span data-i18n-html="pkg1_item4"><strong>Estacionamiento disponible</strong> en el recinto</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mt-8">
+                            <a href="https://sembradoresdeqi.com/formulario-taller-sonidos-opcion-1/" data-i18n="pkg1_btn" class="block text-center py-4 bg-transparent border-2 border-white/30 hover:border-[#FFD700] hover:bg-[#FFD700] hover:text-[#0a1929] text-white font-black rounded-2xl text-xs sm:text-sm transition duration-300 uppercase tracking-wider shadow-lg">
+                                Elegir Paquete 1 ($7,000 MXN)
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Option 2: Paquete 2 -->
+                    <div class="bg-gradient-to-b from-[#132f4c] to-[#0f2744] rounded-3xl p-8 flex flex-col justify-between sdq-card-glow relative overflow-hidden border-2 border-[#FFD700] shadow-2xl backdrop-blur-md">
+                        <div>
+                            <div class="flex items-center justify-between pt-2">
+                                <h3 data-i18n="pkg2_title" class="text-2xl font-black text-[#FFD700]">Paquete 2</h3>
+                            </div>
+                            <p data-i18n="pkg2_sub" class="text-xs text-amber-200 mt-2 font-semibold">Con Hospedaje y Alimentación Completa</p>
+                            
+                            <div class="my-6">
+                                <span class="text-sm text-gray-400 line-through block font-medium">$12,500.00 MXN</span>
+                                <span class="text-4xl sm:text-5xl font-black text-[#FFD700] drop-shadow-[0_0_15px_rgba(255,215,0,0.35)] sdq-font-display">$10,000</span>
+                                <span data-i18n="pkg1_promo" class="text-xs text-gray-300"> MXN (Precio Promo)</span>
+                            </div>
+
+                            <div class="p-3 bg-amber-400/10 rounded-xl border border-amber-400/30 mb-4">
+                                <p data-i18n-html="pkg2_scarcity" class="text-xs text-amber-300 font-extrabold flex items-center gap-1.5">
+                                    <span>⚠️</span> <span>Limitado a solo 10 habitaciones dobles en el Convento</span>
+                                </p>
+                            </div>
+
+                            <div class="space-y-3.5 text-sm text-gray-100 border-t border-white/20 pt-5">
+                                <p class="flex items-start gap-2.5">
+                                    <span class="text-[#FFD700] font-bold">✓</span>
+                                    <span data-i18n-html="pkg2_item1"><strong>Hospedaje en el Convento</strong> (2 noches)</span>
+                                </p>
+                                <p class="flex items-start gap-2.5">
+                                    <span class="text-[#FFD700] font-bold">✓</span>
+                                    <span data-i18n-html="pkg2_item2"><strong>Alimentación completa</strong> (desayunos, comidas y cenas)</span>
+                                </p>
+                                <p class="flex items-start gap-2.5">
+                                    <span class="text-[#FFD700] font-bold">✓</span>
+                                    <span data-i18n-html="pkg2_item3"><strong>Curso completo de 3 días</strong> con el Maestro Yuan</span>
+                                </p>
+                                <p class="flex items-start gap-2.5">
+                                    <span class="text-[#FFD700] font-bold">✓</span>
+                                    <span data-i18n-html="pkg2_item4">Servicio de Coffee Break continuo</span>
+                                </p>
+                                <p class="flex items-start gap-2.5">
+                                    <span class="text-[#FFD700] font-bold">✓</span>
+                                    <span data-i18n-html="pkg2_item5"><strong>Estacionamiento disponible</strong> en el recinto</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mt-8">
+                            <a href="https://sembradoresdeqi.com/formulario-taller-sonidos-opcion-2/" data-i18n="pkg2_btn" class="block text-center py-4 bg-[#FFD700] text-[#0a1929] hover:bg-[#e6c200] font-black rounded-2xl text-xs sm:text-sm transition duration-300 uppercase tracking-wider shadow-xl transform hover:scale-[1.02]">
+                                Elegir Paquete 2 ($10,000 MXN)
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta y Pagos Info Box -->
+                <div id="tarjetas" class="w-full max-w-3xl mx-auto mt-12 p-6 bg-[#132f4c]/90 border-2 border-[#FFD700]/30 rounded-2xl shadow-xl backdrop-blur-sm text-center space-y-3 transform transition hover:scale-[1.01]">
+                    <div class="flex flex-col sm:flex-row items-center justify-center gap-2">
+                        <span class="text-2xl">💳</span>
+                        <h4 data-i18n="card_info_title" class="text-sm sm:text-base md:text-lg font-black text-white uppercase tracking-wider">
+                            Aceptamos Pagos con Tarjeta de Crédito y Débito
+                        </h4>
+                    </div>
+                    <p data-i18n="card_info_desc" class="text-xs sm:text-sm text-gray-200 leading-relaxed font-medium">
+                        *Nota: Si eliges pagar a meses con intereses, considera que los cargos adicionales o comisiones bancarias que puedan generarse corren por tu cuenta, ya que dependen directamente de tu banco emisor.
+                    </p>
+                    <p data-i18n="card_info_important" class="text-xs text-[#FFD700] font-black tracking-wider uppercase pt-2.5 border-t border-white/10 mt-1">
+                        💡 IMPORTANTE: Podrás seleccionar tu método de pago preferido en el Formulario de Inscripción.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- 11. DIRECT FINANCING / PLANES DE ABONOS    -->
+        <!-- ========================================== -->
+        <section id="financiamiento" class="py-20 bg-[#0a1929] border-t border-white/10 relative overflow-hidden">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 relative z-10">
+                <div class="bg-gradient-to-br from-[#132f4c] to-[#0a1929] rounded-3xl p-8 sm:p-12 border border-[#FFD700]/30 shadow-2xl">
+                    <div class="text-center max-w-2xl mx-auto mb-10 space-y-2">
+                        <span data-i18n="fin_tag" class="text-xs font-black text-[#FFD700] uppercase tracking-widest bg-[#0a1929] px-3.5 py-1.5 rounded-full border border-[#FFD700]/20">Facilidad de Pago Directo</span>
+                        <h3 data-i18n="fin_heading" class="text-2xl sm:text-3xl font-extrabold text-white">Plan de Abonos con Sembradores de Qi</h3>
+                        <p data-i18n="fin_sub" class="text-xs sm:text-sm text-gray-300 max-w-xl mx-auto font-medium">Aparta tu lugar hoy y liquida en cómodas mensualidades fijas antes del retiro.</p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10 text-left">
+                        <!-- Option 1 Financing -->
+                        <div class="bg-[#0a1929]/70 p-6 rounded-2xl border border-white/10 space-y-4">
+                            <h4 data-i18n="fin_p1_title" class="text-lg font-bold text-[#FFD700]">Plan de Abonos - Paquete 1</h4>
+                            <div class="space-y-3 text-sm text-gray-200">
+                                <p class="flex items-start gap-2">
+                                    <span class="text-emerald-400 mt-0.5">📌</span>
+                                    <span data-i18n-html="fin_p1_init"><strong>Apartado inicial:</strong> $1,000.00 MXN</span>
+                                </p>
+                                <p class="flex items-start gap-2">
+                                    <span class="text-emerald-400 mt-0.5">📅</span>
+                                    <span data-i18n-html="fin_p1_monthly"><strong>3 mensualidades:</strong> de $2,000.00 MXN</span>
+                                </p>
+                                <p data-i18n="fin_p1_total" class="text-xs text-gray-400 pt-1">Total de inversión: $7,000.00 MXN</p>
+                            </div>
+                        </div>
+
+                        <!-- Option 2 Financing -->
+                        <div class="bg-[#0a1929]/70 p-6 rounded-2xl border border-[#FFD700]/30 space-y-4 shadow-lg shadow-yellow-500/5">
+                            <h4 data-i18n="fin_p2_title" class="text-lg font-bold text-white">Plan de Abonos - Paquete 2</h4>
+                            <div class="space-y-3 text-sm text-gray-200">
+                                <p class="flex items-start gap-2">
+                                    <span class="text-emerald-400 mt-0.5">📌</span>
+                                    <span data-i18n-html="fin_p2_init"><strong>Apartado inicial:</strong> $1,000.00 MXN</span>
+                                </p>
+                                <p class="flex items-start gap-2">
+                                    <span class="text-emerald-400 mt-0.5">📅</span>
+                                    <span data-i18n-html="fin_p2_monthly"><strong>3 mensualidades:</strong> de $3,000.00 MXN</span>
+                                </p>
+                                <p data-i18n="fin_p2_total" class="text-xs text-gray-400 pt-1">Total de inversión: $10,000.00 MXN</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Deadline Alert -->
+                    <div data-i18n-html="fin_deadline" class="text-center font-bold text-gray-200 text-xs sm:text-base mb-8">
+                        📅 Fecha límite para liquidar el pago total: <span class="bg-[#132f4c] text-[#FFD700] px-3 py-1 rounded-md ml-1 inline-block font-extrabold shadow-sm border border-white/10">antes del 15 de noviembre de 2026</span>
+                    </div>
+
+                    <!-- Important Information Banner -->
+                    <div class="p-6 sm:p-8 bg-[#1a365d]/90 border-2 border-amber-500 rounded-2xl space-y-3 text-left shadow-2xl">
+                        <p data-i18n="fin_box_title" class="font-black text-amber-300 text-sm sm:text-base flex items-center gap-2">
+                            <span>📌</span> <span>Información Importante sobre tu Plan Directo:</span>
+                        </p>
+                        <ul class="list-disc pl-5 space-y-2 text-xs sm:text-sm text-gray-100 font-medium">
+                            <li data-i18n-html="fin_box_item1"><strong class="text-white">Flexibilidad:</strong> Puedes realizar abonos mensuales vía transferencia electrónica o depósito bancario.</li>
+                            <li data-i18n-html="fin_box_item2"><strong class="text-white">Seguridad de tu lugar:</strong> Una vez realizado el apartado de $1,000 MXN y llenado tu formulario, tu lugar queda garantizado.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- 12. FREQUENTLY ASKED QUESTIONS (FAQ)       -->
+        <!-- ========================================== -->
+        <section id="faq" class="py-20 bg-[#0a1929] border-t border-white/10 relative">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 relative z-10">
+                <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                    <span data-i18n="faq_tag" class="text-xs font-black text-[#FFD700] uppercase tracking-[0.3em] bg-[#132f4c] px-4 py-1.5 rounded-full border border-[#FFD700]/30 inline-block">
+                        Resolvemos tus Dudas
+                    </span>
+                    <h2 data-i18n="faq_heading" class="text-3xl sm:text-4xl font-extrabold text-white">Preguntas Frecuentes</h2>
+                    <p data-i18n="faq_sub" class="text-gray-300 text-sm sm:text-base">Todo lo que necesitas saber antes de asegurar tu lugar en el taller.</p>
+                </div>
+
+                <div class="space-y-4">
+                    <!-- FAQ 1 -->
+                    <div class="faq-item bg-[#132f4c]/50 rounded-2xl border border-white/10 overflow-hidden transition-all duration-300">
+                        <button type="button" class="faq-question w-full p-6 text-left flex items-center justify-between gap-4 font-bold text-white text-base sm:text-lg focus:outline-none">
+                            <span data-i18n="faq_q1">¿Necesito experiencia previa en Zhineng Qigong para participar?</span>
+                            <span class="faq-icon text-[#FFD700] text-xl transition-transform duration-300">▼</span>
+                        </button>
+                        <div data-i18n="faq_a1" class="faq-answer px-6 pb-6 text-sm sm:text-base text-gray-300 leading-relaxed border-t border-white/5 pt-4">
+                            No, el taller está diseñado tanto para personas que inician desde cero como para instructores y practicantes experimentados. La enseñanza de los sonidos y mudras se explica paso a paso de forma vivencial y comprensible.
+                        </div>
+                    </div>
+
+                    <!-- FAQ 2 -->
+                    <div class="faq-item bg-[#132f4c]/50 rounded-2xl border border-white/10 overflow-hidden transition-all duration-300">
+                        <button type="button" class="faq-question w-full p-6 text-left flex items-center justify-between gap-4 font-bold text-white text-base sm:text-lg focus:outline-none">
+                            <span data-i18n="faq_q2">¿Cómo funciona la dinámica de traducción si el Maestro enseña en inglés?</span>
+                            <span class="faq-icon text-[#FFD700] text-xl transition-transform duration-300">▼</span>
+                        </button>
+                        <div data-i18n="faq_a2" class="faq-answer px-6 pb-6 text-sm sm:text-base text-gray-300 leading-relaxed border-t border-white/5 pt-4">
+                            Contamos con traducción simultánea profesional y fluida al español por parte de la Instructora Sandra Ramos durante todo el taller. La instrucción teórica y las correcciones de postura se transmiten con total claridad para toda la comunidad hispanohablante.
+                        </div>
+                    </div>
+
+                    <!-- FAQ 3 -->
+                    <div class="faq-item bg-[#132f4c]/50 rounded-2xl border border-white/10 overflow-hidden transition-all duration-300">
+                        <button type="button" class="faq-question w-full p-6 text-left flex items-center justify-between gap-4 font-bold text-white text-base sm:text-lg focus:outline-none">
+                            <span data-i18n="faq_q3">¿Qué incluye el Paquete 2 con Hospedaje en el Convento?</span>
+                            <span class="faq-icon text-[#FFD700] text-xl transition-transform duration-300">▼</span>
+                        </button>
+                        <div data-i18n="faq_a3" class="faq-answer px-6 pb-6 text-sm sm:text-base text-gray-300 leading-relaxed border-t border-white/5 pt-4">
+                            Incluye el curso completo de 3 días, hospedaje de 2 noches dentro del Convento de San Joaquín (en habitaciones dobles confortables) y alimentos. El cupo está estrictamente limitado a 10 habitaciones dobles.
+                        </div>
+                    </div>
+
+                    <!-- FAQ 4 -->
+                    <div class="faq-item bg-[#132f4c]/50 rounded-2xl border border-white/10 overflow-hidden transition-all duration-300">
+                        <button type="button" class="faq-question w-full p-6 text-left flex items-center justify-between gap-4 font-bold text-white text-base sm:text-lg focus:outline-none">
+                            <span data-i18n="faq_q4">¿Puedo pagar a plazos o mediante mensualidades?</span>
+                            <span class="faq-icon text-[#FFD700] text-xl transition-transform duration-300">▼</span>
+                        </button>
+                        <div data-i18n-html="faq_a4" class="faq-answer px-6 pb-6 text-sm sm:text-base text-gray-300 leading-relaxed border-t border-white/5 pt-4">
+                            ¡Sí! Puedes apartar tu lugar con sólo <strong>$1,000.00 MXN</strong> y cubrir el resto en 3 abonos mensuales fijos directamente con nosotros (sin comisiones bancarias), siempre que el total quede cubierto antes del 15 de noviembre de 2026.
+                        </div>
+                    </div>
+
+                    <!-- FAQ 5 -->
+                    <div class="faq-item bg-[#132f4c]/50 rounded-2xl border border-white/10 overflow-hidden transition-all duration-300">
+                        <button type="button" class="faq-question w-full p-6 text-left flex items-center justify-between gap-4 font-bold text-white text-base sm:text-lg focus:outline-none">
+                            <span data-i18n="faq_q5">¿Qué ropa y materiales debo llevar para el taller?</span>
+                            <span class="faq-icon text-[#FFD700] text-xl transition-transform duration-300">▼</span>
+                        </button>
+                        <div data-i18n="faq_a5" class="faq-answer px-6 pb-6 text-sm sm:text-base text-gray-300 leading-relaxed border-t border-white/5 pt-4">
+                            Recomendamos vestir ropa holgada y cómoda (preferentemente de algodón o telas transpirables), calcetines cómodos o calzado de suela plana, una libreta para tus notas personales y un termo para agua o té.
+                        </div>
+                    </div>
+
+                    <!-- FAQ 6 -->
+                    <div class="faq-item bg-[#132f4c]/50 rounded-2xl border border-white/10 overflow-hidden transition-all duration-300">
+                        <button type="button" class="faq-question w-full p-6 text-left flex items-center justify-between gap-4 font-bold text-white text-base sm:text-lg focus:outline-none">
+                            <span data-i18n="faq_q6">¿Hay estacionamiento seguro dentro del Convento de San Joaquín?</span>
+                            <span class="faq-icon text-[#FFD700] text-xl transition-transform duration-300">▼</span>
+                        </button>
+                        <div data-i18n="faq_a6" class="faq-answer px-6 pb-6 text-sm sm:text-base text-gray-300 leading-relaxed border-t border-white/5 pt-4">
+                            Sí, el Convento cuenta con estacionamiento privado y vigilado dentro de sus instalaciones sin costo adicional para los asistentes al retiro.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- 13. FINAL REGISTRATION CALL TO ACTION      -->
+        <!-- ========================================== -->
+        <section id="registro" class="py-24 bg-gradient-to-b from-[#0a1929] via-[#0d2238] to-[#0a1929] border-t border-white/10 relative overflow-hidden text-center">
+            <div class="max-w-3xl mx-auto px-6 relative z-10 space-y-6">
+                <span data-i18n="cta_tag" class="text-xs font-bold text-[#FFD700] uppercase tracking-widest bg-[#132f4c] px-4 py-2 rounded-full border border-[#FFD700]/30 inline-block">
+                    Paso Final
+                </span>
+                <h2 data-i18n="cta_heading" class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">¿Listo para transformar tu salud y energía?</h2>
+                <p data-i18n="cta_sub" class="text-sm sm:text-base text-gray-300 max-w-xl mx-auto leading-relaxed">
+                    Selecciona tu paquete de preferencia para iniciar tu pre-registro oficial y apartar tu lugar con el Maestro Yuan Ming.
+                </p>
+                <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="https://sembradoresdeqi.com/formulario-taller-sonidos-opcion-1/" data-i18n="cta_btn_p1" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-[#132f4c] text-white border-2 border-[#FFD700] text-sm sm:text-base font-black px-8 py-4 rounded-2xl hover:bg-[#FFD700] hover:text-[#0a1929] transition duration-300 shadow-2xl hover:scale-105 transform uppercase tracking-wider">
+                        <span>✨ Elegir Paquete 1 ($7,000 MXN)</span>
+                        <span class="text-lg">👉</span>
+                    </a>
+                    <a href="https://sembradoresdeqi.com/formulario-taller-sonidos-opcion-2/" data-i18n="cta_btn_p2" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-[#FFD700] text-[#0a1929] border-2 border-[#FFD700] text-sm sm:text-base font-black px-8 py-4 rounded-2xl hover:bg-[#e6c200] hover:text-[#0a1929] transition duration-300 shadow-2xl hover:scale-105 transform uppercase tracking-wider">
+                        <span>✨ Elegir Paquete 2 ($10,000 MXN)</span>
+                        <span class="text-lg">👉</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- 14. FOOTER                                 -->
+        <!-- ========================================== -->
+        <footer class="py-12 bg-[#0a1929] border-t border-white/10 text-center relative z-10 space-y-6">
+            <div class="max-w-md mx-auto px-4">
+                <a id="footer-whatsapp-link" href="https://wa.me/525533106161?text=Hola,%20solicito%20informes%20sobre%20el%20Taller%20de%20Mudras%20y%20Sonidos%20con%20el%20Maestro%20Yuan%20Ming" target="_blank" rel="noopener" class="w-full flex items-center justify-center gap-3 text-sm sm:text-base font-extrabold text-white bg-emerald-600 hover:bg-emerald-700 transition duration-300 px-6 py-4 rounded-full shadow-lg shadow-emerald-700/20 border border-emerald-500/30 transform hover:-translate-y-0.5">
+                    <span class="text-xl">💬</span>
+                    <span data-i18n="footer_chat_btn">¿Dudas? Chat de Informes WhatsApp: +52 55 3310 6161</span>
+                </a>
+            </div>
+            
+            <div class="text-gray-400 text-xs space-y-2 max-w-xl mx-auto px-4">
+                <p data-i18n="footer_copy">&copy; 2026 Sembradores de Qi. Todos los derechos reservados. Practica con el corazón, comparte con compasión.</p>
+                <p data-i18n="footer_sub" class="text-gray-500 text-[11px]">Zhineng Qigong México • Convento de San Joaquín, CDMX</p>
+            </div>
+        </footer>
+
+        <!-- ========================================== -->
+        <!-- 15. FLOATING ELEMENTS                      -->
+        <!-- ========================================== -->
+        <!-- Floating Registration Button (Direct to Pricing) -->
+        <aside id="floating-cta" class="fixed bottom-4 left-4 sm:bottom-6 sm:left-6 z-40 transition-all duration-300 max-w-[calc(100vw-5.5rem)] sm:max-w-none">
+            <a href="#precios" class="flex items-center gap-2 bg-[#132f4c]/95 hover:bg-[#FFD700] text-white hover:text-[#0a1929] px-3.5 py-2.5 sm:px-5 sm:py-3.5 rounded-full shadow-2xl border-2 border-[#FFD700] text-xs sm:text-sm font-black uppercase tracking-wider transition-all duration-300 transform hover:scale-105 backdrop-blur-md">
+                <span>✨</span>
+                <span data-i18n="floating_btn_reserve">Apartar mi Lugar ($1,000 MXN)</span>
+            </a>
+        </aside>
+
+        <!-- Floating WhatsApp Button (Elevated on mobile to prevent theme scroll button overlap) -->
+        <aside class="fixed bottom-20 right-4 sm:bottom-6 sm:right-6 z-50">
+            <a id="floating-whatsapp-link" href="https://wa.me/525533106161?text=Hola,%20deseo%20informes%20sobre%20el%20Taller%20con%20el%20Maestro%20Yuan%20Ming" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp" class="flex items-center gap-3 bg-emerald-600 hover:bg-emerald-500 text-white p-3.5 sm:px-5 sm:py-3.5 rounded-full shadow-2xl border-2 border-emerald-400 animate-subtle-pulse transition duration-300">
+                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                </svg>
+                <span data-i18n="floating_whatsapp_label" class="hidden sm:inline font-bold text-xs uppercase tracking-wider">¿Dudas? Escríbenos</span>
+            </a>
+        </aside>
+
+    </div>
+
+    <!-- ========================================== -->
+    <!-- 16. JAVASCRIPT & I18N DICTIONARY LOGIC     -->
+    <!-- ========================================== -->
+    <script>
+        // Global language variable
+        let currentLang = 'es';
+
+        // Translations Dictionary (ES & EN)
+        const i18n = {
+            es: {
+                meta_title: "Frecuencias de Sanación: El Sonido de los Órganos Internos - Sembradores de Qi",
+                meta_desc: "Taller Presencial de Mudras y Sonidos de los Órganos Internos con el Maestro Yuan Ming. Del 20 al 22 de Noviembre de 2026 en el histórico Convento de San Joaquín, CDMX.",
+                nav_science: "La Ciencia",
+                nav_organs: "Los 5 Órganos",
+                nav_field: "El Campo de Qi",
+                nav_master: "Maestro Yuan",
+                nav_venue: "Sede",
+                nav_faq: "Preguntas",
+                nav_pricing: "Planes de Inversión",
+                nav_cta: "Asegurar mi Lugar",
+                nav_register_mobile: "Registrarme",
+                hero_badge: "Taller Presencial de Mudras y Sonidos de los Órganos",
+                hero_title: "FRECUENCIAS DE SANACIÓN",
+                hero_subtitle: "El Código de Zhineng Qigong para los Órganos Internos",
+                hero_date_venue: "🏛️ <strong class=\"text-white\">Noviembre 20 al 22, 2026</strong> • Convento de San Joaquín, CDMX<br><span class=\"text-[#FFD700] text-xs sm:text-sm font-bold\">Impartido en persona por el Maestro Yuan Ming</span>",
+                hero_btn_reserve: "Asegurar mi Lugar desde $1,000 MXN",
+                hero_btn_explore: "Explorar los 5 Órganos ↓",
+                cd_title: "⏳ Cuenta Regresiva para el Retiro",
+                cd_days_label: "Días",
+                cd_hours_label: "Horas",
+                cd_mins_label: "Minutos",
+                cd_secs_label: "Segundos",
+                cd_footer: "📅 Viernes 20 al Domingo 22 de Noviembre, 2026 • Miguel Hidalgo, CDMX",
+                summary_quote: "\"Sincroniza tus funciones biológicas y libera las emociones estancadas a través de la frecuencia de la voz y la geometría de los mudras.<br>Te esperamos en el histórico Convento de San Joaquín junto al Maestro Yuan Ming.\"",
+                badge_venue: "⛪ CONVENTO DE SAN JOAQUÍN",
+                badge_date: "📅 NOVIEMBRE 20 AL 22, 2026",
+                badge_translation: "🗣️ INGLÉS CON TRADUCCIÓN",
+                badge_parking: "🚗 CON ESTACIONAMIENTO",
+                sci_tag: "La Ciencia del Sonido y el Qi",
+                sci_heading: "¿Por qué un sonido específico puede restaurar un órgano físico?",
+                sci_p1: "Según la <em>Teoría de las Tres Capas de la Materia</em> formulada por el Dr. Pang Ming, la información es el principio fundamental que organiza y estructura la energía (Qi) y la masa física.",
+                sci_p2: "Cada uno de tus cinco órganos internos (corazón, pulmones, hígado, bazo y riñones) posee una <strong>Firma Vibracional</strong> o frecuencia natural de energía saludable. Cuando acumulamos estrés crónico, miedo, duelo o resentimiento, esa frecuencia se distorsiona, generando bloqueos de Qi que eventualmente derivan en fatiga, inflamación y trastornos de salud.",
+                sci_p3: "En este taller aprenderás la entonación y resonancia exacta de los <strong>sonidos de Zhineng Qigong junto con la geometría corporal de los mudras</strong>. Esta combinación actúa como un diapasón biológico: las células del órgano vuelven a resonar en su estado de armonía original, disolviendo nudos energéticos y liberando la memoria emocional limitante.",
+                sci_box1_title: "Afinación Celular",
+                sci_box1_desc: "El sonido de la voz reestructura el espacio intracelular y el fluido de los tejidos.",
+                sci_box2_title: "Geometría de Mudras",
+                sci_box2_desc: "Posturas manuales milimétricas que canalizan, sellan y protegen la energía de cada órgano.",
+                sci_card_title: "Efectos de la Resonancia Orgánica",
+                sci_card_subtitle: "Transformación Bioenergética Integral",
+                sci_card_item1: "<strong class=\"text-white\">Riñones:</strong> Disolución del miedo y el pánico; restauración de la vitalidad raíz y fuerza de voluntad.",
+                sci_card_item2: "<strong class=\"text-white\">Hígado:</strong> Liberación de la frustración e ira; recuperación de la amabilidad, visión y desintoxicación.",
+                sci_card_item3: "<strong class=\"text-white\">Corazón:</strong> Disolución de la ansiedad y el insomnio; despertar de la alegría pura y paz mental.",
+                sci_card_item4: "<strong class=\"text-white\">Bazo y Páncreas:</strong> Descompresión del sobrepensamiento y preocupación; armonización de la digestión.",
+                sci_card_item5: "<strong class=\"text-white\">Pulmones:</strong> Sanación del duelo y la tristeza arraigada; expansión de la capacidad respiratoria y valentía.",
+                organs_tag: "Explorador Interactivo",
+                organs_heading: "Los 5 Órganos y sus Frecuencias de Sanación",
+                organs_subtitle: "Haz clic en cada órgano para descubrir su elemento, emoción y el poder regenerativo del sonido.",
+                organ_label_emotion: "Emoción a Transformar:",
+                organ_label_virtue: "Estado de Sanación y Virtud:",
+                organ_label_sound: "Efecto del Sonido y Mudra:",
+                organ_cta_learn: "Aprender los sonidos en el retiro",
+                field_tag: "Metodología Tradicional",
+                field_heading: "La Sabiduría del Campo de Qi",
+                field_quote: "\"Una enseñanza viva que respira y se transforma con el grupo\"",
+                field_p1: "En la auténtica práctica de <strong>Zhineng Qigong</strong>, el aprendizaje no sigue un itinerario rígido ni un programa mecánico por minutos. El <strong>Maestro Yuan Ming</strong> sostiene y sintoniza el <em>Campo de Qi colectivo (Campo de Energía)</em> de los practicantes, adaptando en tiempo real las secuencias, la modulación de las frecuencias vocales y la intensidad de los mudras de acuerdo al estado energético, emocional y físico del grupo.",
+                field_pillar1_title: "1. Apertura del Campo",
+                field_pillar1_desc: "Sintonización profunda con la energía del universo para elevar el nivel de conciencia y armonía grupal.",
+                field_pillar2_title: "2. Afinación Viva",
+                field_pillar2_desc: "Transmisión directa de la resonancia exacta de cada sonido y corrección de la postura de mudras.",
+                field_pillar3_title: "3. Integración Celular",
+                field_pillar3_desc: "Asimilación de la práctica para que puedas continuar sanando y afinando tus órganos en casa.",
+                master_tag: "Instructor Titular",
+                master_lang_badge: "Inglés con Traducción al Español",
+                master_name: "Maestro Yuan Ming (Teacher Yuan)",
+                master_p1: "Con décadas de práctica ininterrumpida y estudio riguroso de la anatomía sutil humana, el <strong>Maestro Yuan Ming</strong> es reconocido internacionalmente por su precisión técnica, calidez pedagógica y profundidad en la enseñanza del Zhineng Qigong. Su trayectoria destaca por tender un puente claro y accesible entre la ciencia formulada por el Dr. Pang Ming y las necesidades de salud del practicante contemporáneo.",
+                master_p2: "Su pedagogía prescinde de dogmas o misticismo, basándose siempre en la comprobación vivencial de los cambios biológicos y emocionales que ocurren al armonizar el flujo de energía. Es reconocido por sostener campos de sanación con gran calidez humana y enfoque clínico.",
+                master_quote: "\"La afinación de la voz y la geometría del cuerpo son las tecnologías más puras de autocuración.\"",
+                venue_tag: "El Santuario de Práctica",
+                venue_heading: "Convento de San Joaquín, Tacuba, CDMX",
+                venue_sub: "Un remanso de paz histórica y silencio protegido en el corazón de la Ciudad de México.",
+                venue_box1_title: "Entorno de Paz y Silencio",
+                venue_box1_desc: "Sus claustros y arquitectura colonial aíslan el bullicio urbano, creando una acústica idónea para la resonancia de los sonidos y la introspección.",
+                venue_box2_title: "Jardines y Salón Amplio",
+                venue_box2_desc: "Cuenta con amplio salon de práctica y áreas verdes para caminar.",
+                venue_box3_title: "Acceso y Estacionamiento",
+                venue_box3_desc: "Ubicado en Calz. Sta. Cruz Cacalco 15a, con estacionamiento interior seguro dentro del recinto para todos los asistentes.",
+                venue_map_btn: "📍 Ver Ubicación en Google Maps (Calz. Sta. Cruz Cacalco 15a, CDMX)",
+                price_tag: "Tu Entrada al Taller",
+                price_heading: "Planes de Inversión Especiales",
+                price_apartado: "¡APARTA TU LUGAR DESDE HOY CON SÓLO $1,000.00 MXN!",
+                pkg1_title: "Paquete 1",
+                pkg1_sub: "Ideal para residentes de CDMX o pernocta externa",
+                pkg1_promo: " MXN (Precio Promo)",
+                pkg1_item1: "<strong>Curso completo de 3 días</strong> con el Maestro Yuan",
+                pkg1_item2: "Servicio de <strong>Coffee Break continuo</strong>",
+                pkg1_item3: "<strong>1 Comida al día</strong> en el Convento",
+                pkg1_item4: "<strong>Estacionamiento disponible</strong> en el recinto",
+                pkg1_btn: "Elegir Paquete 1 ($7,000 MXN)",
+                pkg2_title: "Paquete 2",
+                pkg2_sub: "Con Hospedaje y Alimentación Completa",
+                pkg2_scarcity: "<span>⚠️</span> <span>Limitado a solo 10 habitaciones dobles en el Convento</span>",
+                pkg2_item1: "<strong>Hospedaje en el Convento</strong> (2 noches)",
+                pkg2_item2: "<strong>Alimentación completa</strong> (desayunos, comidas y cenas)",
+                pkg2_item3: "<strong>Curso completo de 3 días</strong> con el Maestro Yuan",
+                pkg2_item4: "Servicio de Coffee Break continuo",
+                pkg2_item5: "<strong>Estacionamiento disponible</strong> en el recinto",
+                pkg2_btn: "Elegir Paquete 2 ($10,000 MXN)",
+                card_info_title: "Aceptamos Pagos con Tarjeta de Crédito y Débito",
+                card_info_desc: "*Nota: Si eliges pagar a meses con intereses, considera que los cargos adicionales o comisiones bancarias que puedan generarse corren por tu cuenta, ya que dependen directamente de tu banco emisor.",
+                card_info_important: "💡 IMPORTANTE: Podrás seleccionar tu método de pago preferido en el Formulario de Inscripción.",
+                fin_tag: "Facilidad de Pago Directo",
+                fin_heading: "Plan de Abonos con Sembradores de Qi",
+                fin_sub: "Aparta tu lugar hoy y liquida en cómodas mensualidades fijas antes del retiro.",
+                fin_p1_title: "Plan de Abonos - Paquete 1",
+                fin_p1_init: "<strong>Apartado inicial:</strong> $1,000.00 MXN",
+                fin_p1_monthly: "<strong>3 mensualidades:</strong> de $2,000.00 MXN",
+                fin_p1_total: "Total de inversión: $7,000.00 MXN",
+                fin_p2_title: "Plan de Abonos - Paquete 2",
+                fin_p2_init: "<strong>Apartado inicial:</strong> $1,000.00 MXN",
+                fin_p2_monthly: "<strong>3 mensualidades:</strong> de $3,000.00 MXN",
+                fin_p2_total: "Total de inversión: $10,000.00 MXN",
+                fin_deadline: "📅 Fecha límite para liquidar el pago total: <span class=\"bg-[#132f4c] text-[#FFD700] px-3 py-1 rounded-md ml-1 inline-block font-extrabold shadow-sm border border-white/10\">antes del 15 de noviembre de 2026</span>",
+                fin_box_title: "Información Importante sobre tu Plan Directo:",
+                fin_box_item1: "<strong class=\"text-white\">Flexibilidad:</strong> Puedes realizar abonos mensuales vía transferencia electrónica o depósito bancario.",
+                fin_box_item2: "<strong class=\"text-white\">Seguridad de tu lugar:</strong> Una vez realizado el apartado de $1,000 MXN y llenado tu formulario, tu lugar queda garantizado.",
+                faq_tag: "Resolvemos tus Dudas",
+                faq_heading: "Preguntas Frecuentes",
+                faq_sub: "Todo lo que necesitas saber antes de asegurar tu lugar en el taller.",
+                faq_q1: "¿Necesito experiencia previa en Zhineng Qigong para participar?",
+                faq_a1: "No, el taller está diseñado tanto para personas que inician desde cero como para instructores y practicantes experimentados. La enseñanza de los sonidos y mudras se explica paso a paso de forma vivencial y comprensible.",
+                faq_q2: "¿Cómo funciona la dinámica de traducción si el Maestro enseña en inglés?",
+                faq_a2: "Contamos con traducción simultánea profesional y fluida al español por parte de la Instructora Sandra Ramos durante todo el taller. La instrucción teórica y las correcciones de postura se transmiten con total claridad para toda la comunidad hispanohablante.",
+                faq_q3: "¿Qué incluye el Paquete 2 con Hospedaje en el Convento?",
+                faq_a3: "Incluye el curso completo de 3 días, hospedaje de 2 noches dentro del Convento de San Joaquín (en habitaciones dobles confortables) y alimentos. El cupo está estrictamente limitado a 10 habitaciones dobles.",
+                faq_q4: "¿Puedo pagar a plazos o mediante mensualidades?",
+                faq_a4: "¡Sí! Puedes apartar tu lugar con sólo <strong>$1,000.00 MXN</strong> y cubrir el resto en 3 abonos mensuales fijos directamente con nosotros (sin comisiones bancarias), siempre que el total quede cubierto antes del 15 de noviembre de 2026.",
+                faq_q5: "¿Qué ropa y materiales debo llevar para el taller?",
+                faq_a5: "Recomendamos vestir ropa holgada y cómoda (preferentemente de algodón o telas transpirables), calcetines cómodos o calzado de suela plana, una libreta para tus notas personales y un termo para agua o té.",
+                faq_q6: "¿Hay estacionamiento seguro dentro del Convento de San Joaquín?",
+                faq_a6: "Sí, el Convento cuenta con estacionamiento privado y vigilado dentro de sus instalaciones sin costo adicional para los asistentes al retiro.",
+                cta_tag: "Paso Final",
+                cta_heading: "¿Listo para transformar tu salud y energía?",
+                cta_sub: "Selecciona tu paquete de preferencia para iniciar tu pre-registro oficial y apartar tu lugar con el Maestro Yuan Ming.",
+                cta_btn_p1: "✨ Elegir Paquete 1 ($7,000 MXN)",
+                cta_btn_p2: "✨ Elegir Paquete 2 ($10,000 MXN)",
+                footer_chat_btn: "¿Dudas? Chat de Informes WhatsApp: +52 55 3310 6161",
+                footer_copy: "© 2026 Sembradores de Qi. Todos los derechos reservados. Practica con el corazón, comparte con compasión.",
+                footer_sub: "Zhineng Qigong México • Convento de San Joaquín, CDMX",
+                floating_btn_reserve: "Apartar mi Lugar ($1,000 MXN)",
+                floating_whatsapp_label: "¿Dudas? Escríbenos",
+                tab_corazon: "Corazón",
+                tab_pulmones: "Pulmones",
+                tab_higado: "Hígado",
+                tab_bazo: "Bazo y Páncreas",
+                tab_rinones: "Riñones",
+                whatsapp_msg: "Hola, deseo informes sobre el Taller de Mudras y Sonidos con el Maestro Yuan Ming"
+            },
+            en: {
+                meta_title: "Healing Frequencies: The Sound of the Internal Organs - Sembradores de Qi",
+                meta_desc: "In-Person Internal Organs Mudras & Sounds Workshop with Teacher Yuan Ming. Nov 20-22, 2026, at the historic San Joaquín Convent, Mexico City.",
+                nav_science: "The Science",
+                nav_organs: "The 5 Organs",
+                nav_field: "The Qi Field",
+                nav_master: "Teacher Yuan",
+                nav_venue: "Venue",
+                nav_faq: "FAQ",
+                nav_pricing: "Investment Plans",
+                nav_cta: "Reserve My Spot",
+                nav_register_mobile: "Register",
+                hero_badge: "In-Person Mudras & Internal Organs Sounds Workshop",
+                hero_title: "HEALING FREQUENCIES",
+                hero_subtitle: "The Zhineng Qigong Code for the Internal Organs",
+                hero_date_venue: "🏛️ <strong class=\"text-white\">November 20 - 22, 2026</strong> • San Joaquín Convent, Mexico City<br><span class=\"text-[#FFD700] text-xs sm:text-sm font-bold\">Taught in person by Teacher Yuan Ming</span>",
+                hero_btn_reserve: "Reserve My Spot from $1,000 MXN",
+                hero_btn_explore: "Explore the 5 Organs ↓",
+                cd_title: "⏳ Countdown to the Retreat",
+                cd_days_label: "Days",
+                cd_hours_label: "Hours",
+                cd_mins_label: "Minutes",
+                cd_secs_label: "Seconds",
+                cd_footer: "📅 Friday Nov 20 to Sunday Nov 22, 2026 • Miguel Hidalgo, Mexico City",
+                summary_quote: "\"Synchronize your biological functions and release stagnant emotions through vocal resonance and the geometry of mudras.<br>Join us at the historic San Joaquín Convent with Teacher Yuan Ming.\"",
+                badge_venue: "⛪ SAN JOAQUÍN CONVENT",
+                badge_date: "📅 NOVEMBER 20 - 22, 2026",
+                badge_translation: "🗣️ ENGLISH WITH SPANISH TRANSLATION",
+                badge_parking: "🚗 SECURE PARKING INCLUDED",
+                sci_tag: "The Science of Sound & Qi",
+                sci_heading: "Why can a specific acoustic vibration restore a physical organ?",
+                sci_p1: "According to the <em>Three Layers of Matter Theory</em> formulated by Dr. Pang Ming, information is the primordial principle that organizes and structures Qi (energy) and physical mass.",
+                sci_p2: "Each of your five internal organs (heart, lungs, liver, spleen & pancreas, and kidneys) carries a distinct <strong>Vibrational Signature</strong> of healthy vitality. When chronic stress, fear, grief, or anger accumulate, this natural frequency distorts, creating Qi blockages that manifest as fatigue, inflammation, and health disorders.",
+                sci_p3: "In this retreat, you will master the precise pitch, resonance, and body geometry of <strong>Zhineng Qigong vocal frequencies and mudras</strong>. This synergy acts like a biological tuning fork: organ cells return to their primordial harmony, dissolving energetic stagnation and clearing deep emotional memory.",
+                sci_box1_title: "Cellular Tuning",
+                sci_box1_desc: "Vocal resonance directly restructures intracellular space and tissue fluid.",
+                sci_box2_title: "Mudra Geometry",
+                sci_box2_desc: "Precise manual postures that channel, seal, and protect the Qi of each organ.",
+                sci_card_title: "Effects of Organic Resonance",
+                sci_card_subtitle: "Comprehensive Bioenergetic Transformation",
+                sci_card_item1: "<strong class=\"text-white\">Kidneys:</strong> Dissolution of fear and panic; restoration of root vitality and willpower.",
+                sci_card_item2: "<strong class=\"text-white\">Liver:</strong> Release of frustration and anger; renewal of kindness, vision, and natural detoxification.",
+                sci_card_item3: "<strong class=\"text-white\">Heart:</strong> Calming anxiety and insomnia; awakening pure inner joy and profound mental serenity.",
+                sci_card_item4: "<strong class=\"text-white\">Spleen & Pancreas:</strong> Decompressing overthinking and worry; harmonizing digestion and nourishment.",
+                sci_card_item5: "<strong class=\"text-white\">Lungs:</strong> Healing deep grief and sorrow; expanding respiratory capacity, dignity, and courage.",
+                organs_tag: "Interactive Explorer",
+                organs_heading: "The 5 Organs & Their Healing Frequencies",
+                organs_subtitle: "Click on each organ to explore its element, emotion, and sound regeneration power.",
+                organ_label_emotion: "Emotion to Transform:",
+                organ_label_virtue: "Healing State & Virtue:",
+                organ_label_sound: "Sound & Mudra Effect:",
+                organ_cta_learn: "Learn the sounds at the retreat",
+                field_tag: "Traditional Methodology",
+                field_heading: "The Wisdom of the Qi Field",
+                field_quote: "\"A living teaching that breathes and evolves with the group\"",
+                field_p1: "In the authentic tradition of <strong>Zhineng Qigong</strong>, teaching does not follow a rigid minute-by-minute itinerary. <strong>Teacher Yuan Ming</strong> attunes and guides the collective *Qi Field* of the group, dynamically adjusting the vocal frequencies, duration of practices, and mudra corrections in real-time according to the energetic, physical, and emotional state of the participants.",
+                field_pillar1_title: "1. Field Opening",
+                field_pillar1_desc: "Deep attunement with universal energy to elevate group awareness and collective harmony.",
+                field_pillar2_title: "2. Live Attunement",
+                field_pillar2_desc: "Direct transmission of exact acoustic vibration, posture corrections, and precise mudra alignment.",
+                field_pillar3_title: "3. Cellular Integration",
+                field_pillar3_desc: "Grounded integration so you can continue cultivating and healing your organs independently at home.",
+                master_tag: "Lead Teacher",
+                master_lang_badge: "Taught in English with Spanish Translation",
+                master_name: "Teacher Yuan Ming",
+                master_p1: "With decades of dedicated practice and rigorous mastery of human subtle anatomy, <strong>Teacher Yuan Ming</strong> is internationally renowned for his technical precision, pedagogical warmth, and profound depth in teaching Zhineng Qigong. His life work bridges the scientific foundation developed by Dr. Pang Ming with the practical health needs of the modern practitioner.",
+                master_p2: "His teaching is devoid of dogma and mysticism, focusing instead on direct experiential verification of the physiological and emotional shifts that occur when restoring energetic flow. He is recognized for holding powerful healing fields with warmth and clinical clarity.",
+                master_quote: "\"Vocal frequency and body geometry are the purest organic technologies for self-healing.\"",
+                venue_tag: "The Practice Sanctuary",
+                venue_heading: "San Joaquín Convent, Mexico City",
+                venue_sub: "A historic haven of protected silence and serenity in the heart of Mexico City.",
+                venue_box1_title: "Peace & Protected Silence",
+                venue_box1_desc: "Its cloisters and colonial architecture isolate urban noise, creating ideal acoustics for sound resonance and deep introspection.",
+                venue_box2_title: "Gardens & Spacious Hall",
+                venue_box2_desc: "Features a spacious practice hall and peaceful green gardens for walking.",
+                venue_box3_title: "Access & Secure Parking",
+                venue_box3_desc: "Located at Calz. Sta. Cruz Cacalco 15a, with secure on-site gated parking included for all attendees.",
+                venue_map_btn: "📍 View Location on Google Maps (Calz. Sta. Cruz Cacalco 15a, CDMX)",
+                price_tag: "Your Retreat Pass",
+                price_heading: "Special Investment Packages",
+                price_apartado: "RESERVE YOUR SPOT TODAY WITH ONLY $1,000.00 MXN!",
+                pkg1_title: "Package 1",
+                pkg1_sub: "Ideal for local residents or external lodging",
+                pkg1_promo: " MXN (Promo Rate)",
+                pkg1_item1: "<strong>Full 3-day workshop</strong> with Teacher Yuan",
+                pkg1_item2: "Continuous <strong>Coffee Break & tea service</strong>",
+                pkg1_item3: "<strong>Daily lunch</strong> inside the Convent",
+                pkg1_item4: "<strong>Secure parking</strong> inside the premises",
+                pkg1_btn: "Select Package 1 ($7,000 MXN)",
+                pkg2_title: "Package 2",
+                pkg2_sub: "With On-Site Lodging & Full Meals",
+                pkg2_scarcity: "<span>⚠️</span> <span>Strictly limited to 10 double rooms inside the Convent</span>",
+                pkg2_item1: "<strong>Convent Lodging</strong> (2 nights)",
+                pkg2_item2: "<strong>Full meal plan</strong> (breakfasts, lunches, and dinners)",
+                pkg2_item3: "<strong>Full 3-day workshop</strong> with Teacher Yuan",
+                pkg2_item4: "Continuous Coffee Break & tea service",
+                pkg2_item5: "<strong>Secure parking</strong> inside the premises",
+                pkg2_btn: "Select Package 2 ($10,000 MXN)",
+                card_info_title: "Credit & Debit Cards Accepted",
+                card_info_desc: "*Note: If you choose installment payments through your bank, please note that any additional bank fees or interest rates depend entirely on your card-issuing bank.",
+                card_info_important: "💡 IMPORTANT: You will be able to select your preferred payment method in the Registration Form.",
+                fin_tag: "Direct Payment Flexibility",
+                fin_heading: "Installment Plan with Sembradores de Qi",
+                fin_sub: "Reserve your spot today and pay in fixed monthly installments prior to the retreat.",
+                fin_p1_title: "Installment Plan - Package 1",
+                fin_p1_init: "<strong>Initial deposit:</strong> $1,000.00 MXN",
+                fin_p1_monthly: "<strong>3 monthly payments:</strong> of $2,000.00 MXN",
+                fin_p1_total: "Total investment: $7,000.00 MXN",
+                fin_p2_title: "Installment Plan - Package 2",
+                fin_p2_init: "<strong>Initial deposit:</strong> $1,000.00 MXN",
+                fin_p2_monthly: "<strong>3 monthly payments:</strong> of $3,000.00 MXN",
+                fin_p2_total: "Total investment: $10,000.00 MXN",
+                fin_deadline: "📅 Payment completion deadline: <span class=\"bg-[#132f4c] text-[#FFD700] px-3 py-1 rounded-md ml-1 inline-block font-extrabold shadow-sm border border-white/10\">before November 15, 2026</span>",
+                fin_box_title: "Important Information regarding your Direct Plan:",
+                fin_box_item1: "<strong class=\"text-white\">Flexibility:</strong> Monthly payments can be made via wire transfer or direct bank deposit.",
+                fin_box_item2: "<strong class=\"text-white\">Spot Security:</strong> Your place is officially reserved and guaranteed upon completing your $1,000 MXN deposit and registration form.",
+                faq_tag: "Answers to Common Questions",
+                faq_heading: "Frequently Asked Questions",
+                faq_sub: "Everything you need to know before securing your spot at the retreat.",
+                faq_q1: "Do I need previous Zhineng Qigong experience to attend?",
+                faq_a1: "No, the workshop is designed for complete beginners as well as advanced practitioners and certified instructors. Sounds and mudras are taught step-by-step in an accessible, experiential format.",
+                faq_q2: "How does translation work during the retreat?",
+                faq_a2: "Teacher Yuan teaches in English, accompanied by professional, seamless simultaneous Spanish translation by Instructor Sandra Ramos throughout the entire workshop. All theoretical explanations and posture corrections are clearly understood by both English and Spanish speakers.",
+                faq_q3: "What does Package 2 with on-site lodging include?",
+                faq_a3: "It includes the full 3-day workshop, 2 nights of comfortable lodging in double rooms inside San Joaquín Convent, and full meal service. Availability is strictly limited to 10 double rooms.",
+                faq_q4: "Can I pay in installments or monthly payments?",
+                faq_a4: "Yes! You can secure your spot with only <strong>$1,000.00 MXN</strong> and pay the remaining balance in 3 monthly installments directly with us, provided the full amount is covered before November 15, 2026.",
+                faq_q5: "What clothes and materials should I bring?",
+                faq_a5: "We recommend loose, comfortable clothing (preferably breathable cotton), flat-soled shoes or socks, a notebook for personal insights, and a reusable water bottle or thermos.",
+                faq_q6: "Is there secure parking at the San Joaquín Convent?",
+                faq_a6: "Yes, the Convent has private, secure on-site parking at no additional cost for all retreat attendees.",
+                cta_tag: "Final Step",
+                cta_heading: "Ready to transform your health and energy?",
+                cta_sub: "Choose your preferred package to begin your official registration and secure your place with Teacher Yuan Ming.",
+                cta_btn_p1: "✨ Select Package 1 ($7,000 MXN)",
+                cta_btn_p2: "✨ Select Package 2 ($10,000 MXN)",
+                footer_chat_btn: "Questions? Chat with us on WhatsApp: +52 55 3310 6161",
+                footer_copy: "© 2026 Sembradores de Qi. All rights reserved. Practice from the heart, share with compassion.",
+                footer_sub: "Zhineng Qigong Mexico • San Joaquín Convent, Mexico City",
+                floating_btn_reserve: "Reserve My Spot ($1,000 MXN)",
+                floating_whatsapp_label: "Questions? Chat",
+                tab_corazon: "Heart",
+                tab_pulmones: "Lungs",
+                tab_higado: "Liver",
+                tab_bazo: "Spleen & Pancreas",
+                tab_rinones: "Kidneys",
+                whatsapp_msg: "Hello, I would like information regarding the Internal Organs Workshop with Teacher Yuan Ming"
+            }
+        };
+
+        // Organ Dynamic Multi-language Data
+        const organDataMulti = {
+            es: {
+                corazon: {
+                    icon: '🫀',
+                    element: 'Elemento Fuego',
+                    name: 'Corazón',
+                    sub: 'Centro Emocional y de la Conciencia',
+                    emotion: 'Ansiedad, agitación mental, dispersión, insomnio y exceso de excitación emocional.',
+                    virtue: 'Paz profunda, serenidad imperturbable, compasión y alegría interior pura.',
+                    sound: 'El sonido regula la presión arterial, armoniza el ritmo cardíaco y relaja el sistema nervioso central, permitiendo que la mente vuelva a descansar en calma en el pecho.',
+                    glowGradient: 'from-red-600/30 to-amber-500/20'
+                },
+                pulmones: {
+                    icon: '🫁',
+                    element: 'Elemento Metal',
+                    name: 'Pulmones',
+                    sub: 'Respiración y Energía Vital Defensiva',
+                    emotion: 'Tristeza profunda, duelo no resuelto, melancolía, apego y sensación de vacío.',
+                    virtue: 'Coraje, dignidad, vitalidad respiratoria, desapego sereno y optimismo celular.',
+                    sound: 'El sonido y el mudra expanden los alvéolos, fortalecen la energía del sistema inmune y liberan la memoria de tristeza o pérdida retenida en la zona torácica.',
+                    glowGradient: 'from-slate-200/30 to-blue-400/20'
+                },
+                higado: {
+                    icon: '🪵',
+                    element: 'Elemento Madera',
+                    name: 'Hígado',
+                    sub: 'Circulación y Libre Flujo Energético',
+                    emotion: 'Ira, frustración, resentimiento acumulado, irritabilidad y rigidez física o mental.',
+                    virtue: 'Amabilidad, benevolencia, flexibilidad, claridad en la toma de decisiones y serenidad.',
+                    sound: 'El sonido descongestiona la energía hepática, estimula la desintoxicación celular y alivia la tensión en tendones, cuello y vista.',
+                    glowGradient: 'from-emerald-600/30 to-teal-500/20'
+                },
+                bazo: {
+                    icon: '🌾',
+                    element: 'Elemento Tierra',
+                    name: 'Bazo y Páncreas',
+                    sub: 'Digestión, Nutrición y Asimilación',
+                    emotion: 'Preocupación excesiva, rumiación mental (sobrepensamiento), obsesiones e incertidumbre.',
+                    virtue: 'Centramiento, ecuanimidad, confianza en los procesos de la vida y armonía interior.',
+                    sound: 'El sonido armoniza el sistema digestivo, disuelve la niebla mental y restablece la capacidad de asimilar tanto los nutrientes como las experiencias de la vida.',
+                    glowGradient: 'from-amber-500/30 to-yellow-400/20'
+                },
+                rinones: {
+                    icon: '🌊',
+                    element: 'Elemento Agua',
+                    name: 'Riñones',
+                    sub: 'Reserva de Vitalidad, Raíz y Longevidad',
+                    emotion: 'Miedo, inseguridad, sensación de pánico, fatiga crónica y agotamiento vital.',
+                    virtue: 'Voluntad inquebrantable, sabiduría intuitiva, firmeza, calma y vitalidad raíz.',
+                    sound: 'El sonido recarga la reserva de energía más profunda del organismo, fortalece la zona lumbar y rodillas, y transforma el miedo en seguridad y confianza plena.',
+                    glowGradient: 'from-blue-700/30 to-indigo-600/20'
+                }
+            },
+            en: {
+                corazon: {
+                    icon: '🫀',
+                    element: 'Fire Element',
+                    name: 'Heart',
+                    sub: 'Center of Emotion & Pure Consciousness',
+                    emotion: 'Anxiety, mental agitation, scattered focus, insomnia, and emotional hyper-reactivity.',
+                    virtue: 'Profound peace, unshakeable tranquility, compassion, and pure inner joy.',
+                    sound: 'The sound stabilizes blood pressure, harmonizes cardiac rhythm, and calms the central nervous system, allowing the mind to rest peacefully in the chest.',
+                    glowGradient: 'from-red-600/30 to-amber-500/20'
+                },
+                pulmones: {
+                    icon: '🫁',
+                    element: 'Metal Element',
+                    name: 'Lungs',
+                    sub: 'Respiration & Defensive Vital Qi',
+                    emotion: 'Deep grief, unresolved mourning, melancholy, emotional clinging, and inner emptiness.',
+                    virtue: 'Courage, self-worth, respiratory vitality, serene detachment, and cellular optimism.',
+                    sound: 'The sound and mudra expand alveoli, fortify immune energy, and release the accumulated memory of sorrow held within the chest and thoracic cavity.',
+                    glowGradient: 'from-slate-200/30 to-blue-400/20'
+                },
+                higado: {
+                    icon: '🪵',
+                    element: 'Wood Element',
+                    name: 'Liver',
+                    sub: 'Circulation & Free Flow of Vital Energy',
+                    emotion: 'Anger, frustration, pent-up resentment, chronic irritability, and physical stiffness.',
+                    virtue: 'Kindness, benevolence, emotional flexibility, clear decision-making, and deep calm.',
+                    sound: 'The sound decongests hepatic Qi, stimulates natural cellular detoxification, and relieves tension in tendons, neck, and eyesight.',
+                    glowGradient: 'from-emerald-600/30 to-teal-500/20'
+                },
+                bazo: {
+                    icon: '🌾',
+                    element: 'Earth Element',
+                    name: 'Spleen & Pancreas',
+                    sub: 'Digestion, Nutrition & Mental Assimilation',
+                    emotion: 'Excessive worry, repetitive overthinking, obsessive rumination, and uncertainty.',
+                    virtue: 'Centering, equanimity, grounded trust in life processes, and internal harmony.',
+                    sound: 'The sound harmonizes the digestive tract, clears brain fog, and restores the capacity to nourish both body nutrients and life experiences with ease.',
+                    glowGradient: 'from-amber-500/30 to-yellow-400/20'
+                },
+                rinones: {
+                    icon: '🌊',
+                    element: 'Water Element',
+                    name: 'Kidneys',
+                    sub: 'Root Vitality, Longevity & Willpower',
+                    emotion: 'Fear, existential insecurity, panic tendencies, chronic fatigue, and vital depletion.',
+                    virtue: 'Unshakeable willpower, intuitive wisdom, grounded stability, and profound vitality.',
+                    sound: 'The sound replenishes the deepest reservoir of primordial Qi, strengthens the lower back and knees, and transforms fear into confidence.',
+                    glowGradient: 'from-blue-700/30 to-indigo-600/20'
+                }
+            }
+        };
+
+        let currentActiveOrgan = 'corazon';
+
+        // ----------------------------------------
+        // LANGUAGE SWITCHER ENGINE
+        // ----------------------------------------
+        function setLanguage(lang) {
+            if (!i18n[lang]) return;
+            currentLang = lang;
+            document.documentElement.lang = lang;
+
+            // Save preference to localStorage
+            try {
+                localStorage.setItem('sdq_lang_pref', lang);
+            } catch (e) {}
+
+            const dict = i18n[lang];
+
+            // Update Meta Title & Description
+            const metaTitle = document.getElementById('meta-title');
+            if (metaTitle && dict.meta_title) metaTitle.textContent = dict.meta_title;
+            const metaDesc = document.getElementById('meta-desc');
+            if (metaDesc && dict.meta_desc) metaDesc.setAttribute('content', dict.meta_desc);
+
+            // Update text nodes with data-i18n
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (dict[key]) {
+                    el.textContent = dict[key];
+                }
+            });
+
+            // Update HTML nodes with data-i18n-html
+            document.querySelectorAll('[data-i18n-html]').forEach(el => {
+                const key = el.getAttribute('data-i18n-html');
+                if (dict[key]) {
+                    el.innerHTML = dict[key];
+                }
+            });
+
+            // Update Tab Labels
+            const tabCorazon = document.getElementById('tab-label-corazon');
+            if (tabCorazon) tabCorazon.textContent = dict.tab_corazon;
+            const tabPulmones = document.getElementById('tab-label-pulmones');
+            if (tabPulmones) tabPulmones.textContent = dict.tab_pulmones;
+            const tabHigado = document.getElementById('tab-label-higado');
+            if (tabHigado) tabHigado.textContent = dict.tab_higado;
+            const tabBazo = document.getElementById('tab-label-bazo');
+            if (tabBazo) tabBazo.textContent = dict.tab_bazo;
+            const tabRinones = document.getElementById('tab-label-rinones');
+            if (tabRinones) tabRinones.textContent = dict.tab_rinones;
+
+            // Update WhatsApp Link Messages
+            const encodedMsg = encodeURIComponent(dict.whatsapp_msg);
+            const footerWa = document.getElementById('footer-whatsapp-link');
+            if (footerWa) footerWa.href = `https://wa.me/525533106161?text=${encodedMsg}`;
+            const floatingWa = document.getElementById('floating-whatsapp-link');
+            if (floatingWa) floatingWa.href = `https://wa.me/525533106161?text=${encodedMsg}`;
+
+            // Update Switcher UI Buttons Active State
+            document.querySelectorAll('.lang-btn-es').forEach(btn => {
+                if (lang === 'es') btn.classList.add('active');
+                else btn.classList.remove('active');
+            });
+            document.querySelectorAll('.lang-btn-en').forEach(btn => {
+                if (lang === 'en') btn.classList.add('active');
+                else btn.classList.remove('active');
+            });
+
+            // Refresh Current Organ Display in new language
+            renderOrgan(currentActiveOrgan);
+        }
+
+        // Render Organ Detail
+        function renderOrgan(organKey) {
+            currentActiveOrgan = organKey;
+            const data = organDataMulti[currentLang][organKey] || organDataMulti['es'][organKey];
+            if (!data) return;
+
+            const organIcon = document.getElementById('organ-icon-wrapper');
+            const organElement = document.getElementById('organ-element');
+            const organName = document.getElementById('organ-name');
+            const organSub = document.getElementById('organ-sub');
+            const organEmotion = document.getElementById('organ-emotion');
+            const organVirtue = document.getElementById('organ-virtue');
+            const organSound = document.getElementById('organ-sound');
+
+            if (organIcon) {
+                organIcon.textContent = data.icon;
+                organIcon.className = `w-32 h-32 mx-auto rounded-full bg-gradient-to-tr ${data.glowGradient} border-2 border-[#FFD700] flex items-center justify-center text-6xl shadow-xl animate-pulse`;
+            }
+            if (organElement) organElement.textContent = data.element;
+            if (organName) organName.textContent = data.name;
+            if (organSub) organSub.textContent = data.sub;
+            if (organEmotion) organEmotion.textContent = data.emotion;
+            if (organVirtue) organVirtue.textContent = data.virtue;
+            if (organSound) organSound.textContent = data.sound;
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            
+            // ----------------------------------------
+            // A. INITIALIZE LANGUAGE (URL or Storage)
+            // ----------------------------------------
+            const urlParams = new URLSearchParams(window.location.search);
+            const langParam = urlParams.get('lang');
+            let savedLang = 'es';
+            try {
+                savedLang = localStorage.getItem('sdq_lang_pref') || 'es';
+            } catch (e) {}
+
+            const initialLang = (langParam === 'en' || langParam === 'es') ? langParam : savedLang;
+            setLanguage(initialLang);
+
+            // ----------------------------------------
+            // B. MOBILE MENU TOGGLE
+            // ----------------------------------------
+            const menuBtn = document.getElementById('mobile-menu-btn');
+            const menuDrawer = document.getElementById('mobile-menu-drawer');
+            const openIcon = document.getElementById('menu-open-icon');
+            const closeIcon = document.getElementById('menu-close-icon');
+            const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+
+            if (menuBtn && menuDrawer) {
+                menuBtn.addEventListener('click', function () {
+                    const isHidden = menuDrawer.classList.contains('hidden');
+                    if (isHidden) {
+                        menuDrawer.classList.remove('hidden');
+                        openIcon.classList.add('hidden');
+                        closeIcon.classList.remove('hidden');
+                    } else {
+                        menuDrawer.classList.add('hidden');
+                        openIcon.classList.remove('hidden');
+                        closeIcon.classList.add('hidden');
+                    }
+                });
+
+                mobileLinks.forEach(link => {
+                    link.addEventListener('click', function () {
+                        menuDrawer.classList.add('hidden');
+                        openIcon.classList.remove('hidden');
+                        closeIcon.classList.add('hidden');
+                    });
+                });
+            }
+
+            // ----------------------------------------
+            // C. LIVE COUNTDOWN TIMER (Nov 20, 2026)
+            // ----------------------------------------
+            const targetDate = new Date('2026-11-20T09:00:00-06:00').getTime();
+            const elDays = document.getElementById('cd-days');
+            const elHours = document.getElementById('cd-hours');
+            const elMins = document.getElementById('cd-mins');
+            const elSecs = document.getElementById('cd-secs');
+
+            function updateCountdown() {
+                const now = new Date().getTime();
+                const diff = targetDate - now;
+
+                if (diff > 0) {
+                    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+                    const secs = Math.floor((diff % (1000 * 60)) / 1000);
+
+                    if (elDays) elDays.textContent = days.toString().padStart(2, '0');
+                    if (elHours) elHours.textContent = hours.toString().padStart(2, '0');
+                    if (elMins) elMins.textContent = mins.toString().padStart(2, '0');
+                    if (elSecs) elSecs.textContent = secs.toString().padStart(2, '0');
+                } else {
+                    if (elDays) elDays.textContent = "00";
+                    if (elHours) elHours.textContent = "00";
+                    if (elMins) elMins.textContent = "00";
+                    if (elSecs) elSecs.textContent = "00";
+                }
+            }
+            updateCountdown();
+            setInterval(updateCountdown, 1000);
+
+            // ----------------------------------------
+            // D. 5 ORGANS INTERACTIVE SWITCHER
+            // ----------------------------------------
+            const organTabs = document.querySelectorAll('.organ-tab');
+
+            organTabs.forEach(tab => {
+                tab.addEventListener('click', function () {
+                    const organKey = this.getAttribute('data-organ');
+                    
+                    // Tab active states
+                    organTabs.forEach(t => {
+                        t.classList.remove('active');
+                        t.setAttribute('aria-selected', 'false');
+                    });
+                    this.classList.add('active');
+                    this.setAttribute('aria-selected', 'true');
+
+                    renderOrgan(organKey);
+                });
+            });
+
+            // ----------------------------------------
+            // E. FAQ ACCORDION TOGGLER
+            // ----------------------------------------
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const btn = item.querySelector('.faq-question');
+                if (btn) {
+                    btn.addEventListener('click', function () {
+                        const isActive = item.classList.contains('active');
+                        // Close others
+                        faqItems.forEach(i => i.classList.remove('active'));
+                        if (!isActive) {
+                            item.classList.add('active');
+                        }
+                    });
+                }
+            });
+
+        });
+    </script>
+
+</body>
+</html>
