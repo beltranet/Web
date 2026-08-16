@@ -223,14 +223,14 @@
                         <!-- Nombre Completo -->
                         <div class="space-y-2">
                             <label for="nombre" data-i18n="lbl_name" class="block text-xs font-bold text-gray-300 uppercase tracking-wider">Nombre Completo *</label>
-                            <input type="text" id="nombre" name="nombre" class="w-full bg-[#0a1929]/80 border border-white/10 rounded-xl p-3 text-sm text-white focus:outline-none focus:border-[#FFD700] transition" placeholder="Ej: Juan Pérez Sánchez">
+                            <input type="text" id="nombre" name="nombre" data-i18n-placeholder="ph_name" class="w-full bg-[#0a1929]/80 border border-white/10 rounded-xl p-3 text-sm text-white focus:outline-none focus:border-[#FFD700] transition" placeholder="Ej: Juan Pérez Sánchez">
                             <span data-i18n="err_required" class="error-msg text-[10px] text-rose-400 hidden">Este campo es requerido.</span>
                         </div>
 
                         <!-- Correo Electrónico -->
                         <div class="space-y-2">
                             <label for="email" data-i18n="lbl_email" class="block text-xs font-bold text-gray-300 uppercase tracking-wider">Correo Electrónico *</label>
-                            <input type="email" id="email" name="email" class="w-full bg-[#0a1929]/80 border border-white/10 rounded-xl p-3 text-sm text-white focus:outline-none focus:border-[#FFD700] transition" placeholder="Ej: juan@ejemplo.com">
+                            <input type="email" id="email" name="email" data-i18n-placeholder="ph_email" class="w-full bg-[#0a1929]/80 border border-white/10 rounded-xl p-3 text-sm text-white focus:outline-none focus:border-[#FFD700] transition" placeholder="Ej: juan@ejemplo.com">
                             <span data-i18n="err_email" class="error-msg text-[10px] text-rose-400 hidden">Ingresa un correo electrónico válido.</span>
                         </div>
                     </div>
@@ -268,9 +268,9 @@
                                     <option value="+351">🇵🇹 +351 (PT)</option>
                                     <option value="+61">🇦🇺 +61 (AU)</option>
                                     <option value="+974">🇶🇦 +974 (QA)</option>
-                                    <option value="otro">Otro</option>
+                                    <option value="otro" id="opt_code_other">Otro</option>
                                 </select>
-                                <input type="tel" id="whatsapp_num" name="whatsapp_num" class="flex-grow bg-[#0a1929]/80 border border-white/10 rounded-xl p-3 text-sm text-white focus:outline-none focus:border-[#FFD700] transition" placeholder="Ej: 55 1234 5678">
+                                <input type="tel" id="whatsapp_num" name="whatsapp_num" data-i18n-placeholder="ph_whatsapp" class="flex-grow bg-[#0a1929]/80 border border-white/10 rounded-xl p-3 text-sm text-white focus:outline-none focus:border-[#FFD700] transition" placeholder="Ej: 55 1234 5678">
                             </div>
                             <span data-i18n="err_required" class="error-msg text-[10px] text-rose-400 hidden">Este campo es requerido.</span>
                         </div>
@@ -278,7 +278,7 @@
                         <!-- País -->
                         <div class="space-y-2">
                             <label for="pais" data-i18n="lbl_country" class="block text-xs font-bold text-gray-300 uppercase tracking-wider">País *</label>
-                            <input type="text" id="pais" name="pais" class="w-full bg-[#0a1929]/80 border border-white/10 rounded-xl p-3 text-sm text-white focus:outline-none focus:border-[#FFD700] transition" placeholder="Ej: México" readonly>
+                            <input type="text" id="pais" name="pais" data-i18n-placeholder="ph_country" class="w-full bg-[#0a1929]/80 border border-white/10 rounded-xl p-3 text-sm text-white focus:outline-none focus:border-[#FFD700] transition" placeholder="Ej: México" readonly>
                             <span data-i18n="err_required" class="error-msg text-[10px] text-rose-400 hidden">Este campo es requerido.</span>
                         </div>
                     </div>
@@ -291,7 +291,7 @@
                         
                         <!-- Dynamic select for Mexico -->
                         <select id="residencia_select" title="Estado de Residencia" aria-label="Estado de Residencia" class="w-full bg-[#0a1929] border border-white/10 rounded-xl p-3 text-sm text-white focus:outline-none focus:border-[#FFD700] transition">
-                            <option value="" disabled selected>Elige tu estado...</option>
+                            <option value="" disabled selected id="opt_res_placeholder">Elige tu estado...</option>
                             <option value="Aguascalientes">Aguascalientes</option>
                             <option value="Baja California">Baja California</option>
                             <option value="Baja California Sur">Baja California Sur</option>
@@ -324,11 +324,11 @@
                             <option value="Veracruz">Veracruz</option>
                             <option value="Yucatán">Yucatán</option>
                             <option value="Zacatecas">Zacatecas</option>
-                            <option value="Otro">Otro (Escribir...)</option>
+                            <option value="Otro" id="opt_res_other">Otro (Escribir...)</option>
                         </select>
                         
                         <!-- Text input for typing city/state -->
-                        <input type="text" id="residencia_text" class="w-full bg-[#0a1929]/80 border border-white/10 rounded-xl p-3 text-sm text-white focus:outline-none focus:border-[#FFD700] transition hidden" placeholder="Ej: Monterrey, Nuevo León">
+                        <input type="text" id="residencia_text" data-i18n-placeholder="ph_residence" class="w-full bg-[#0a1929]/80 border border-white/10 rounded-xl p-3 text-sm text-white focus:outline-none focus:border-[#FFD700] transition hidden" placeholder="Ej: Monterrey, Nuevo León">
                         
                         <span data-i18n="err_required" class="error-msg text-[10px] text-rose-400 hidden">Este campo es requerido.</span>
                     </div>
@@ -337,7 +337,7 @@
                         <!-- Edad -->
                         <div class="space-y-2">
                             <label for="edad" data-i18n="lbl_age" class="block text-xs font-bold text-gray-300 uppercase tracking-wider">Edad *</label>
-                            <input type="number" id="edad" name="edad" min="1" max="120" class="w-full bg-[#0a1929]/80 border border-white/10 rounded-xl p-3 text-sm text-white focus:outline-none focus:border-[#FFD700] transition" placeholder="Ej: 35">
+                            <input type="number" id="edad" name="edad" min="1" max="120" data-i18n-placeholder="ph_age" class="w-full bg-[#0a1929]/80 border border-white/10 rounded-xl p-3 text-sm text-white focus:outline-none focus:border-[#FFD700] transition" placeholder="Ej: 35">
                             <span data-i18n="err_age" class="error-msg text-[10px] text-rose-400 hidden">Ingresa una edad válida (1 a 120 años).</span>
                         </div>
 
@@ -345,7 +345,7 @@
                         <div class="space-y-2">
                             <label for="genero" data-i18n="lbl_gender" class="block text-xs font-bold text-gray-300 uppercase tracking-wider">Género *</label>
                             <select id="genero" name="genero" class="w-full bg-[#0a1929] border border-white/10 rounded-xl p-3 text-sm text-white focus:outline-none focus:border-[#FFD700] transition">
-                                <option value="" disabled selected>Selecciona tu género...</option>
+                                <option value="" disabled selected id="opt_gen_placeholder">Selecciona tu género...</option>
                                 <option value="Femenino" id="opt_gen_fem">Femenino</option>
                                 <option value="Masculino" id="opt_gen_masc">Masculino</option>
                                 <option value="Otro" id="opt_gen_other">Otro</option>
@@ -396,7 +396,7 @@
                         <!-- Text input for typing who/what -->
                         <div id="referencia_detalle_container" class="space-y-2 hidden">
                             <label id="referencia_detalle_label" for="referencia_detalle" data-i18n="lbl_referral_detail" class="block text-xs font-bold text-gray-300 uppercase tracking-wider">Por favor especifica (ej: nombre de quien te invitó o medio) *</label>
-                            <input type="text" id="referencia_detalle" class="w-full bg-[#0a1929]/80 border border-white/10 rounded-xl p-3 text-sm text-white focus:outline-none focus:border-[#FFD700] transition" placeholder="Ej: Sandra Ramos, Alina, Mary Carmen, Felipe, etc.">
+                            <input type="text" id="referencia_detalle" data-i18n-placeholder="ph_ref_detail" class="w-full bg-[#0a1929]/80 border border-white/10 rounded-xl p-3 text-sm text-white focus:outline-none focus:border-[#FFD700] transition" placeholder="Ej: Sandra Ramos, Alina, Mary Carmen, Felipe, etc.">
                             <span data-i18n="err_required" class="error-msg text-[10px] text-rose-400 hidden">Este campo es requerido.</span>
                         </div>
                         
@@ -496,14 +496,14 @@
                     <!-- Detalle Movilidad -->
                     <div class="space-y-2">
                         <label for="movilidad_detalle" data-i18n-html="lbl_mob_detail" class="block text-xs font-bold text-gray-300 uppercase tracking-wider">En caso de responder SÍ, detalla tu condición física: <span id="movilidad_detalle_asterisk" class="hidden text-rose-500">*</span></label>
-                        <textarea id="movilidad_detalle" name="movilidad_detalle" rows="2" class="w-full bg-[#0a1929]/80 border border-white/10 rounded-xl p-3 text-sm text-white focus:outline-none focus:border-[#FFD700] transition" placeholder="Ej: Dificultad para subir escaleras, prótesis, etc."></textarea>
+                        <textarea id="movilidad_detalle" name="movilidad_detalle" rows="2" data-i18n-placeholder="ph_mob_detail" class="w-full bg-[#0a1929]/80 border border-white/10 rounded-xl p-3 text-sm text-white focus:outline-none focus:border-[#FFD700] transition" placeholder="Ej: Dificultad para subir escaleras, prótesis, etc."></textarea>
                         <span data-i18n="err_mob_detail" class="error-msg text-[10px] text-rose-400 hidden">Por favor detalla tu condición física.</span>
                     </div>
 
                     <!-- Restricciones Alimenticias -->
                     <div class="space-y-2">
                         <label for="alergias" data-i18n="lbl_allergies" class="block text-xs font-bold text-gray-300 uppercase tracking-wider">Alergias Alimenticias *</label>
-                        <textarea id="alergias" name="alergias" rows="2" class="w-full bg-[#0a1929]/80 border border-white/10 rounded-xl p-3 text-sm text-white focus:outline-none focus:border-[#FFD700] transition" placeholder="Ej: Ninguna / Alergia al cacahuate / Intolerante al gluten..."></textarea>
+                        <textarea id="alergias" name="alergias" rows="2" data-i18n-placeholder="ph_allergies" class="w-full bg-[#0a1929]/80 border border-white/10 rounded-xl p-3 text-sm text-white focus:outline-none focus:border-[#FFD700] transition" placeholder="Ej: Ninguna / Alergia al cacahuate / Intolerante al gluten..."></textarea>
                         <span data-i18n="err_allergies" class="error-msg text-[10px] text-rose-400 hidden">Este campo es requerido. En caso de no tener alergias, escribe "Ninguna".</span>
                     </div>
                 </div>
@@ -607,12 +607,24 @@
                 error_banner_desc: "Revisa los campos marcados en rojo antes de enviar.",
                 sec1_title: "1. Información de Contacto",
                 lbl_name: "Nombre Completo *",
+                ph_name: "Ej: Juan Pérez Sánchez",
                 lbl_email: "Correo Electrónico *",
+                ph_email: "Ej: juan@ejemplo.com",
                 lbl_whatsapp: "WhatsApp de Contacto *",
+                ph_whatsapp: "Ej: 55 1234 5678",
+                opt_code_other: "Otro",
                 lbl_country: "País *",
+                ph_country: "Ej: México",
+                ph_country_free: "Escribe tu país",
                 lbl_residence: "Ciudad y Estado de Residencia *",
+                opt_res_placeholder: "Elige tu estado...",
+                opt_res_other: "Otro (Escribir...)",
+                ph_residence: "Ej: Monterrey, Nuevo León",
+                ph_residence_free: "Escribe tu ciudad y estado",
                 lbl_age: "Edad *",
+                ph_age: "Ej: 35",
                 lbl_gender: "Género *",
+                opt_gen_placeholder: "Selecciona tu género...",
                 opt_gen_fem: "Femenino",
                 opt_gen_masc: "Masculino",
                 opt_gen_other: "Otro",
@@ -630,6 +642,7 @@
                 opt_ref_web: "Página web oficial (sembradoresdeqi.com)",
                 opt_ref_other: "Otro (especificar...)",
                 lbl_referral_detail: "Por favor especifica (ej: nombre de quien te invitó o medio) *",
+                ph_ref_detail: "Ej: Sandra Ramos, Alina, Mary Carmen, Felipe, etc.",
                 sec4_title: "4. Forma de Pago (Paquete 1)",
                 sec4_promo_badge: "Precio Promo: $7,000.00 MXN",
                 sec4_instructions: "Selecciona la modalidad de pago que mejor se adapte a ti para el <strong>Paquete 1</strong>:",
@@ -647,7 +660,9 @@
                 opt_mob_no: "No, no presento ninguna limitación física",
                 opt_mob_yes: "Sí (Favor de detallar en la siguiente pregunta)",
                 lbl_mob_detail: "En caso de responder SÍ, detalla tu condición física: <span id=\"movilidad_detalle_asterisk\" class=\"hidden text-rose-500\">*</span>",
+                ph_mob_detail: "Ej: Dificultad para subir escaleras, prótesis, etc.",
                 lbl_allergies: "Alergias Alimenticias *",
+                ph_allergies: "Ej: Ninguna / Alergia al cacahuate / Intolerante al gluten...",
                 sec6_title: "6. Talla de Playera",
                 lbl_shirt: "Talla de Playera *",
                 opt_shirt_placeholder: "Elige tu talla de playera...",
@@ -698,12 +713,24 @@
                 error_banner_desc: "Check the fields highlighted in red before submitting.",
                 sec1_title: "1. Contact Information",
                 lbl_name: "Full Name *",
+                ph_name: "e.g., John Smith",
                 lbl_email: "Email Address *",
+                ph_email: "e.g., john@example.com",
                 lbl_whatsapp: "Contact WhatsApp *",
+                ph_whatsapp: "e.g., 55 1234 5678",
+                opt_code_other: "Other",
                 lbl_country: "Country *",
+                ph_country: "e.g., Mexico",
+                ph_country_free: "Type your country",
                 lbl_residence: "City & State of Residence *",
+                opt_res_placeholder: "Choose your state...",
+                opt_res_other: "Other (Type...)",
+                ph_residence: "e.g., Los Angeles, California",
+                ph_residence_free: "Type your city and state",
                 lbl_age: "Age *",
+                ph_age: "e.g., 35",
                 lbl_gender: "Gender *",
+                opt_gen_placeholder: "Select your gender...",
                 opt_gen_fem: "Female",
                 opt_gen_masc: "Male",
                 opt_gen_other: "Other",
@@ -721,6 +748,7 @@
                 opt_ref_web: "Official Website (sembradoresdeqi.com)",
                 opt_ref_other: "Other (specify...)",
                 lbl_referral_detail: "Please specify (e.g., name of person who invited you or media) *",
+                ph_ref_detail: "e.g., Sandra Ramos, Alina, Mary Carmen, Felipe, etc.",
                 sec4_title: "4. Payment Method (Package 1)",
                 sec4_promo_badge: "Promo Rate: $7,000.00 MXN",
                 sec4_instructions: "Select the payment option that best fits your preference for <strong>Package 1</strong>:",
@@ -738,7 +766,9 @@
                 opt_mob_no: "No, I do not have any physical limitations",
                 opt_mob_yes: "Yes (Please provide details in the next field)",
                 lbl_mob_detail: "If YES, please detail your physical condition: <span id=\"movilidad_detalle_asterisk\" class=\"hidden text-rose-500\">*</span>",
+                ph_mob_detail: "e.g., Difficulty climbing stairs, prosthetics, etc.",
                 lbl_allergies: "Food Allergies *",
+                ph_allergies: "e.g., None / Peanut allergy / Gluten intolerance...",
                 sec6_title: "6. T-Shirt Size",
                 lbl_shirt: "T-Shirt Size *",
                 opt_shirt_placeholder: "Choose your T-shirt size...",
@@ -796,7 +826,19 @@
                 }
             });
 
+            document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+                const key = el.getAttribute('data-i18n-placeholder');
+                if (dict[key]) {
+                    el.setAttribute('placeholder', dict[key]);
+                }
+            });
+
             // Update Option Text in Selects
+            if (document.getElementById('opt_code_other')) document.getElementById('opt_code_other').textContent = dict.opt_code_other;
+            if (document.getElementById('opt_res_placeholder')) document.getElementById('opt_res_placeholder').textContent = dict.opt_res_placeholder;
+            if (document.getElementById('opt_res_other')) document.getElementById('opt_res_other').textContent = dict.opt_res_other;
+
+            if (document.getElementById('opt_gen_placeholder')) document.getElementById('opt_gen_placeholder').textContent = dict.opt_gen_placeholder;
             if (document.getElementById('opt_gen_fem')) document.getElementById('opt_gen_fem').textContent = dict.opt_gen_fem;
             if (document.getElementById('opt_gen_masc')) document.getElementById('opt_gen_masc').textContent = dict.opt_gen_masc;
             if (document.getElementById('opt_gen_other')) document.getElementById('opt_gen_other').textContent = dict.opt_gen_other;
@@ -814,6 +856,24 @@
             if (document.getElementById('opt_shirt_m')) document.getElementById('opt_shirt_m').textContent = dict.opt_shirt_m;
             if (document.getElementById('opt_shirt_l')) document.getElementById('opt_shirt_l').textContent = dict.opt_shirt_l;
             if (document.getElementById('opt_shirt_xl')) document.getElementById('opt_shirt_xl').textContent = dict.opt_shirt_xl;
+
+            // Country & residence dynamic placeholders and labels
+            const paisCodigoSelect = document.getElementById('pais_codigo');
+            const paisInput = document.getElementById('pais');
+            const residenciaSelect = document.getElementById('residencia_select');
+            const residenciaText = document.getElementById('residencia_text');
+            if (paisCodigoSelect && paisInput) {
+                if (paisCodigoSelect.value === '+52') {
+                    paisInput.value = (lang === 'en') ? 'Mexico' : 'México';
+                } else if (paisCodigoSelect.value === 'otro') {
+                    paisInput.placeholder = dict.ph_country_free;
+                }
+            }
+            if (residenciaSelect && residenciaText) {
+                if (residenciaSelect.value === 'Otro' || residenciaSelect.classList.contains('hidden')) {
+                    residenciaText.placeholder = (residenciaSelect.value === 'Otro') ? dict.ph_residence_free : dict.ph_residence;
+                }
+            }
 
             // Help WhatsApp link
             const helpWa = document.getElementById('help-wa-btn');

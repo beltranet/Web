@@ -491,7 +491,7 @@
                                 <span class="text-xs sm:text-sm text-gray-200">Sí (Favor de detallar en la siguiente pregunta)</span>
                             </label>
                         </div>
-                        <p class="text-xs sm:text-sm text-amber-200/90 font-semibold mt-2">Esta información es 100% confidencial. Te informamos que, en caso de alojarse en el Convento, las habitaciones se encuentran en el primer piso y no se cuenta con rampa para facilitar el acceso a este nivel.</p>
+                        <p class="text-xs sm:text-sm text-amber-200/90 font-semibold mt-2">🏛️ <strong>Aviso de accesibilidad en habitaciones:</strong> Esta información es 100% confidencial. Por favor toma en consideración que las habitaciones para huéspedes en el Convento de San Joaquín se encuentran ubicadas en el primer piso (planta alta) y las instalaciones no cuentan con elevador ni rampa de acceso para personas con discapacidad o movilidad reducida.</p>
                         <span class="error-msg text-[10px] text-rose-400 hidden">Selecciona una respuesta.</span>
                     </div>
 
@@ -937,8 +937,8 @@
             // 3. Physical condition / Mobility warning
             if (isAlojamiento && data.movilidad && data.movilidad.startsWith('Sí')) {
                 warningsHtml += `
-                    <div class="bg-blue-500/10 border border-blue-500/30 p-4 rounded-xl text-left text-sm sm:text-base text-blue-200 space-y-1">
-                        🏠 <strong>Ubicación de Alojamiento:</strong> Te recordamos que las habitaciones del Convento se encuentran en el primer piso y no se cuenta con rampa para facilitar el acceso a este nivel.
+                    <div class="bg-amber-500/10 border border-amber-500/30 p-4 rounded-xl text-left text-sm sm:text-base text-amber-200 space-y-1">
+                        🏛️ <strong>Aviso Importante sobre Hospedaje y Accesibilidad:</strong> Dado que indicaste una condición física o limitación de movilidad, te recordamos que las habitaciones del Convento de San Joaquín se encuentran en el primer piso (planta alta) y no se cuenta con elevador ni rampa para personas con discapacidad. Por favor ten en cuenta esta logística para tu comodidad y estancia.
                     </div>
                 `;
             }
