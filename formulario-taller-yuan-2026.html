@@ -799,6 +799,39 @@
             document.getElementById('pago_opciones_container').classList.remove('border-2', 'border-rose-500', 'p-4', 'rounded-2xl');
         }
 
+        function copyClabeToClipboard(btn) {
+            const clabe = "722969010920226920";
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(clabe).then(() => {
+                    mostrarFeedbackCopiado(btn);
+                }).catch(() => {
+                    fallbackCopiarClabe(clabe, btn);
+                });
+            } else {
+                fallbackCopiarClabe(clabe, btn);
+            }
+        }
+
+        function mostrarFeedbackCopiado(btn) {
+            const originalText = btn.innerHTML;
+            btn.innerHTML = "✅ ¡Copiada!";
+            btn.classList.add("bg-[#FFD700]", "text-[#0a1929]");
+            setTimeout(() => {
+                btn.innerHTML = originalText;
+                btn.classList.remove("bg-[#FFD700]", "text-[#0a1929]");
+            }, 2500);
+        }
+
+        function fallbackCopiarClabe(texto, btn) {
+            const temp = document.createElement("textarea");
+            temp.value = texto;
+            document.body.appendChild(temp);
+            temp.select();
+            document.execCommand("copy");
+            document.body.removeChild(temp);
+            mostrarFeedbackCopiado(btn);
+        }
+
         function handleSuccess(data) {
             loader.classList.add('hidden');
             formWrapper.classList.add('hidden');
@@ -815,27 +848,50 @@
             let isApartado = data.modalidad.includes('apartado');
             let isAlojamiento = data.modalidad.includes('alojamiento') || data.modalidad.includes('Alojamiento') || data.modalidad.includes('Paquete 2');
             
-            const transferDetailsHtml = `
-                <div class="bg-[#0a1929] rounded-2xl p-6 border border-white/10 text-left space-y-3 shadow-lg">
-                    <h3 class="text-base sm:text-lg font-bold text-[#FFD700] uppercase tracking-wider border-b border-white/10 pb-2 flex items-center gap-2"><span>🏦</span> Datos de Transferencia o Depósito</h3>
-                    <p class="text-sm sm:text-base text-gray-200 leading-relaxed">
-                        ¡Muchas gracias por tu registro! Para completar tu inscripción, <strong>los datos de la cuenta bancaria para realizar tu depósito o transferencia te serán proporcionados por mensaje de WhatsApp</strong>.
-                    </p>
-                    <p class="text-sm sm:text-base text-gray-300 leading-relaxed">
-                        Por favor, haz clic en el botón de abajo para abrir WhatsApp y solicitar a Felipe los detalles de la cuenta de depósito para realizar tu pago.
-                    </p>
+            const emailNoticeHtml = `
+                <div class="bg-[#132f4c] border border-emerald-500/40 rounded-2xl p-4 text-emerald-300 text-xs sm:text-sm flex items-center justify-center gap-3 shadow-lg mb-4">
+                    <span class="text-2xl">📧</span>
+                    <span class="text-left">Hemos enviado un correo de confirmación a <strong class="text-white">${data.email}</strong> con el resumen de tu registro. (Revisa tu carpeta de Spam o Promociones si no lo ves).</span>
                 </div>
             `;
 
-             if (data.modalidad === 'Paquete 1 ($7,000.00 un solo pago)') {
+            const getTransferCard = (amount) => `
+                <div class="bg-[#0a1929] rounded-2xl p-6 border-2 border-[#FFD700]/50 text-left space-y-4 shadow-xl">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-white/10 pb-3">
+                        <h3 class="text-base sm:text-lg font-bold text-[#FFD700] uppercase tracking-wider flex items-center gap-2"><span>🏦</span> Datos Oficiales para Transferencia o Depósito</h3>
+                        <span class="text-xs bg-[#132f4c] text-emerald-300 px-3 py-1 rounded-full font-bold border border-emerald-500/30">Monto: ${amount}</span>
+                    </div>
+                    <p class="text-xs sm:text-sm text-gray-300 leading-relaxed">
+                        Por favor realiza tu transferencia o depósito a la cuenta bancaria oficial:
+                    </p>
+                    <div class="bg-[#132f4c]/70 p-4 rounded-xl space-y-2.5 border border-white/10 text-xs sm:text-sm">
+                        <div class="flex justify-between border-b border-white/5 pb-1.5"><span class="text-gray-400 font-medium">Banco / Institución:</span><span class="font-bold text-white">Mercado Pago W</span></div>
+                        <div class="flex justify-between border-b border-white/5 pb-1.5"><span class="text-gray-400 font-medium">Beneficiario:</span><span class="font-bold text-white">Felipe de Jesus Beltran Chin</span></div>
+                        <div class="flex flex-col sm:flex-row justify-between sm:items-center gap-2 border-b border-white/5 pb-1.5">
+                            <span class="text-gray-400 font-medium">CLABE:</span>
+                            <div class="flex items-center gap-2">
+                                <span class="font-black text-[#FFD700] text-sm sm:text-base tracking-wider">722969010920226920</span>
+                                <button type="button" onclick="copyClabeToClipboard(this)" class="px-3 py-1 bg-[#0a1929] hover:bg-[#FFD700] hover:text-[#0a1929] text-xs text-gray-300 font-bold rounded-lg border border-white/20 transition cursor-pointer shadow-sm">📋 Copiar CLABE</button>
+                            </div>
+                        </div>
+                        <div class="flex justify-between pt-1"><span class="text-gray-400 font-medium">Concepto / Motivo:</span><span class="text-gray-200 font-semibold">Taller - ${data.nombre}</span></div>
+                    </div>
+                    <div class="bg-emerald-950/40 border border-emerald-500/30 p-3.5 rounded-xl text-xs text-emerald-200 flex items-start gap-2">
+                        <span>✅</span>
+                        <span><strong>Paso indispensable:</strong> Una vez hecha tu transferencia, envía tu comprobante a Felipe por WhatsApp con el botón de abajo o responde a tu correo de confirmación.</span>
+                    </div>
+                </div>
+            `;
+
+            if (data.modalidad === 'Paquete 1 ($7,000.00 un solo pago)') {
                 if (data.metodo_pago === 'Transferencia') {
                     introHtml = `<p class="text-base sm:text-lg text-gray-200 max-w-xl mx-auto leading-relaxed">Has elegido realizar el pago total de contado del <strong>Paquete 1 ($7,000.00 MXN)</strong> por transferencia bancaria.</p>`;
-                    detailsHtml = transferDetailsHtml;
-                    waMessage = `Hola Felipe, acabo de registrarme para el Taller de Mudras y Sonidos 2026. Elegí la opción de depósito o transferencia bancaria para el Paquete 1 ($7,000.00 MXN) y me gustaría solicitar los datos de la cuenta bancaria para realizar mi pago. Mi nombre es ${data.nombre}.`;
-                    waButtonText.textContent = '📱 Solicitar Datos de Cuenta por WhatsApp';
+                    detailsHtml = emailNoticeHtml + getTransferCard('$7,000.00 MXN');
+                    waMessage = `Hola Felipe, acabo de registrarme para el Taller de Mudras y Sonidos 2026 en el Paquete 1 ($7,000.00 MXN). Realicé mi transferencia por el pago total y aquí te comparto mi comprobante. Mi nombre es ${data.nombre}.`;
+                    waButtonText.textContent = '📱 Enviar Comprobante por WhatsApp';
                 } else if (data.metodo_pago === 'Tarjeta') {
                     introHtml = `<p class="text-base sm:text-lg text-gray-200 max-w-xl mx-auto leading-relaxed">Has elegido realizar el pago total del <strong>Paquete 1 ($7,000.00 MXN)</strong> con tarjeta.</p>`;
-                    detailsHtml = `
+                    detailsHtml = emailNoticeHtml + `
                         <div class="bg-[#0a1929] rounded-2xl p-6 border border-white/10 text-left space-y-4 shadow-lg">
                             <h3 class="text-base sm:text-lg font-bold text-[#FFD700] uppercase tracking-wider border-b border-white/10 pb-2 flex items-center gap-2"><span>💳</span> Enlace de Pago Seguro</h3>
                             <p class="text-sm sm:text-base text-gray-300">Haz clic en el botón de abajo para pagar el monto total de **$7,000.00 MXN** con tu tarjeta de crédito o débito:</p>
@@ -844,18 +900,18 @@
                             </div>
                         </div>
                     `;
-                    waMessage = `Hola Felipe, acabo de registrarme para el Taller de Mudras y Sonidos 2026. Realicé mi pago de contado con tarjeta de crédito o débito para el Paquete 1 ($7,000.00 MXN) y aquí te comparto mi comprobante. Mi nombre es ${data.nombre}.`;
+                    waMessage = `Hola Felipe, acabo de registrarme para el Taller de Mudras y Sonidos 2026. Realicé mi pago de contado con tarjeta para el Paquete 1 ($7,000.00 MXN) y aquí te comparto mi comprobante. Mi nombre es ${data.nombre}.`;
                     waButtonText.textContent = '📱 Enviar Comprobante por WhatsApp';
                 }
             } else if (data.modalidad === 'Paquete 1 ($1,000.00 apartado)') {
                 if (data.metodo_pago === 'Transferencia') {
                     introHtml = `<p class="text-base sm:text-lg text-gray-200 max-w-xl mx-auto leading-relaxed">Has elegido realizar el pago de apartado del <strong>Paquete 1 ($1,000.00 MXN)</strong> por transferencia bancaria.</p>`;
-                    detailsHtml = transferDetailsHtml;
-                    waMessage = `Hola Felipe, acabo de registrarme para el Taller de Mudras y Sonidos 2026. Elegí realizar el apartado por depósito o transferencia bancaria para el Paquete 1 ($1,000.00 MXN de apartado) y me gustaría solicitar los datos de la cuenta bancaria para realizar mi pago. Mi nombre es ${data.nombre}.`;
-                    waButtonText.textContent = '📱 Solicitar Datos de Cuenta por WhatsApp';
+                    detailsHtml = emailNoticeHtml + getTransferCard('$1,000.00 MXN (Apartado)');
+                    waMessage = `Hola Felipe, acabo de registrarme para el Taller de Mudras y Sonidos 2026. Realicé mi transferencia de apartado para el Paquete 1 ($1,000.00 MXN) y aquí te comparto mi comprobante. Mi nombre es ${data.nombre}.`;
+                    waButtonText.textContent = '📱 Enviar Comprobante por WhatsApp';
                 } else if (data.metodo_pago === 'Tarjeta') {
                     introHtml = `<p class="text-base sm:text-lg text-gray-200 max-w-xl mx-auto leading-relaxed">Has elegido realizar el apartado del <strong>Paquete 1 ($1,000.00 MXN)</strong> con tarjeta.</p>`;
-                    detailsHtml = `
+                    detailsHtml = emailNoticeHtml + `
                         <div class="bg-[#0a1929] rounded-2xl p-6 border border-white/10 text-left space-y-4 shadow-lg">
                             <h3 class="text-base sm:text-lg font-bold text-[#FFD700] uppercase tracking-wider border-b border-white/10 pb-2 flex items-center gap-2"><span>💳</span> Enlace de Pago Seguro</h3>
                             <p class="text-sm sm:text-base text-gray-300">Haz clic en el botón de abajo para pagar tu apartado de **$1,000.00 MXN** con tu tarjeta de crédito o débito:</p>
@@ -864,38 +920,38 @@
                             </div>
                         </div>
                     `;
-                    waMessage = `Hola Felipe, acabo de registrarme para el Taller de Mudras y Sonidos 2026. Realicé el pago de apartado con tarjeta de crédito o débito para el Paquete 1 ($1,000.00 MXN de apartado) y aquí te comparto mi comprobante. Mi nombre es ${data.nombre}.`;
+                    waMessage = `Hola Felipe, acabo de registrarme para el Taller de Mudras y Sonidos 2026. Realicé el pago de apartado con tarjeta para el Paquete 1 ($1,000.00 MXN) y aquí te comparto mi comprobante. Mi nombre es ${data.nombre}.`;
                     waButtonText.textContent = '📱 Enviar Comprobante por WhatsApp';
                 }
             } else if (data.modalidad === 'Paquete 2 ($10,000.00 un solo pago)') {
                 if (data.metodo_pago === 'Transferencia') {
                     introHtml = `<p class="text-base sm:text-lg text-gray-200 max-w-xl mx-auto leading-relaxed">Has elegido realizar el pago de contado del <strong>Paquete 2 ($10,000.00 MXN)</strong> por transferencia bancaria.</p>`;
-                    detailsHtml = transferDetailsHtml;
-                    waMessage = `Hola Felipe, acabo de registrarme para el Taller de Mudras y Sonidos 2026. Elegí la opción de depósito o transferencia bancaria para el Paquete 2 ($10,000.00 MXN) y me gustaría solicitar los datos de la cuenta bancaria para realizar mi pago. Mi nombre es ${data.nombre}.`;
-                    waButtonText.textContent = '📱 Solicitar Datos de Cuenta por WhatsApp';
+                    detailsHtml = emailNoticeHtml + getTransferCard('$10,000.00 MXN');
+                    waMessage = `Hola Felipe, acabo de registrarme para el Taller de Mudras y Sonidos 2026 en el Paquete 2 ($10,000.00 MXN). Realicé mi transferencia por el pago total y aquí te comparto mi comprobante. Mi nombre es ${data.nombre}.`;
+                    waButtonText.textContent = '📱 Enviar Comprobante por WhatsApp';
                 } else if (data.metodo_pago === 'Tarjeta') {
                     introHtml = `<p class="text-base sm:text-lg text-gray-200 max-w-xl mx-auto leading-relaxed">Has elegido realizar el pago del <strong>Paquete 2 ($10,000.00 MXN)</strong> con tarjeta.</p>`;
-                    detailsHtml = `
+                    detailsHtml = emailNoticeHtml + `
                         <div class="bg-[#0a1929] rounded-2xl p-6 border border-white/10 text-left space-y-4 shadow-lg">
                             <h3 class="text-base sm:text-lg font-bold text-[#FFD700] uppercase tracking-wider border-b border-white/10 pb-2 flex items-center gap-2"><span>💳</span> Enlace de Pago Seguro</h3>
                             <p class="text-sm sm:text-base text-gray-300">Haz clic en el botón de abajo para pagar el monto de **$10,000.00 MXN** con tu tarjeta de crédito o débito:</p>
                             <div class="text-center py-2">
-                                <a href="https://mpago.li/2opFfaa" target="_blank" rel="noopener" class="inline-flex items-center justify-center bg-[#009ee3] hover:bg-[#007ec1] text-white font-extrabold text-xs uppercase tracking-wider px-8 py-3.5 rounded-xl transition shadow-md">Pagar con Mercado Pago ($10,000.00 MXN) 👉</a>
+                                <a href="https://mpago.li/1GZpA3W" target="_blank" rel="noopener" class="inline-flex items-center justify-center bg-[#009ee3] hover:bg-[#007ec1] text-white font-extrabold text-xs uppercase tracking-wider px-8 py-3.5 rounded-xl transition shadow-md">Pagar con Mercado Pago ($10,000.00 MXN) 👉</a>
                             </div>
                         </div>
                     `;
-                    waMessage = `Hola Felipe, acabo de registrarme para el Taller de Mudras y Sonidos 2026. Realicé mi pago de contado con tarjeta de crédito o débito para el Paquete 2 ($10,000.00 MXN) y aquí te comparto mi comprobante. Mi nombre es ${data.nombre}.`;
+                    waMessage = `Hola Felipe, acabo de registrarme para el Taller de Mudras y Sonidos 2026. Realicé mi pago de contado con tarjeta para el Paquete 2 ($10,000.00 MXN) y aquí te comparto mi comprobante. Mi nombre es ${data.nombre}.`;
                     waButtonText.textContent = '📱 Enviar Comprobante por WhatsApp';
                 }
             } else if (data.modalidad === 'Paquete 2 ($1,000.00 apartado)') {
                 if (data.metodo_pago === 'Transferencia') {
                     introHtml = `<p class="text-base sm:text-lg text-gray-200 max-w-xl mx-auto leading-relaxed">Has elegido realizar el apartado del <strong>Paquete 2 ($1,000.00 MXN)</strong> por transferencia bancaria.</p>`;
-                    detailsHtml = transferDetailsHtml;
-                    waMessage = `Hola Felipe, acabo de registrarme para el Taller de Mudras y Sonidos 2026. Elegí realizar el apartado por depósito o transferencia bancaria para el Paquete 2 ($1,000.00 MXN de apartado) y me gustaría solicitar los datos de la cuenta bancaria para realizar mi pago. Mi nombre es ${data.nombre}.`;
-                    waButtonText.textContent = '📱 Solicitar Datos de Cuenta por WhatsApp';
+                    detailsHtml = emailNoticeHtml + getTransferCard('$1,000.00 MXN (Apartado)');
+                    waMessage = `Hola Felipe, acabo de registrarme para el Taller de Mudras y Sonidos 2026. Realicé mi transferencia de apartado para el Paquete 2 ($1,000.00 MXN) y aquí te comparto mi comprobante. Mi nombre es ${data.nombre}.`;
+                    waButtonText.textContent = '📱 Enviar Comprobante por WhatsApp';
                 } else if (data.metodo_pago === 'Tarjeta') {
                     introHtml = `<p class="text-base sm:text-lg text-gray-200 max-w-xl mx-auto leading-relaxed">Has elegido realizar el apartado del <strong>Paquete 2 ($1,000.00 MXN)</strong> con tarjeta.</p>`;
-                    detailsHtml = `
+                    detailsHtml = emailNoticeHtml + `
                         <div class="bg-[#0a1929] rounded-2xl p-6 border border-white/10 text-left space-y-4 shadow-lg">
                             <h3 class="text-base sm:text-lg font-bold text-[#FFD700] uppercase tracking-wider border-b border-white/10 pb-2 flex items-center gap-2"><span>💳</span> Enlace de Pago Seguro</h3>
                             <p class="text-sm sm:text-base text-gray-300">Haz clic en el siguiente botón para realizar tu pago de apartado de **$1,000.00 MXN** con tu tarjeta de crédito o débito:</p>
@@ -904,7 +960,7 @@
                             </div>
                         </div>
                     `;
-                    waMessage = `Hola Felipe, acabo de registrarme para el Taller de Mudras y Sonidos 2026. Realicé el pago de apartado con tarjeta de crédito o débito para el Paquete 2 ($1,000.00 MXN de apartado) y aquí te comparto mi comprobante. Mi nombre es ${data.nombre}.`;
+                    waMessage = `Hola Felipe, acabo de registrarme para el Taller de Mudras y Sonidos 2026. Realicé el pago de apartado con tarjeta para el Paquete 2 ($1,000.00 MXN) y aquí te comparto mi comprobante. Mi nombre es ${data.nombre}.`;
                     waButtonText.textContent = '📱 Enviar Comprobante por WhatsApp';
                 }
             }
@@ -919,7 +975,7 @@
                 </div>
             `;
             
-            // 2. Apartado deadline warning
+            // 2. Apartado deadline warning & Payment reminders notice
             if (isApartado) {
                 let planDetails = '';
                 if (data.modalidad.includes('Paquete 1')) {
@@ -928,8 +984,12 @@
                     planDetails = ' Posterior a tu apartado de $1,000.00 MXN, tu plan consiste en <strong>3 pagos mensuales adicionales de $3,000.00 MXN</strong>.';
                 }
                 warningsHtml += `
-                    <div class="bg-amber-500/10 border border-amber-500/30 p-4 rounded-xl text-left text-sm sm:text-base text-amber-200 space-y-1">
-                        📅 <strong>Fecha límite de liquidación:</strong> Recuerda que la fecha límite para realizar la liquidación total de tu curso es el <strong>15 de noviembre de 2026</strong>.${planDetails}
+                    <div class="bg-amber-500/10 border border-amber-500/30 p-4 rounded-xl text-left text-xs sm:text-sm text-amber-200 space-y-2">
+                        <div>📅 <strong>Fecha límite de liquidación:</strong> Recuerda que la fecha límite para realizar la liquidación total de tu curso es el <strong>15 de noviembre de 2026</strong>.${planDetails}</div>
+                        <div class="font-bold text-white bg-amber-500/20 p-2.5 rounded-lg border border-amber-500/30 flex items-center gap-2">
+                            <span>🔔</span>
+                            <span><strong>Recordatorios de pago:</strong> Te estaremos enviando recordatorios oportunos de tus fechas y pagos mensuales directamente a tu correo electrónico (<strong>${data.email}</strong>).</span>
+                        </div>
                     </div>
                 `;
             }
